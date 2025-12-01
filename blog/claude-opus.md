@@ -1,5 +1,7 @@
 ---
 tags: [genai]
+authors: [dc]
+date: 2025-11-26
 ---
 
 # How does Claude's newest model perform in SAP ABAP development?

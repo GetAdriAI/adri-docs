@@ -4,6 +4,7 @@
 import React, {memo, useMemo} from 'react';
 import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
+import {TAG_ORDER} from '../../blogConfig';
 
 // Webpack-only helper to access every generated blog metadata file.
 // eslint-disable-next-line @typescript-eslint/no-var-requires, global-require
@@ -54,9 +55,16 @@ function groupItemsByTag(items) {
     }
   });
 
-  return Array.from(groups.values()).sort((a, b) =>
-    a.tag.label.localeCompare(b.tag.label),
-  );
+  return Array.from(groups.values()).sort((a, b) => {
+    const orderA = TAG_ORDER.indexOf(a.tag.label?.toLowerCase());
+    const orderB = TAG_ORDER.indexOf(b.tag.label?.toLowerCase());
+    if (orderA !== -1 || orderB !== -1) {
+      const normalizedA = orderA === -1 ? TAG_ORDER.length : orderA;
+      const normalizedB = orderB === -1 ? TAG_ORDER.length : orderB;
+      return normalizedA - normalizedB;
+    }
+    return a.tag.label.localeCompare(b.tag.label);
+  });
 }
 
 function TagHeading({tag, className}) {

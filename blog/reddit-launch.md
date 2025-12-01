@@ -1,5 +1,7 @@
 ---
-tags: [research-agent, launch]
+tags: [research-agent]
+authors: [dc]
+date: 2025-11-27
 ---
 
 # SAP Research Agent Reddit Launch

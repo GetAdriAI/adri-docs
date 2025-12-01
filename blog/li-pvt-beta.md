@@ -1,5 +1,7 @@
 ---
 tags: [research-agent]
+authors: [dc]
+date: 2025-11-24
 ---
 
 # SAP Research Agent Private beta launch

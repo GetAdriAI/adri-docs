@@ -1,5 +1,7 @@
 ---
 tags: [chromasql]
+authors: [dc]
+date: 2025-11-10
 ---
 
 # ChromaSQL Early Preview

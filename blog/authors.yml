@@ -10,6 +10,16 @@ yangshun:
     github: yangshun
     newsletter: https://www.greatfrontend.com
 
+dc:
+  name: Darshita Chaturvedi
+  title: Co-Founder & CEO, Adri AI
+  url: https://www.linkedin.com/in/darshitac/
+  image_url: https://github.com/darshitac11.png
+  page: true
+  socials:
+    linkedin: darshitac
+    github: darshitac11
+
 slorber:
   name: Sébastien Lorber
   title: Docusaurus maintainer
@@ -17,7 +27,7 @@ slorber:
   image_url: https://github.com/slorber.png
   page:
     # customize the url of the author page at /blog/authors/<permalink>
-    permalink: '/all-sebastien-lorber-articles'
+    permalink: "/all-sebastien-lorber-articles"
   socials:
     x: sebastienlorber
     linkedin: sebastienlorber
