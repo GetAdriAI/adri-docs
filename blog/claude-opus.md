@@ -1,3 +1,7 @@
+---
+tags: [genai]
+---
+
 # How does Claude's newest model perform in SAP ABAP development?
 
 Claude Opus 4.5 was released yesterday and is claimed to be "the best model in the world for coding," so I was curious how it performs in ABAP development.

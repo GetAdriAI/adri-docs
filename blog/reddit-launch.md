@@ -1,3 +1,7 @@
+---
+tags: [research-agent, launch]
+---
+
 # SAP Research Agent Reddit Launch
 
 We launched on Reddit and it crashed our app. 🫠

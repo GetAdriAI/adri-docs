@@ -1,19 +1,19 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+genai:
+  label: genai
+  permalink: /genai
+  description: GenAI tag description
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+chromasql:
+  label: chromasql
+  permalink: /chromasql
+  description: chromasql tag description
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+launch:
+  label: launch
+  permalink: /launch
+  description: launch tag description
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+research-agent:
+  label: research-agent
+  permalink: /research-agent
+  description: research-agent tag description

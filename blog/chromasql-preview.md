@@ -1,3 +1,7 @@
+---
+tags: [chromasql]
+---
+
 # ChromaSQL Early Preview
 
 Excited to share an early preview of ChromaSQL, a new SQL-like language that helps ABAP developers access SAP’s tribal knowledge in a few seconds instead of wading through SE11/SE84 and stacks of notes. 🎉

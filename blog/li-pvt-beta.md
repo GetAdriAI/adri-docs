@@ -1,3 +1,7 @@
+---
+tags: [research-agent]
+---
+
 # SAP Research Agent Private beta launch
 
 Yesterday, we opened up free access to our SAP Change Request agent for everyone who requested it earlier.
