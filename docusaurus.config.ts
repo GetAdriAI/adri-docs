@@ -71,7 +71,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/linkedin_cover_nov_12 (1).jpg',
+    image: 'img/cover.jpg',
     colorMode: {
       respectPrefersColorScheme: true,
     },
