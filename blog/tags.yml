@@ -1,19 +1,14 @@
 genai:
-  label: genai
+  label: GenAI
   permalink: /genai
   description: GenAI tag description
 
 chromasql:
-  label: chromasql
+  label: ChromaSQL
   permalink: /chromasql
   description: chromasql tag description
 
-launch:
-  label: launch
-  permalink: /launch
-  description: launch tag description
-
 research-agent:
-  label: research-agent
+  label: Research Agent
   permalink: /research-agent
   description: research-agent tag description

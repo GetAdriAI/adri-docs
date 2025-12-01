@@ -4,7 +4,7 @@ authors: [dc]
 date: 2025-11-27
 ---
 
-# SAP Research Agent Reddit Launch
+# Reddit Launch
 
 We launched on Reddit and it crashed our app. 🫠
 

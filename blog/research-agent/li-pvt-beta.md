@@ -4,7 +4,7 @@ authors: [dc]
 date: 2025-11-24
 ---
 
-# SAP Research Agent Private beta launch
+# Private beta launch
 
 Yesterday, we opened up free access to our SAP Change Request agent for everyone who requested it earlier.
 
