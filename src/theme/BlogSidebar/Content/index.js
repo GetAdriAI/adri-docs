@@ -25,6 +25,30 @@ const permalinkToTags = new Map(
   ]),
 );
 
+function getTagSlug(tag) {
+  const slugFromPermalink = tag.permalink
+    ?.split('/')
+    .filter(Boolean)
+    .pop()
+    ?.toLowerCase();
+  if (slugFromPermalink) {
+    return slugFromPermalink;
+  }
+  return tag.label?.toLowerCase().replace(/\s+/g, '-');
+}
+
+function getOrderIndex(tag) {
+  const slug = getTagSlug(tag);
+  if (slug) {
+    const slugIndex = TAG_ORDER.indexOf(slug);
+    if (slugIndex !== -1) {
+      return slugIndex;
+    }
+  }
+  const labelIndex = TAG_ORDER.indexOf(tag.label?.toLowerCase() ?? '');
+  return labelIndex;
+}
+
 function groupItemsByTag(items) {
   const groups = new Map();
 
@@ -56,8 +80,8 @@ function groupItemsByTag(items) {
   });
 
   return Array.from(groups.values()).sort((a, b) => {
-    const orderA = TAG_ORDER.indexOf(a.tag.label?.toLowerCase());
-    const orderB = TAG_ORDER.indexOf(b.tag.label?.toLowerCase());
+    const orderA = getOrderIndex(a.tag);
+    const orderB = getOrderIndex(b.tag);
     if (orderA !== -1 || orderB !== -1) {
       const normalizedA = orderA === -1 ? TAG_ORDER.length : orderA;
       const normalizedB = orderB === -1 ? TAG_ORDER.length : orderB;
