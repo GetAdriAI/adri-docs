@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://getadriai.github.io/code-agent-docs/blog</id>
+    <id>https://getadriai.github.io/adri-docs/blog</id>
     <title>Adri AI Blog</title>
     <updated>2025-11-27T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://getadriai.github.io/code-agent-docs/blog"/>
+    <link rel="alternate" href="https://getadriai.github.io/adri-docs/blog"/>
     <subtitle>Adri AI Blog</subtitle>
-    <icon>https://getadriai.github.io/code-agent-docs/img/favicon.ico</icon>
+    <icon>https://getadriai.github.io/adri-docs/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Reddit Launch]]></title>
-        <id>https://getadriai.github.io/code-agent-docs/blog/research-agent/reddit-launch</id>
-        <link href="https://getadriai.github.io/code-agent-docs/blog/research-agent/reddit-launch"/>
+        <id>https://getadriai.github.io/adri-docs/blog/research-agent/reddit-launch</id>
+        <link href="https://getadriai.github.io/adri-docs/blog/research-agent/reddit-launch"/>
         <updated>2025-11-27T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[We launched on Reddit and it crashed our app. 🫠]]></summary>
         <content type="html"><![CDATA[<p>We launched on Reddit and it crashed our app. 🫠</p>
@@ -40,8 +40,8 @@ It's typical startup advice, but harder to actually practice than it sounds.</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[How does Claude's newest model perform in SAP ABAP development?]]></title>
-        <id>https://getadriai.github.io/code-agent-docs/blog/genai/claude-opus</id>
-        <link href="https://getadriai.github.io/code-agent-docs/blog/genai/claude-opus"/>
+        <id>https://getadriai.github.io/adri-docs/blog/genai/claude-opus</id>
+        <link href="https://getadriai.github.io/adri-docs/blog/genai/claude-opus"/>
         <updated>2025-11-26T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Claude Opus 4.5 was released yesterday and is claimed to be "the best model in the world for coding," so I was curious how it performs in ABAP development.]]></summary>
         <content type="html"><![CDATA[<p>Claude Opus 4.5 was released yesterday and is claimed to be "the best model in the world for coding," so I was curious how it performs in ABAP development.</p>
@@ -70,8 +70,8 @@ It's typical startup advice, but harder to actually practice than it sounds.</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Private beta launch]]></title>
-        <id>https://getadriai.github.io/code-agent-docs/blog/research-agent/li-pvt-beta</id>
-        <link href="https://getadriai.github.io/code-agent-docs/blog/research-agent/li-pvt-beta"/>
+        <id>https://getadriai.github.io/adri-docs/blog/research-agent/li-pvt-beta</id>
+        <link href="https://getadriai.github.io/adri-docs/blog/research-agent/li-pvt-beta"/>
         <updated>2025-11-24T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Yesterday, we opened up free access to our SAP Change Request agent for everyone who requested it earlier.]]></summary>
         <content type="html"><![CDATA[<p>Yesterday, we opened up free access to our SAP Change Request agent for everyone who requested it earlier.</p>
@@ -92,8 +92,8 @@ It's typical startup advice, but harder to actually practice than it sounds.</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[ChromaSQL Early Preview]]></title>
-        <id>https://getadriai.github.io/code-agent-docs/blog/chromasql/chromasql-preview</id>
-        <link href="https://getadriai.github.io/code-agent-docs/blog/chromasql/chromasql-preview"/>
+        <id>https://getadriai.github.io/adri-docs/blog/chromasql/chromasql-preview</id>
+        <link href="https://getadriai.github.io/adri-docs/blog/chromasql/chromasql-preview"/>
         <updated>2025-11-10T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Excited to share an early preview of ChromaSQL, a new SQL-like language that helps ABAP developers access SAP’s tribal knowledge in a few seconds instead of wading through SE11/SE84 and stacks of notes. 🎉]]></summary>
         <content type="html"><![CDATA[<p>Excited to share an early preview of ChromaSQL, a new SQL-like language that helps ABAP developers access SAP’s tribal knowledge in a few seconds instead of wading through SE11/SE84 and stacks of notes. 🎉</p>

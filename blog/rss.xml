@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Adri AI Blog</title>
-        <link>https://getadriai.github.io/code-agent-docs/blog</link>
+        <link>https://getadriai.github.io/adri-docs/blog</link>
         <description>Adri AI Blog</description>
         <lastBuildDate>Thu, 27 Nov 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,8 +10,8 @@
         <language>en</language>
         <item>
             <title><![CDATA[Reddit Launch]]></title>
-            <link>https://getadriai.github.io/code-agent-docs/blog/research-agent/reddit-launch</link>
-            <guid>https://getadriai.github.io/code-agent-docs/blog/research-agent/reddit-launch</guid>
+            <link>https://getadriai.github.io/adri-docs/blog/research-agent/reddit-launch</link>
+            <guid>https://getadriai.github.io/adri-docs/blog/research-agent/reddit-launch</guid>
             <pubDate>Thu, 27 Nov 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[We launched on Reddit and it crashed our app. 🫠]]></description>
             <content:encoded><![CDATA[<p>We launched on Reddit and it crashed our app. 🫠</p>
@@ -37,8 +37,8 @@ It's typical startup advice, but harder to actually practice than it sounds.</p>
         </item>
         <item>
             <title><![CDATA[How does Claude's newest model perform in SAP ABAP development?]]></title>
-            <link>https://getadriai.github.io/code-agent-docs/blog/genai/claude-opus</link>
-            <guid>https://getadriai.github.io/code-agent-docs/blog/genai/claude-opus</guid>
+            <link>https://getadriai.github.io/adri-docs/blog/genai/claude-opus</link>
+            <guid>https://getadriai.github.io/adri-docs/blog/genai/claude-opus</guid>
             <pubDate>Wed, 26 Nov 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Claude Opus 4.5 was released yesterday and is claimed to be "the best model in the world for coding," so I was curious how it performs in ABAP development.]]></description>
             <content:encoded><![CDATA[<p>Claude Opus 4.5 was released yesterday and is claimed to be "the best model in the world for coding," so I was curious how it performs in ABAP development.</p>
@@ -63,8 +63,8 @@ It's typical startup advice, but harder to actually practice than it sounds.</p>
         </item>
         <item>
             <title><![CDATA[Private beta launch]]></title>
-            <link>https://getadriai.github.io/code-agent-docs/blog/research-agent/li-pvt-beta</link>
-            <guid>https://getadriai.github.io/code-agent-docs/blog/research-agent/li-pvt-beta</guid>
+            <link>https://getadriai.github.io/adri-docs/blog/research-agent/li-pvt-beta</link>
+            <guid>https://getadriai.github.io/adri-docs/blog/research-agent/li-pvt-beta</guid>
             <pubDate>Mon, 24 Nov 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Yesterday, we opened up free access to our SAP Change Request agent for everyone who requested it earlier.]]></description>
             <content:encoded><![CDATA[<p>Yesterday, we opened up free access to our SAP Change Request agent for everyone who requested it earlier.</p>
@@ -81,8 +81,8 @@ It's typical startup advice, but harder to actually practice than it sounds.</p>
         </item>
         <item>
             <title><![CDATA[ChromaSQL Early Preview]]></title>
-            <link>https://getadriai.github.io/code-agent-docs/blog/chromasql/chromasql-preview</link>
-            <guid>https://getadriai.github.io/code-agent-docs/blog/chromasql/chromasql-preview</guid>
+            <link>https://getadriai.github.io/adri-docs/blog/chromasql/chromasql-preview</link>
+            <guid>https://getadriai.github.io/adri-docs/blog/chromasql/chromasql-preview</guid>
             <pubDate>Mon, 10 Nov 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Excited to share an early preview of ChromaSQL, a new SQL-like language that helps ABAP developers access SAP’s tribal knowledge in a few seconds instead of wading through SE11/SE84 and stacks of notes. 🎉]]></description>
             <content:encoded><![CDATA[<p>Excited to share an early preview of ChromaSQL, a new SQL-like language that helps ABAP developers access SAP’s tribal knowledge in a few seconds instead of wading through SE11/SE84 and stacks of notes. 🎉</p>
