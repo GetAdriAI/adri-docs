@@ -18,12 +18,12 @@ const config: Config = {
   url: 'https://getadriai.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/code-agent-docs/',
+  baseUrl: '/adri-docs/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'GetAdriAI', // Usually your GitHub org/user name.
-  projectName: 'code-agent-docs', // Usually your repo name.
+  projectName: 'adri-docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -45,7 +45,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://getadriai.github.io/code-agent-docs/tree/main',
+            'https://getadriai.github.io/adri-docs/tree/main',
         },
         blog: {
           showReadingTime: true,
@@ -56,7 +56,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://getadriai.github.io/code-agent-docs/tree/main',
+            'https://getadriai.github.io/adri-docs/tree/main',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -100,7 +100,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://github.com/GetAdriAI/code-agent-docs',
+          href: 'https://github.com/GetAdriAI/adri-docs',
           label: 'GitHub',
           position: 'right',
         },
