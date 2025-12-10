@@ -1,6 +1,7 @@
 # Contact Us
 
-Need help or want to collaborate? Pick the channel that fits:
+Need help or want to collaborate?
+Pick the channel that fits:
 
 - **Report a bug or issue** – submit an issue on our [GitHub repo](https://github.com/GetAdriAI/adri-docs/issues). Include your environment, steps to reproduce, and screenshots/logs where possible for faster turnaround.
 - **Request a feature** – create a [feature request](https://github.com/GetAdriAI/adri-docs/issues/new?title=[Feature]%20Issue&labels=enhancement) with context on the business problem, expected workflow, and priority.
