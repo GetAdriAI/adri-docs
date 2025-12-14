@@ -55,3 +55,7 @@ For Enterprise Plan, contact us at [founders@getadri.ai](mailto:founders@getadri
 :::note
 For Enterprise Plan, contact us at [founders@getadri.ai](mailto:founders@getadri.ai)
 :::
+
+## Have Any Other Questions?
+
+Need help or want to collaborate? [Pick the channel that fits your need](contact.md).
