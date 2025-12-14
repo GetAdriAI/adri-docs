@@ -1,4 +1,10 @@
-# Why Consultants Struggle to Find Standard SAP Capabilities Before Developing Custom Code
+---
+tags: [research-agent]
+authors: [dc]
+date: 2025-12-14
+---
+
+# Why Finding Standard SAP Objects Is Difficult?
 
 Consultants struggle to find standard SAP capabilities before developing custom code for several interconnected reasons:
 
@@ -49,3 +55,7 @@ ECC 6.0 vs S/4HANA have different capabilities. A consultant might not know:
 ## Why SAP Research Agent Matters
 
 SAP Research Agent solves the **discoverability problem**. By indexing ~50M standard objects and making them semantically searchable, it essentially asks consultants: "Did you check if SAP already built this?" before they write code.
+
+:::info
+Try out SAP Research Agent here: https://research.getadri.ai/
+:::
