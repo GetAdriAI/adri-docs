@@ -38,11 +38,11 @@ When a business user says "we need to auto-calculate freight costs," consultants
 
 This translation requires deep system knowledge that junior/mid-level consultants often lack.
 
-## 4. Time Pressure and Risk Aversion
+## 4. Time Pressure and Misaligned Incentives
 
-- Searching for standard solutions takes time with uncertain payoff
-- Custom code gives immediate control and certainty
-- Many consultants default to "build custom" because it's faster than proving a standard solution exists (or doesn't)
+- **Research is unbudgeted risk**: No time is set aside purely for research. Even if a consultant diligently searches for standards for a day and finds nothing, they're a day behind on implementation with nothing to show for it
+- **Visible effort bias**: It's harder to prove the effort and complexity of your work when you propose a standard solution. Writing 10,000 lines of custom code is immediately recognizable; finding the right BAPI is not
+- **Default to custom**: Many consultants default to "build custom" because it's faster than proving a standard solution exists (or doesn't) and custom code is easier to justify on timesheets
 
 ## 5. Version Complexity
 
