@@ -2,16 +2,16 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://getadriai.github.io/adri-docs/blog</id>
     <title>Adri AI Blog</title>
-    <updated>2025-12-14T08:53:14.000Z</updated>
+    <updated>2025-12-14T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://getadriai.github.io/adri-docs/blog"/>
     <subtitle>Adri AI Blog</subtitle>
     <icon>https://getadriai.github.io/adri-docs/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[Why Consultants Struggle to Find Standard SAP Capabilities Before Developing Custom Code]]></title>
+        <title type="html"><![CDATA[Why Finding Standard SAP Objects Is Difficult?]]></title>
         <id>https://getadriai.github.io/adri-docs/blog/research-agent/why-it-matters</id>
         <link href="https://getadriai.github.io/adri-docs/blog/research-agent/why-it-matters"/>
-        <updated>2025-12-14T08:53:14.000Z</updated>
+        <updated>2025-12-14T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Consultants struggle to find standard SAP capabilities before developing custom code for several interconnected reasons:]]></summary>
         <content type="html"><![CDATA[<p>Consultants struggle to find standard SAP capabilities before developing custom code for several interconnected reasons:</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-sheer-volume-and-fragmentation">1. Sheer Volume and Fragmentation<a href="https://getadriai.github.io/adri-docs/blog/research-agent/why-it-matters#1-sheer-volume-and-fragmentation" class="hash-link" aria-label="Direct link to 1. Sheer Volume and Fragmentation" title="Direct link to 1. Sheer Volume and Fragmentation" translate="no">​</a></h2>
@@ -52,7 +52,13 @@
 <li class="">An old BAPI has been deprecated/replaced</li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-sap-research-agent-matters">Why SAP Research Agent Matters<a href="https://getadriai.github.io/adri-docs/blog/research-agent/why-it-matters#why-sap-research-agent-matters" class="hash-link" aria-label="Direct link to Why SAP Research Agent Matters" title="Direct link to Why SAP Research Agent Matters" translate="no">​</a></h2>
-<p>SAP Research Agent solves the <strong>discoverability problem</strong>. By indexing ~50M standard objects and making them semantically searchable, it essentially asks consultants: "Did you check if SAP already built this?" before they write code.</p>]]></content>
+<p>SAP Research Agent solves the <strong>discoverability problem</strong>. By indexing ~50M standard objects and making them semantically searchable, it essentially asks consultants: "Did you check if SAP already built this?" before they write code.</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>Try out SAP Research Agent here: <a href="https://research.getadri.ai/" target="_blank" rel="noopener noreferrer" class="">https://research.getadri.ai/</a></p></div></div>]]></content>
+        <author>
+            <name>Darshita Chaturvedi</name>
+            <uri>https://www.linkedin.com/in/darshitac/</uri>
+        </author>
+        <category label="Research Agent" term="Research Agent"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Reddit Launch]]></title>
