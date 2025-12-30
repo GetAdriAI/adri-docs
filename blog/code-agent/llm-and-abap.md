@@ -33,8 +33,6 @@ The problem isn't that LLMs lack ABAP training data. It's that they've seen far 
 
 When patterns conflict, the majority wins and that is why these are not random errors. They're the most probable outputs given what the model has seen, and they just happen to be wrong for ABAP.
 
----
-
 ## The Three Failure Patterns
 
 ### 1. Type System Misunderstanding

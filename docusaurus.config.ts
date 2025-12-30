@@ -96,6 +96,12 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
+          href: 'https://research.getadri.ai',
+          label: 'Try Adri agents today',
+          position: 'right',
+          className: 'navbar-cta-button',
+        },
+        {
           href: 'https://www.linkedin.com/company/adri-ai/',
           label: 'LinkedIn',
           position: 'right',
