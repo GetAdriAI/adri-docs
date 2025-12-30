@@ -33,7 +33,6 @@
 </ul>
 <p>The problem isn't that LLMs lack ABAP training data. It's that they've seen far more of everything else.</p>
 <p>When patterns conflict, the majority wins and that is why these are not random errors. They're the most probable outputs given what the model has seen, and they just happen to be wrong for ABAP.</p>
-<hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-three-failure-patterns">The Three Failure Patterns<a href="https://getadriai.github.io/adri-docs/blog/code-agent/llm-and-abap#the-three-failure-patterns" class="hash-link" aria-label="Direct link to The Three Failure Patterns" title="Direct link to The Three Failure Patterns" translate="no">​</a></h2>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-type-system-misunderstanding">1. Type System Misunderstanding<a href="https://getadriai.github.io/adri-docs/blog/code-agent/llm-and-abap#1-type-system-misunderstanding" class="hash-link" aria-label="Direct link to 1. Type System Misunderstanding" title="Direct link to 1. Type System Misunderstanding" translate="no">​</a></h3>
 <p>ABAP enforces strong, static typing with meaningful distinctions between:</p>
