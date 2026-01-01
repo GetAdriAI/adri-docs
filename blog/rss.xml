@@ -45,6 +45,7 @@
             <description><![CDATA[We spent months studying the patterns in mistakes LLMs make while writing ABAP code. While many teams frame the risks in terms of "hallucination", we've learned that hallucination is not the core issue in ABAP.]]></description>
             <content:encoded><![CDATA[<p>We spent months studying the patterns in mistakes LLMs make while writing ABAP code. While many teams frame the risks in terms of "hallucination", we've learned that hallucination is <strong>not</strong> the core issue in ABAP.</p>
 <p>The real problems stem from <strong>how LLMs generalize programming patterns</strong> and how <strong>ABAP fundamentally differs from mainstream programming languages</strong>.</p>
+<figure><img src="https://getadriai.github.io/adri-docs/img/how-llms-fail-in-abap.png" alt="How LLMs fail in ABAP"><figcaption style="text-align:center;font-style:italic">How LLMs fail in ABAP</figcaption></figure>
 <p>This blog breaks down:</p>
 <ul>
 <li class="">the structural mismatches between ABAP and the broader coding corpus models are trained on</li>
