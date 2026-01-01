@@ -15,9 +15,9 @@ The real problems stem from **how LLMs generalize programming patterns** and how
   <figcaption style={{textAlign: "center", fontStyle: "italic"}}>How LLMs fail in ABAP</figcaption>
 </figure>
 
-<!-- truncate -->
-
 This blog breaks down:
+
+<!-- truncate -->
 
 - the structural mismatches between ABAP and the broader coding corpus models are trained on
 - the systematic mistakes that appear again and again
