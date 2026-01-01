@@ -10,14 +10,19 @@ We spent months studying the patterns in mistakes LLMs make while writing ABAP c
 
 The real problems stem from **how LLMs generalize programming patterns** and how **ABAP fundamentally differs from mainstream programming languages**.
 
+<figure>
+  <img src="/adri-docs/img/how-llms-fail-in-abap.png" alt="How LLMs fail in ABAP" />
+  <figcaption style={{textAlign: "center", fontStyle: "italic"}}>How LLMs fail in ABAP</figcaption>
+</figure>
+
+<!-- truncate -->
+
 This blog breaks down:
 
 - the structural mismatches between ABAP and the broader coding corpus models are trained on
 - the systematic mistakes that appear again and again
 - why these are _not bugs_, but consequences of model training behavior
 - what ABAP teams should do in practice
-
-<!-- truncate -->
 
 ## The Core Thesis
 
