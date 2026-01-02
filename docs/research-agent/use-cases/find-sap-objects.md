@@ -32,6 +32,6 @@ Use SAP Research Agent to locate relevant objects from your ERP system using nat
 | Approach                          | Best For                                                             |
 | --------------------------------- | -------------------------------------------------------------------- |
 | **Agent Search** (this page)      | Exploratory searches, understanding context, getting recommendations |
-| **[ChromaSQL](search-index.mdx)** | Precise queries, bulk searches, filtering by specific metadata       |
+| **[ChromaSQL](chromasql-search)** | Precise queries, bulk searches, filtering by specific metadata       |
 
 Use the agent when you're unsure what you're looking for. Use ChromaSQL when you know exactly what filters and patterns to apply.
