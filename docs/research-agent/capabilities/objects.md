@@ -20,5 +20,5 @@ The indexed objects are organized into the following categories:
 
 Refer the following pages for further details.
 
-- [Object definitions and examples](docs/glossary/model_name.md)
-- [SAP Object Relationships](docs/glossary/sap_object_relationships.md)
+- [Object definitions and examples](../../glossary/model_name.md)
+- [SAP Object Relationships](../../glossary/sap_object_relationships.md)
