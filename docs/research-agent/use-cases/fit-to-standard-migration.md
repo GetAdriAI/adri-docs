@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+---
+
 # Fit-to-standard
 
 "Fit-to-standard" is arguably the most frustrating part of any S/4HANA migration.
