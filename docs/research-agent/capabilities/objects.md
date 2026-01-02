@@ -4,7 +4,11 @@ sidebar_position: 3
 
 # Available SAP Standard Objects
 
-Each SAP object is categorized into an object type.
+SAP Research Agent indexes millions of standard SAP objects from your connected ERP system. These objects are used for [system validation](system-validation.md) and can be searched using the [Research Agent](../use-cases/find-sap-objects.md) or [ChromaSQL](../use-cases/chromasql-search.mdx) directly.
+
+## Object Types
+
+The indexed objects are organized into the following categories:
 
 | Object Type                | Objects                                                                                                      |
 | :------------------------- | :----------------------------------------------------------------------------------------------------------- |
