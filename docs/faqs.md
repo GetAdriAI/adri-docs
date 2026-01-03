@@ -27,11 +27,11 @@ The user base is geographically diverse with three main pockets: United States, 
 
 ## How does SAP Research Agent work?
 
-Details [here](./research-agent/research-intro.mdx#how-does-sap-research-agent-work)
+Details [here](./research-agent/research-intro.mdx)
 
 ## Which models are being used?
 
-Details [here](./research-agent/research-intro.mdx#which-models-are-being-used)
+Details [here](./research-agent/capabilities/models.md)
 
 ## What are the usage limits?
 
