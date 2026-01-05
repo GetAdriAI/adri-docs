@@ -15,10 +15,10 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://getadriai.github.io/',
+  url: 'https://docs.getadri.ai',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/adri-docs/',
+  baseUrl: '/', // changed from `/adri-docs/` to `/` on setting custom domain in GitHub pages
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
