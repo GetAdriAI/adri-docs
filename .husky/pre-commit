@@ -64,6 +64,9 @@ fi
 
 rm -f /tmp/link-check-output.txt
 
+# Clear the broken links file since no broken links were found
+> "$BROKEN_LINKS_FILE"
+
 echo ""
 printf "${GREEN}✅ Link check passed${NC}\n"
 echo ""
