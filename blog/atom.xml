@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://getadriai.github.io/adri-docs/blog</id>
+    <id>https://getadriai.github.io/blog</id>
     <title>Adri AI Blog</title>
     <updated>2026-01-01T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://getadriai.github.io/adri-docs/blog"/>
+    <link rel="alternate" href="https://getadriai.github.io/blog"/>
     <subtitle>Adri AI Blog</subtitle>
-    <icon>https://getadriai.github.io/adri-docs/img/favicon.ico</icon>
+    <icon>https://getadriai.github.io/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Research Notes: Building a high-performant ABAP coding agent]]></title>
-        <id>https://getadriai.github.io/adri-docs/blog/code-agent/abap-problems</id>
-        <link href="https://getadriai.github.io/adri-docs/blog/code-agent/abap-problems"/>
+        <id>https://getadriai.github.io/blog/code-agent/abap-problems</id>
+        <link href="https://getadriai.github.io/blog/code-agent/abap-problems"/>
         <updated>2026-01-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[I have been using the most powerful coding models for ABAP coding for quite some time now. It's painful, but I persevere because this is how I learn the shortcomings of the models to build a coding agent that actually works.]]></summary>
         <content type="html"><![CDATA[<p>I have been using the most powerful coding models for ABAP coding for quite some time now. It's painful, but I persevere because this is how I learn the shortcomings of the models to build a coding agent that actually works.</p>
 <figure><img src="https://getadriai.github.io/adri-docs/img/code-agent-error-log.png" alt="ABAP error log"><figcaption style="text-align:center;font-style:italic">ABAP error log example</figcaption></figure>
 <p>Here's what months of research have taught me, in just a few sentences.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="two-strategies-for-building-a-better-agent">Two Strategies for Building a Better Agent<a href="https://getadriai.github.io/adri-docs/blog/code-agent/abap-problems#two-strategies-for-building-a-better-agent" class="hash-link" aria-label="Direct link to Two Strategies for Building a Better Agent" title="Direct link to Two Strategies for Building a Better Agent" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="proactive-prevent-errors-before-they-happen">Proactive: Prevent Errors Before They Happen<a href="https://getadriai.github.io/adri-docs/blog/code-agent/abap-problems#proactive-prevent-errors-before-they-happen" class="hash-link" aria-label="Direct link to Proactive: Prevent Errors Before They Happen" title="Direct link to Proactive: Prevent Errors Before They Happen" translate="no">​</a></h3>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="two-strategies-for-building-a-better-agent">Two Strategies for Building a Better Agent<a href="https://getadriai.github.io/blog/code-agent/abap-problems#two-strategies-for-building-a-better-agent" class="hash-link" aria-label="Direct link to Two Strategies for Building a Better Agent" title="Direct link to Two Strategies for Building a Better Agent" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="proactive-prevent-errors-before-they-happen">Proactive: Prevent Errors Before They Happen<a href="https://getadriai.github.io/blog/code-agent/abap-problems#proactive-prevent-errors-before-they-happen" class="hash-link" aria-label="Direct link to Proactive: Prevent Errors Before They Happen" title="Direct link to Proactive: Prevent Errors Before They Happen" translate="no">​</a></h3>
 <p>Can we stop an agent from making the same mistake twice?</p>
 <p>The idea is appealing. If the model messed up once, teach it not to do it again. But so far, the results have been disappointing. Models don't retain corrections the way you'd hope.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="reactive-recover-after-the-error">Reactive: Recover After the Error<a href="https://getadriai.github.io/adri-docs/blog/code-agent/abap-problems#reactive-recover-after-the-error" class="hash-link" aria-label="Direct link to Reactive: Recover After the Error" title="Direct link to Reactive: Recover After the Error" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="reactive-recover-after-the-error">Reactive: Recover After the Error<a href="https://getadriai.github.io/blog/code-agent/abap-problems#reactive-recover-after-the-error" class="hash-link" aria-label="Direct link to Reactive: Recover After the Error" title="Direct link to Reactive: Recover After the Error" translate="no">​</a></h3>
 <p>Can we ensure that when an error does happen, the agent fixes it itself?</p>
 <p>This approach has shown much better results. I'm hopeful we can make significant improvements here.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="creating-a-synthetic-dataset">Creating a Synthetic Dataset<a href="https://getadriai.github.io/adri-docs/blog/code-agent/abap-problems#creating-a-synthetic-dataset" class="hash-link" aria-label="Direct link to Creating a Synthetic Dataset" title="Direct link to Creating a Synthetic Dataset" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="creating-a-synthetic-dataset">Creating a Synthetic Dataset<a href="https://getadriai.github.io/blog/code-agent/abap-problems#creating-a-synthetic-dataset" class="hash-link" aria-label="Direct link to Creating a Synthetic Dataset" title="Direct link to Creating a Synthetic Dataset" translate="no">​</a></h2>
 <p>When a model makes a mistake, I ask it to document what went wrong and what fixed it. The prompt looks something like this:</p>
 <blockquote>
 <p>"Throughout our conversation, you implemented wrong syntax many times and repeated some mistakes as well. Document all the mistakes that you did such that when I provide this list of mistakes next time, you don't repeat these mistakes..."</p>
 </blockquote>
 <p>This generates a dataset of errors and their corrections. But it raises questions: How many fixed code samples should I generate for each error? Does quantity affect the recovery strategy? These are still open problems.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="looming-problems">Looming Problems<a href="https://getadriai.github.io/adri-docs/blog/code-agent/abap-problems#looming-problems" class="hash-link" aria-label="Direct link to Looming Problems" title="Direct link to Looming Problems" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="looming-problems">Looming Problems<a href="https://getadriai.github.io/blog/code-agent/abap-problems#looming-problems" class="hash-link" aria-label="Direct link to Looming Problems" title="Direct link to Looming Problems" translate="no">​</a></h2>
 <p><strong>Scaling</strong> — How do we capture a meaningful percentage of the errors a model makes?</p>
 <p><strong>Cost</strong> — How much money do we spend on capturing these errors and building synthetic datasets?</p>
 <p><strong>Regression</strong> — Every model makes different mistakes. The errors I've catalogued for one model may be completely irrelevant for the next release. It's a moving target.</p>
@@ -42,8 +42,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[LLMs Don't Hallucinate ABAP. They Overgeneralize It.]]></title>
-        <id>https://getadriai.github.io/adri-docs/blog/code-agent/llm-and-abap</id>
-        <link href="https://getadriai.github.io/adri-docs/blog/code-agent/llm-and-abap"/>
+        <id>https://getadriai.github.io/blog/code-agent/llm-and-abap</id>
+        <link href="https://getadriai.github.io/blog/code-agent/llm-and-abap"/>
         <updated>2025-12-30T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[We spent months studying the patterns in mistakes LLMs make while writing ABAP code. While many teams frame the risks in terms of "hallucination", we've learned that hallucination is not the core issue in ABAP.]]></summary>
         <content type="html"><![CDATA[<p>We spent months studying the patterns in mistakes LLMs make while writing ABAP code. While many teams frame the risks in terms of "hallucination", we've learned that hallucination is <strong>not</strong> the core issue in ABAP.</p>
@@ -56,7 +56,7 @@
 <li class="">why these are <em>not bugs</em>, but consequences of model training behavior</li>
 <li class="">what ABAP teams should do in practice</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-core-thesis">The Core Thesis<a href="https://getadriai.github.io/adri-docs/blog/code-agent/llm-and-abap#the-core-thesis" class="hash-link" aria-label="Direct link to The Core Thesis" title="Direct link to The Core Thesis" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-core-thesis">The Core Thesis<a href="https://getadriai.github.io/blog/code-agent/llm-and-abap#the-core-thesis" class="hash-link" aria-label="Direct link to The Core Thesis" title="Direct link to The Core Thesis" translate="no">​</a></h2>
 <p>LLMs don't primarily fail in ABAP because they hallucinate. They fail because they default to mainstream programming patterns.</p>
 <p>When an LLM generates code, it produces what it's seen most often in training. That's overwhelmingly Python, JavaScript, Java, and standard SQL. So when asked to write ABAP, the model reaches for familiar patterns:</p>
 <ul>
@@ -66,8 +66,8 @@
 </ul>
 <p>The problem isn't that LLMs lack ABAP training data. It's that they've seen far more of everything else.</p>
 <p>When patterns conflict, the majority wins and that is why these are not random errors. They're the most probable outputs given what the model has seen, and they just happen to be wrong for ABAP.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-three-failure-patterns">The Three Failure Patterns<a href="https://getadriai.github.io/adri-docs/blog/code-agent/llm-and-abap#the-three-failure-patterns" class="hash-link" aria-label="Direct link to The Three Failure Patterns" title="Direct link to The Three Failure Patterns" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-type-system-misunderstanding">1. Type System Misunderstanding<a href="https://getadriai.github.io/adri-docs/blog/code-agent/llm-and-abap#1-type-system-misunderstanding" class="hash-link" aria-label="Direct link to 1. Type System Misunderstanding" title="Direct link to 1. Type System Misunderstanding" translate="no">​</a></h3>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-three-failure-patterns">The Three Failure Patterns<a href="https://getadriai.github.io/blog/code-agent/llm-and-abap#the-three-failure-patterns" class="hash-link" aria-label="Direct link to The Three Failure Patterns" title="Direct link to The Three Failure Patterns" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-type-system-misunderstanding">1. Type System Misunderstanding<a href="https://getadriai.github.io/blog/code-agent/llm-and-abap#1-type-system-misunderstanding" class="hash-link" aria-label="Direct link to 1. Type System Misunderstanding" title="Direct link to 1. Type System Misunderstanding" translate="no">​</a></h3>
 <p>ABAP enforces strong, static typing with meaningful distinctions between:</p>
 <ul>
 <li class=""><code>CHAR</code> (fixed length)</li>
@@ -81,7 +81,7 @@
 <li class="">boolean improvisations instead of <code>abap_bool</code></li>
 <li class="">generic <code>string</code> usage where DDIC types are required</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-opensql--standard-sql">2. OpenSQL ≠ Standard SQL<a href="https://getadriai.github.io/adri-docs/blog/code-agent/llm-and-abap#2-opensql--standard-sql" class="hash-link" aria-label="Direct link to 2. OpenSQL ≠ Standard SQL" title="Direct link to 2. OpenSQL ≠ Standard SQL" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-opensql--standard-sql">2. OpenSQL ≠ Standard SQL<a href="https://getadriai.github.io/blog/code-agent/llm-and-abap#2-opensql--standard-sql" class="hash-link" aria-label="Direct link to 2. OpenSQL ≠ Standard SQL" title="Direct link to 2. OpenSQL ≠ Standard SQL" translate="no">​</a></h3>
 <p>OpenSQL is database-independent, SAP-portable, and syntactically constrained.</p>
 <p>And yet, LLMs frequently output:</p>
 <ul>
@@ -90,7 +90,7 @@
 <li class="">ANSI or vendor-style date expressions</li>
 <li class="">unsupported analytic functions</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-object--naming-resolution-errors">3. Object &amp; Naming Resolution Errors<a href="https://getadriai.github.io/adri-docs/blog/code-agent/llm-and-abap#3-object--naming-resolution-errors" class="hash-link" aria-label="Direct link to 3. Object &amp; Naming Resolution Errors" title="Direct link to 3. Object &amp; Naming Resolution Errors" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-object--naming-resolution-errors">3. Object &amp; Naming Resolution Errors<a href="https://getadriai.github.io/blog/code-agent/llm-and-abap#3-object--naming-resolution-errors" class="hash-link" aria-label="Direct link to 3. Object &amp; Naming Resolution Errors" title="Direct link to 3. Object &amp; Naming Resolution Errors" translate="no">​</a></h3>
 <p>ABAP behaves like an ecosystem, not just a programming language.</p>
 <p>Objects depend on:</p>
 <ul>
@@ -107,11 +107,11 @@
 <li class="">function modules that "sound right", but don't exist</li>
 </ul>
 <p>Unless the model has access to the actual system metadata, it <strong>cannot</strong> reliably resolve object identity.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-rag-alone-isnt-enough">Why RAG Alone Isn't Enough<a href="https://getadriai.github.io/adri-docs/blog/code-agent/llm-and-abap#why-rag-alone-isnt-enough" class="hash-link" aria-label="Direct link to Why RAG Alone Isn't Enough" title="Direct link to Why RAG Alone Isn't Enough" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-rag-alone-isnt-enough">Why RAG Alone Isn't Enough<a href="https://getadriai.github.io/blog/code-agent/llm-and-abap#why-rag-alone-isnt-enough" class="hash-link" aria-label="Direct link to Why RAG Alone Isn't Enough" title="Direct link to Why RAG Alone Isn't Enough" translate="no">​</a></h2>
 <p>RAG (retrieval-augmented generation) helps. It can ground object names, fetch documentation, and prevent the model from inventing BAPIs that don't exist.</p>
 <p>But RAG only fixes context gaps. It doesn't fix training-level biases.</p>
 <p>Even with perfect retrieval, the model will still default to the mainstream patterns described above. These are baked into the model's weights, not gaps in its context window. Retrieval can tell the model <em>what exists</em>, but it can't override <em>how the model writes code</em>.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-abap-teams-should-do">What ABAP Teams Should Do<a href="https://getadriai.github.io/adri-docs/blog/code-agent/llm-and-abap#what-abap-teams-should-do" class="hash-link" aria-label="Direct link to What ABAP Teams Should Do" title="Direct link to What ABAP Teams Should Do" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-abap-teams-should-do">What ABAP Teams Should Do<a href="https://getadriai.github.io/blog/code-agent/llm-and-abap#what-abap-teams-should-do" class="hash-link" aria-label="Direct link to What ABAP Teams Should Do" title="Direct link to What ABAP Teams Should Do" translate="no">​</a></h2>
 <p>If you want useful AI coding support in ABAP:</p>
 <ul>
 <li class="">Use system-aware agents connected to SAP runtime metadata. This solves the naming resolution problem by giving the model access to what actually exists.</li>
@@ -121,7 +121,7 @@
 <li class="">Build on retrieval-first architectures. Ground object references in real documentation.</li>
 </ul>
 <p>LLMs work best as assistive tools that require grounding, constraints, and verification rather than drop-in code generators.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="final-thoughts">Final Thoughts<a href="https://getadriai.github.io/adri-docs/blog/code-agent/llm-and-abap#final-thoughts" class="hash-link" aria-label="Direct link to Final Thoughts" title="Direct link to Final Thoughts" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="final-thoughts">Final Thoughts<a href="https://getadriai.github.io/blog/code-agent/llm-and-abap#final-thoughts" class="hash-link" aria-label="Direct link to Final Thoughts" title="Direct link to Final Thoughts" translate="no">​</a></h2>
 <p>LLMs are optimized for mainstream programming patterns. ABAP deliberately breaks from those patterns, which is why these failures are systematic, not random.</p>
 <p>Understanding that distinction is the first step toward building reliable ABAP-aware AI tooling.</p>]]></content>
         <author>
@@ -136,12 +136,12 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Why Finding Standard SAP Objects Is Difficult?]]></title>
-        <id>https://getadriai.github.io/adri-docs/blog/research-agent/why-it-matters</id>
-        <link href="https://getadriai.github.io/adri-docs/blog/research-agent/why-it-matters"/>
+        <id>https://getadriai.github.io/blog/research-agent/why-it-matters</id>
+        <link href="https://getadriai.github.io/blog/research-agent/why-it-matters"/>
         <updated>2025-12-14T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Consultants struggle to find standard SAP capabilities before developing custom code for several interconnected reasons:]]></summary>
         <content type="html"><![CDATA[<p>Consultants struggle to find standard SAP capabilities before developing custom code for several interconnected reasons:</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-sheer-volume-and-fragmentation">1. Sheer Volume and Fragmentation<a href="https://getadriai.github.io/adri-docs/blog/research-agent/why-it-matters#1-sheer-volume-and-fragmentation" class="hash-link" aria-label="Direct link to 1. Sheer Volume and Fragmentation" title="Direct link to 1. Sheer Volume and Fragmentation" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-sheer-volume-and-fragmentation">1. Sheer Volume and Fragmentation<a href="https://getadriai.github.io/blog/research-agent/why-it-matters#1-sheer-volume-and-fragmentation" class="hash-link" aria-label="Direct link to 1. Sheer Volume and Fragmentation" title="Direct link to 1. Sheer Volume and Fragmentation" translate="no">​</a></h2>
 <p>SAP systems contain millions of objects (e.g. 27 million standard objects in S/4HANA alone). These are scattered across:</p>
 <ul>
 <li class="">Transaction codes, function modules, BAPIs</li>
@@ -150,13 +150,13 @@
 <li class="">Configuration settings and enhancement points</li>
 </ul>
 <p>There's no single, searchable index that shows "here's what SAP can do out of the box."</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-poor-native-search-and-documentation">2. Poor Native Search and Documentation<a href="https://getadriai.github.io/adri-docs/blog/research-agent/why-it-matters#2-poor-native-search-and-documentation" class="hash-link" aria-label="Direct link to 2. Poor Native Search and Documentation" title="Direct link to 2. Poor Native Search and Documentation" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-poor-native-search-and-documentation">2. Poor Native Search and Documentation<a href="https://getadriai.github.io/blog/research-agent/why-it-matters#2-poor-native-search-and-documentation" class="hash-link" aria-label="Direct link to 2. Poor Native Search and Documentation" title="Direct link to 2. Poor Native Search and Documentation" translate="no">​</a></h2>
 <ul>
 <li class=""><strong>SE37/SE80 are limited</strong>: You need to know <em>what</em> you're looking for. If you don't know a function module exists, you can't search for it effectively</li>
 <li class=""><strong>SAP Help Portal is generic</strong>: Documentation describes features conceptually but doesn't surface specific technical objects</li>
 <li class=""><strong>No semantic search</strong>: Traditional keyword searches miss relevant objects if you don't use exact SAP terminology</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-knowledge-gap-between-business-requirements-and-technical-objects">3. Knowledge Gap Between Business Requirements and Technical Objects<a href="https://getadriai.github.io/adri-docs/blog/research-agent/why-it-matters#3-knowledge-gap-between-business-requirements-and-technical-objects" class="hash-link" aria-label="Direct link to 3. Knowledge Gap Between Business Requirements and Technical Objects" title="Direct link to 3. Knowledge Gap Between Business Requirements and Technical Objects" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-knowledge-gap-between-business-requirements-and-technical-objects">3. Knowledge Gap Between Business Requirements and Technical Objects<a href="https://getadriai.github.io/blog/research-agent/why-it-matters#3-knowledge-gap-between-business-requirements-and-technical-objects" class="hash-link" aria-label="Direct link to 3. Knowledge Gap Between Business Requirements and Technical Objects" title="Direct link to 3. Knowledge Gap Between Business Requirements and Technical Objects" translate="no">​</a></h2>
 <p>When a business user says "we need to auto-calculate freight costs," consultants must translate that to:</p>
 <ul>
 <li class="">Is there a standard BAPI for this?</li>
@@ -165,20 +165,20 @@
 <li class="">What tables store freight data?</li>
 </ul>
 <p>This translation requires deep system knowledge that junior/mid-level consultants often lack.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-time-pressure-and-misaligned-incentives">4. Time Pressure and Misaligned Incentives<a href="https://getadriai.github.io/adri-docs/blog/research-agent/why-it-matters#4-time-pressure-and-misaligned-incentives" class="hash-link" aria-label="Direct link to 4. Time Pressure and Misaligned Incentives" title="Direct link to 4. Time Pressure and Misaligned Incentives" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-time-pressure-and-misaligned-incentives">4. Time Pressure and Misaligned Incentives<a href="https://getadriai.github.io/blog/research-agent/why-it-matters#4-time-pressure-and-misaligned-incentives" class="hash-link" aria-label="Direct link to 4. Time Pressure and Misaligned Incentives" title="Direct link to 4. Time Pressure and Misaligned Incentives" translate="no">​</a></h2>
 <ul>
 <li class=""><strong>Research is unbudgeted risk</strong>: No time is set aside purely for research. Even if a consultant diligently searches for standards for a day and finds nothing, they're a day behind on implementation with nothing to show for it</li>
 <li class=""><strong>Visible effort bias</strong>: It's harder to prove the effort and complexity of your work when you propose a standard solution. Writing 10,000 lines of custom code is immediately recognizable; finding the right BAPI is not</li>
 <li class=""><strong>Default to custom</strong>: Many consultants default to "build custom" because it's faster than proving a standard solution exists (or doesn't) and custom code is easier to justify on timesheets</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-version-complexity">5. Version Complexity<a href="https://getadriai.github.io/adri-docs/blog/research-agent/why-it-matters#5-version-complexity" class="hash-link" aria-label="Direct link to 5. Version Complexity" title="Direct link to 5. Version Complexity" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-version-complexity">5. Version Complexity<a href="https://getadriai.github.io/blog/research-agent/why-it-matters#5-version-complexity" class="hash-link" aria-label="Direct link to 5. Version Complexity" title="Direct link to 5. Version Complexity" translate="no">​</a></h2>
 <p>ECC 6.0 vs S/4HANA have different capabilities. A consultant might not know:</p>
 <ul>
 <li class="">CDS views in S/4HANA could replace their custom join logic</li>
 <li class="">A new RAP business object exists for their use case</li>
 <li class="">An old BAPI has been deprecated/replaced</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-sap-research-agent-matters">Why SAP Research Agent Matters<a href="https://getadriai.github.io/adri-docs/blog/research-agent/why-it-matters#why-sap-research-agent-matters" class="hash-link" aria-label="Direct link to Why SAP Research Agent Matters" title="Direct link to Why SAP Research Agent Matters" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-sap-research-agent-matters">Why SAP Research Agent Matters<a href="https://getadriai.github.io/blog/research-agent/why-it-matters#why-sap-research-agent-matters" class="hash-link" aria-label="Direct link to Why SAP Research Agent Matters" title="Direct link to Why SAP Research Agent Matters" translate="no">​</a></h2>
 <p>SAP Research Agent solves the <strong>discoverability problem</strong>. By indexing ~50M standard objects and making them semantically searchable, it essentially asks consultants: "Did you check if SAP already built this?" before they write code.</p>
 <div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>Try out SAP Research Agent here: <a href="https://research.getadri.ai/" target="_blank" rel="noopener noreferrer" class="">https://research.getadri.ai/</a></p></div></div>]]></content>
         <author>
@@ -189,8 +189,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Reddit Launch]]></title>
-        <id>https://getadriai.github.io/adri-docs/blog/research-agent/reddit-launch</id>
-        <link href="https://getadriai.github.io/adri-docs/blog/research-agent/reddit-launch"/>
+        <id>https://getadriai.github.io/blog/research-agent/reddit-launch</id>
+        <link href="https://getadriai.github.io/blog/research-agent/reddit-launch"/>
         <updated>2025-11-27T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[We launched on Reddit and it crashed our app. 🫠]]></summary>
         <content type="html"><![CDATA[<p>We launched on Reddit and it crashed our app. 🫠</p>
@@ -220,8 +220,8 @@ It's typical startup advice, but harder to actually practice than it sounds.</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[How does Claude's newest model perform in SAP ABAP development?]]></title>
-        <id>https://getadriai.github.io/adri-docs/blog/genai/claude-opus</id>
-        <link href="https://getadriai.github.io/adri-docs/blog/genai/claude-opus"/>
+        <id>https://getadriai.github.io/blog/genai/claude-opus</id>
+        <link href="https://getadriai.github.io/blog/genai/claude-opus"/>
         <updated>2025-11-26T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Claude Opus 4.5 was released yesterday and is claimed to be "the best model in the world for coding," so I was curious how it performs in ABAP development.]]></summary>
         <content type="html"><![CDATA[<p>Claude Opus 4.5 was released yesterday and is claimed to be "the best model in the world for coding," so I was curious how it performs in ABAP development.</p>
@@ -250,8 +250,8 @@ It's typical startup advice, but harder to actually practice than it sounds.</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Private beta launch]]></title>
-        <id>https://getadriai.github.io/adri-docs/blog/research-agent/li-pvt-beta</id>
-        <link href="https://getadriai.github.io/adri-docs/blog/research-agent/li-pvt-beta"/>
+        <id>https://getadriai.github.io/blog/research-agent/li-pvt-beta</id>
+        <link href="https://getadriai.github.io/blog/research-agent/li-pvt-beta"/>
         <updated>2025-11-24T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Yesterday, we opened up free access to our SAP Change Request agent for everyone who requested it earlier.]]></summary>
         <content type="html"><![CDATA[<p>Yesterday, we opened up free access to our SAP Change Request agent for everyone who requested it earlier.</p>
@@ -272,8 +272,8 @@ It's typical startup advice, but harder to actually practice than it sounds.</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[ChromaSQL Early Preview]]></title>
-        <id>https://getadriai.github.io/adri-docs/blog/chromasql/chromasql-preview</id>
-        <link href="https://getadriai.github.io/adri-docs/blog/chromasql/chromasql-preview"/>
+        <id>https://getadriai.github.io/blog/chromasql/chromasql-preview</id>
+        <link href="https://getadriai.github.io/blog/chromasql/chromasql-preview"/>
         <updated>2025-11-10T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Excited to share an early preview of ChromaSQL, a new SQL-like language that helps ABAP developers access SAP’s tribal knowledge in a few seconds instead of wading through SE11/SE84 and stacks of notes. 🎉]]></summary>
         <content type="html"><![CDATA[<p>Excited to share an early preview of ChromaSQL, a new SQL-like language that helps ABAP developers access SAP’s tribal knowledge in a few seconds instead of wading through SE11/SE84 and stacks of notes. 🎉</p>
