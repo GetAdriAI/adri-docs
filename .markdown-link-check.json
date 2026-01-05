@@ -1,0 +1,35 @@
+{
+  "ignorePatterns": [
+    {
+      "pattern": "^mailto:"
+    },
+    {
+      "pattern": "^http://localhost"
+    },
+    {
+      "pattern": "^\\{.*\\}$",
+      "comment": "Ignore JSX expressions like {demoVideo} or {useBaseUrl(...)}"
+    },
+    {
+      "pattern": "^/adri-docs/",
+      "comment": "Ignore absolute paths to static assets"
+    },
+    {
+      "pattern": "^docs/",
+      "comment": "Ignore paths starting with docs/"
+    },
+    {
+      "pattern": "^(\\.\\./)+[a-zA-Z0-9-]+(/[a-zA-Z0-9-]+)*$",
+      "comment": "Ignore relative paths with ../ without extensions"
+    },
+    {
+      "pattern": "^[a-zA-Z0-9-]+(/[a-zA-Z0-9-]+)*$",
+      "comment": "Ignore relative paths without extensions - Docusaurus routes"
+    }
+  ],
+  "aliveStatusCodes": [200, 206, 301, 302, 307, 308],
+  "retryOn429": true,
+  "retryCount": 3,
+  "fallbackRetryDelay": "5s",
+  "timeout": "20s"
+}
