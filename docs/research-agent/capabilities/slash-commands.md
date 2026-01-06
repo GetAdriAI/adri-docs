@@ -5,7 +5,7 @@ The purpose of Slash commands is to trigger in-built prompt templates in SAP Res
 One such slash command is `/migrate`. It streamlines one of the most complex SAP journeys: migrating from SAP ECC 6.0 to SAP S/4HANA 2023.
 
 <figure>
-  <img src="/adri-docs/img/slash-command.png" alt="Slash command in SAP Research Agent" />
+  <img src="/img/slash-command.png" alt="Slash command in SAP Research Agent" />
   <figcaption style={{textAlign: "center", fontStyle: "italic"}}>Slash command in SAP Research Agent</figcaption>
 </figure>
 

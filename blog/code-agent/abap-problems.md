@@ -9,7 +9,7 @@ date: 2026-01-01
 I have been using the most powerful coding models for ABAP coding for quite some time now. It's painful, but I persevere because this is how I learn the shortcomings of the models to build a coding agent that actually works.
 
 <figure>
-  <img src="/adri-docs/img/code-agent-error-log.png" alt="ABAP error log" />
+  <img src="/img/code-agent-error-log.png" alt="ABAP error log" />
   <figcaption style={{textAlign: "center", fontStyle: "italic"}}>ABAP error log example</figcaption>
 </figure>
 
