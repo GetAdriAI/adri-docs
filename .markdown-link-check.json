@@ -11,12 +11,12 @@
       "comment": "Ignore JSX expressions like {demoVideo} or {useBaseUrl(...)}"
     },
     {
-      "pattern": "^/adri-docs/",
-      "comment": "Ignore absolute paths to static assets"
-    },
-    {
       "pattern": "^docs/",
       "comment": "Ignore paths starting with docs/"
+    },
+    {
+      "pattern": "^/img/",
+      "comment": "Ignore static image assets - verified by Docusaurus build"
     },
     {
       "pattern": "^(\\.\\./)+[a-zA-Z0-9-]+(/[a-zA-Z0-9-]+)*$",
