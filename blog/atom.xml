@@ -14,7 +14,7 @@
         <updated>2026-01-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[I have been using the most powerful coding models for ABAP coding for quite some time now. It's painful, but I persevere because this is how I learn the shortcomings of the models to build a coding agent that actually works.]]></summary>
         <content type="html"><![CDATA[<p>I have been using the most powerful coding models for ABAP coding for quite some time now. It's painful, but I persevere because this is how I learn the shortcomings of the models to build a coding agent that actually works.</p>
-<figure><img src="https://docs.getadri.ai/adri-docs/img/code-agent-error-log.png" alt="ABAP error log"><figcaption style="text-align:center;font-style:italic">ABAP error log example</figcaption></figure>
+<figure><img src="https://docs.getadri.ai/img/code-agent-error-log.png" alt="ABAP error log"><figcaption style="text-align:center;font-style:italic">ABAP error log example</figcaption></figure>
 <p>Here's what months of research have taught me, in just a few sentences.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="two-strategies-for-building-a-better-agent">Two Strategies for Building a Better Agent<a href="https://docs.getadri.ai/blog/code-agent/abap-problems#two-strategies-for-building-a-better-agent" class="hash-link" aria-label="Direct link to Two Strategies for Building a Better Agent" title="Direct link to Two Strategies for Building a Better Agent" translate="no">​</a></h2>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="proactive-prevent-errors-before-they-happen">Proactive: Prevent Errors Before They Happen<a href="https://docs.getadri.ai/blog/code-agent/abap-problems#proactive-prevent-errors-before-they-happen" class="hash-link" aria-label="Direct link to Proactive: Prevent Errors Before They Happen" title="Direct link to Proactive: Prevent Errors Before They Happen" translate="no">​</a></h3>
@@ -48,7 +48,7 @@
         <summary type="html"><![CDATA[We spent months studying the patterns in mistakes LLMs make while writing ABAP code. While many teams frame the risks in terms of "hallucination", we've learned that hallucination is not the core issue in ABAP.]]></summary>
         <content type="html"><![CDATA[<p>We spent months studying the patterns in mistakes LLMs make while writing ABAP code. While many teams frame the risks in terms of "hallucination", we've learned that hallucination is <strong>not</strong> the core issue in ABAP.</p>
 <p>The real problems stem from <strong>how LLMs generalize programming patterns</strong> and how <strong>ABAP fundamentally differs from mainstream programming languages</strong>.</p>
-<figure><img src="https://docs.getadri.ai/adri-docs/img/how-llms-fail-in-abap.png" alt="How LLMs fail in ABAP"><figcaption style="text-align:center;font-style:italic">How LLMs fail in ABAP</figcaption></figure>
+<figure><img src="https://docs.getadri.ai/img/how-llms-fail-in-abap.png" alt="How LLMs fail in ABAP"><figcaption style="text-align:center;font-style:italic">How LLMs fail in ABAP</figcaption></figure>
 <p>This blog breaks down:</p>
 <ul>
 <li class="">the structural mismatches between ABAP and the broader coding corpus models are trained on</li>
