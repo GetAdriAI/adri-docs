@@ -8,6 +8,35 @@ GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 NC='\033[0m'
 
+echo "Checking URLs in config files..."
+echo ""
+
+# Check URLs in docusaurus.config.ts
+# Skip social media URLs that block bots (linkedin.com returns 999)
+config_urls=$(grep -oE "https?://[^'\"\`]+" docusaurus.config.ts | grep -v "linkedin.com" | sort -u)
+config_check_failed=0
+
+for url in $config_urls; do
+    http_status=$(curl -s -o /dev/null -w "%{http_code}" -L --max-time 10 "$url")
+    if echo "$http_status" | grep -qE "^[23]"; then
+        printf "  ${GREEN}✓${NC} %s\n" "$url"
+    else
+        printf "  ${RED}✖${NC} %s (status: %s)\n" "$url" "$http_status"
+        config_check_failed=1
+    fi
+done
+
+echo ""
+
+if [ "$config_check_failed" -eq 1 ]; then
+    printf "${RED}❌ BROKEN URLs FOUND IN CONFIG${NC}\n"
+    echo "Please fix the broken URLs in docusaurus.config.ts before committing."
+    exit 1
+fi
+
+printf "${GREEN}✅ Config URL check passed${NC}\n"
+echo ""
+
 echo "Checking links in documentation..."
 echo ""
 
