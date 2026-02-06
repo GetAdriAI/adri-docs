@@ -2,11 +2,76 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.getadri.ai/blog</id>
     <title>Adri AI Blog</title>
-    <updated>2026-01-01T00:00:00.000Z</updated>
+    <updated>2026-02-06T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.getadri.ai/blog"/>
     <subtitle>Adri AI Blog</subtitle>
     <icon>https://docs.getadri.ai/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Why ChatGPT Fails at Finding SAP APIs]]></title>
+        <id>https://docs.getadri.ai/blog/research-agent/api-hub</id>
+        <link href="https://docs.getadri.ai/blog/research-agent/api-hub"/>
+        <updated>2026-02-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[If you're building CAP or RAP applications, you've probably asked ChatGPT to find APIs in the SAP Business Accelerator Hub.]]></summary>
+        <content type="html"><![CDATA[<p>If you're building CAP or RAP applications, you've probably asked ChatGPT to find APIs in the SAP Business Accelerator Hub.</p>
+<p>I tested ChatGPT with a straightforward request and found three distinct failure patterns that make general-purpose LLMs problematic for SAP API discovery.</p>
+<figure><img src="https://docs.getadri.ai/img/chatgpt.png" alt="How ChatGPT finds incorrect SAP APIs"><figcaption style="text-align:center;font-style:italic">How ChatGPT finds incorrect SAP APIs</figcaption></figure>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-test">The Test<a href="https://docs.getadri.ai/blog/research-agent/api-hub#the-test" class="hash-link" aria-label="Direct link to The Test" title="Direct link to The Test" translate="no">​</a></h2>
+<p>I gave ChatGPT a simple prompt:</p>
+<blockquote>
+<p>"List all the endpoints from Maintenance of Lookup Table Data from SAP Business Accelerator Hub"</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-three-failure-patterns">The Three Failure Patterns<a href="https://docs.getadri.ai/blog/research-agent/api-hub#the-three-failure-patterns" class="hash-link" aria-label="Direct link to The Three Failure Patterns" title="Direct link to The Three Failure Patterns" translate="no">​</a></h2>
+<p><strong>1. Incomplete Results</strong></p>
+<p>ChatGPT found <strong>5 out of 14 available APIs</strong>. That's a 64% miss rate.</p>
+<figure><img src="https://docs.getadri.ai/img/failure-1.png" alt="Incomplete Results"><figcaption style="text-align:center;font-style:italic">Incomplete Results</figcaption></figure>
+<p>For developers, incomplete API discovery means incomplete implementations. You build against what you think exists, only to discover later that there were better endpoints available—or worse, you rebuild functionality that already existed.</p>
+<p><strong>2. Non-existent API endpoints</strong></p>
+<p>The endpoints ChatGPT listed? <strong>They don't exist.</strong></p>
+<figure><img src="https://docs.getadri.ai/img/failure-2.png" alt="Non-existent API endpoints"><figcaption style="text-align:center;font-style:italic">Non-existent API endpoints</figcaption></figure>
+<p>This is the most dangerous failure mode. The response looks authoritative—proper OData formatting, reasonable naming conventions, correct HTTP verbs. But none of these endpoints will work when you actually try to call them.</p>
+<p><strong>3. Correct Source, Wrong Data</strong></p>
+<p>Even when ChatGPT identified the right API package, it still returned incorrect endpoint details. Finding the right haystack doesn't help if you're pulling out the wrong needles.</p>
+<figure><img src="https://docs.getadri.ai/img/failure-3.png" alt="Citation Mess"><figcaption style="text-align:center;font-style:italic">Correct Source, Wrong Data</figcaption></figure>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-general-purpose-llms-struggle-here">Why General-Purpose LLMs Struggle Here<a href="https://docs.getadri.ai/blog/research-agent/api-hub#why-general-purpose-llms-struggle-here" class="hash-link" aria-label="Direct link to Why General-Purpose LLMs Struggle Here" title="Direct link to Why General-Purpose LLMs Struggle Here" translate="no">​</a></h2>
+<p>The SAP Business Accelerator Hub contains more than <strong>40,000 artifacts</strong>.</p>
+<p>If we look at five key products, this is what the distribution looks like.</p>
+<figure><img src="https://docs.getadri.ai/img/adri-artifacts.png" alt="Adri Artifacts"><figcaption style="text-align:center;font-style:italic">Adri Artifacts</figcaption></figure>
+<p>General-purpose LLMs have seen some of this in training data, but:</p>
+<ul>
+<li class="">API specifications change frequently</li>
+<li class="">Training data captures snapshots, not current state</li>
+<li class="">The sheer volume means coverage is spotty at best</li>
+<li class="">Popular APIs get better coverage; niche ones get hallucinated</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-actually-works">What Actually Works<a href="https://docs.getadri.ai/blog/research-agent/api-hub#what-actually-works" class="hash-link" aria-label="Direct link to What Actually Works" title="Direct link to What Actually Works" translate="no">​</a></h2>
+<p>Purpose-built agents that <strong>connect directly to the source</strong> solve this problem. Instead of guessing from training data, they query the actual SAP Business Accelerator Hub.</p>
+<p>This is why Adri connects with the SAP Business Accelerator Hub. When you ask about an API, you get answers grounded in what actually exists.</p>
+<p>Here's the same query through Adri's Research Agent:</p>
+<figure><img src="https://docs.getadri.ai/img/adri-results.png" alt="Results by Adri Agent"><figcaption style="text-align:center;font-style:italic">Results by Adri Agent</figcaption></figure>
+<p>The difference:</p>
+<ul>
+<li class=""><strong>Complete</strong>: Discovered 2 packages and all 14 endpoints</li>
+<li class=""><strong>Correct</strong>: Every endpoint actually exists and works</li>
+<li class=""><strong>Cited</strong>: Links back to the source for verification</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-to-use">How to use?<a href="https://docs.getadri.ai/blog/research-agent/api-hub#how-to-use" class="hash-link" aria-label="Direct link to How to use?" title="Direct link to How to use?" translate="no">​</a></h2>
+<p>Head over to <a href="https://research.getadri.ai/sessions" target="_blank" rel="noopener noreferrer" class="">SAP Research Agent by Adri AI</a>. From the skill selector dropdown, choose <strong>SAP Business Accelerator Hub</strong> — this connects the agent directly to the Hub so every response is grounded in real, up-to-date API data.</p>
+<p>Once selected, simply type your query — for example, <em>"List all the endpoints from Maintenance of Lookup Table Data"</em> — and the agent will fetch the results straight from the source.</p>
+<figure><img src="https://docs.getadri.ai/img/how-to-use.png" alt="Results by Adri Agent"><figcaption style="text-align:center;font-style:italic">How to use</figcaption></figure>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-takeaway">The Takeaway<a href="https://docs.getadri.ai/blog/research-agent/api-hub#the-takeaway" class="hash-link" aria-label="Direct link to The Takeaway" title="Direct link to The Takeaway" translate="no">​</a></h2>
+<p><strong>Context beats memorized patterns. Every time.</strong></p>
+<p>If you're building CAP/RAP applications, choose an AI agent that connects to your SAP infrastructure—not one that guesses what might be there.</p>]]></content>
+        <author>
+            <name>Darshita Chaturvedi</name>
+            <uri>https://www.linkedin.com/in/darshitac/</uri>
+        </author>
+        <author>
+            <name>Shyam Swaroop</name>
+            <uri>https://www.linkedin.com/in/shyamswaroop/</uri>
+        </author>
+        <category label="Research Agent" term="Research Agent"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Research Notes: Building a high-performant ABAP coding agent]]></title>
         <id>https://docs.getadri.ai/blog/code-agent/abap-problems</id>
