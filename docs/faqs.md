@@ -27,30 +27,19 @@ The user base is geographically diverse with three main pockets: United States, 
 
 ## How does SAP Research Agent work?
 
-Details [here](./research-agent/research-intro.mdx)
+Details [here](./research-agent/research-intro.mdx).
 
 ## Which models are being used?
 
-Details [here](./research-agent/capabilities/models.md)
+Details [here](./research-agent/capabilities/models.md).
 
 ## What are the usage limits?
 
-Before signup, a user gets 50,000 free tokens.
-
-After signup, they get another 200,000 free tokens.
-
-Once you runout of these free tokens, you should upgrade to the Enterprise Plan.
-
-:::note
-For Enterprise Plan, contact us at [founders@getadri.ai](mailto:founders@getadri.ai)
-:::
+The usage limits for all the tiers are mentioned in the [Pricing Page](https://www.getadri.ai/pricing).
 
 ## What is the difference between all the tiers?
 
-| Category             | Non signed up      | Free plan           | Enterprise |
-| -------------------- | ------------------ | ------------------- | ---------- |
-| Tokens               | 50,000 free tokens | 200,000 free tokens | Custom     |
-| Conversation History | Not saved          | Saved               | Saved      |
+Please visit the [Pricing Page](https://www.getadri.ai/pricing).
 
 :::note
 For Enterprise Plan, contact us at [founders@getadri.ai](mailto:founders@getadri.ai)
