@@ -12,5 +12,5 @@ One such slash command is `/migrate`. It streamlines one of the most complex SAP
 With a single command, you get:
 
 - Pre-built prompt templates optimized for migration use cases
-- Auto-selected collections for both ECC 6.0 and S/4HANA 2023
+- Auto-selected connected SAP systems for both ECC 6.0 and S/4HANA 2023
 - Instant search across a combined set of 45M+ SAP standard objects

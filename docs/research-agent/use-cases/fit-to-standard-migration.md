@@ -27,24 +27,24 @@ This can be accomplished in two ways:
 Use the `/migrate` command to instantly configure your session for migration research. This command:
 
 - Loads pre-built prompt templates optimized for migration use cases
-- Auto-selects both ECC 6.0 and S/4HANA 2023 collections
+- Auto-selects both ECC 6.0 and S/4HANA 2023 connected SAP systems
 - Enables instant search across 45M+ SAP standard objects
 
 Simply type `/migrate` followed by your question to get started.
 
 Learn more about [Slash Commands](../capabilities/slash-commands.md).
 
-### 2. Manual Collection Selection
+### 2. Manual System Selection
 
-Alternatively, you can manually select multiple collections to include in your session:
+Alternatively, you can manually select multiple connected SAP systems to include in your session:
 
-1. Open the collection selector in SAP Research Agent
+1. Open the system selector in SAP Research Agent
 2. Select both **ECC 6.0 EHP 7** (~18M+ objects in demo sandbox) and **S/4HANA 2023** (~27M+ objects in demo sandbox)
 3. Run your queries across both systems simultaneously
 
-This approach gives you flexibility to choose specific collections based on your migration scenario.
+This approach gives you flexibility to choose specific connected SAP systems based on your migration scenario.
 
-Learn more about [Selecting Multiple Collections](../capabilities/multi-collection.md).
+Learn more about [Selecting Multiple Connected SAP Systems](../capabilities/multi-collection.md).
 
 ## Example Queries
 

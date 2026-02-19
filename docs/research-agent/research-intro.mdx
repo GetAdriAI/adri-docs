@@ -42,11 +42,11 @@ Check out the [free and open version](https://research.getadri.ai) — a demo sa
 ## Core Architecture
 
 - **AI Backend**: SAP Research Agent uses over 40 Large Language Models with specialized configuration for SAP research tasks. See [Models](capabilities/models.md) for details.
-- **Knowledge Graph**: When you connect your SAP system with Adri, a knowledge graph is created of all the technical objects in your system — custom tables, field definitions, dependencies, and more. This knowledge graph is stored in a ChromaDB vector database containing millions of standard and custom SAP objects. See [Available SAP Standard Objects](capabilities/objects.md) for details.
+- **Knowledge Graph**: When you connect your SAP systems with Adri — any number of systems, irrespective of version (ECC, S/4HANA, etc.) — a knowledge graph is created for each, containing all the technical objects in that system: custom tables, field definitions, dependencies, and more. Each knowledge graph is stored in a ChromaDB vector database containing millions of standard and custom SAP objects. See [Available SAP Standard Objects](capabilities/objects.md) for details.
 
 ## Installed Components
 
-View the installed components in the connected ERP system by clicking the "eye" icon next to the collection selector.
+View the installed components in the connected ERP system by clicking the "eye" icon next to the system selector.
 
 <figure>
   <img src={useBaseUrl('/img/installed.png')} alt="Installed Components in ECC 6.0 EHP 7 system" />

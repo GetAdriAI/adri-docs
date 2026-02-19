@@ -4,11 +4,11 @@ sidebar_position: 6
 
 # System Validation
 
-SAP Research Agent validates its recommendations against your connected SAP system by querying the knowledge graph.
+SAP Research Agent validates its recommendations against your connected SAP systems by querying the knowledge graph. Multiple SAP systems can be connected with Adri, irrespective of version (ECC, S/4HANA, etc.).
 
 ## How It Works
 
-The agent writes ChromaSQL queries—a SQL-inspired domain-specific language created by Adri AI—to search the vector database containing your system's objects. This ensures that suggested tables, function modules, transactions, and other objects actually exist in your environment.
+The agent writes ChromaSQL queries—a SQL-inspired domain-specific language created by Adri AI—to search the vector database containing your systems' objects. This ensures that suggested tables, function modules, transactions, and other objects actually exist in your environment.
 
 ## What Gets Validated
 

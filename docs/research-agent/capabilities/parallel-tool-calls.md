@@ -15,7 +15,7 @@ SAP Research Agent has access to several key capabilities:
 To enable parallel execution, explicitly instruct the agent to run tasks simultaneously. For example:
 
 - "Search the web **and** validate in my system **in parallel**"
-- "Query both ECC and S/4HANA collections **at the same time**"
+- "Query both ECC and S/4HANA systems **at the same time**"
 - "Process this document **while** searching for related objects"
 
 ## Benefits
