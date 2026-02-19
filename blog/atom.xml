@@ -207,14 +207,14 @@
         <summary type="html"><![CDATA[Consultants struggle to find standard SAP capabilities before developing custom code for several interconnected reasons:]]></summary>
         <content type="html"><![CDATA[<p>Consultants struggle to find standard SAP capabilities before developing custom code for several interconnected reasons:</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-sheer-volume-and-fragmentation">1. Sheer Volume and Fragmentation<a href="https://docs.getadri.ai/blog/research-agent/why-it-matters#1-sheer-volume-and-fragmentation" class="hash-link" aria-label="Direct link to 1. Sheer Volume and Fragmentation" title="Direct link to 1. Sheer Volume and Fragmentation" translate="no">​</a></h2>
-<p>SAP systems contain millions of objects (e.g. 27 million standard objects in S/4HANA alone). These are scattered across:</p>
+<p>SAP systems contain millions of objects (e.g. ~27M+ standard &amp; custom objects in S/4HANA alone). These are scattered across:</p>
 <ul>
 <li class="">Transaction codes, function modules, BAPIs</li>
 <li class="">Tables, views, and CDS views</li>
 <li class="">Business objects and APIs</li>
 <li class="">Configuration settings and enhancement points</li>
 </ul>
-<p>There's no single, searchable index that shows "here's what SAP can do out of the box."</p>
+<p>There's no single, searchable knowledge graph that shows "here's what SAP can do out of the box."</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-poor-native-search-and-documentation">2. Poor Native Search and Documentation<a href="https://docs.getadri.ai/blog/research-agent/why-it-matters#2-poor-native-search-and-documentation" class="hash-link" aria-label="Direct link to 2. Poor Native Search and Documentation" title="Direct link to 2. Poor Native Search and Documentation" translate="no">​</a></h2>
 <ul>
 <li class=""><strong>SE37/SE80 are limited</strong>: You need to know <em>what</em> you're looking for. If you don't know a function module exists, you can't search for it effectively</li>
@@ -244,7 +244,7 @@
 <li class="">An old BAPI has been deprecated/replaced</li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-sap-research-agent-matters">Why SAP Research Agent Matters<a href="https://docs.getadri.ai/blog/research-agent/why-it-matters#why-sap-research-agent-matters" class="hash-link" aria-label="Direct link to Why SAP Research Agent Matters" title="Direct link to Why SAP Research Agent Matters" translate="no">​</a></h2>
-<p>SAP Research Agent solves the <strong>discoverability problem</strong>. By indexing ~50M standard objects and making them semantically searchable, it essentially asks consultants: "Did you check if SAP already built this?" before they write code.</p>
+<p>SAP Research Agent solves the <strong>discoverability problem</strong>. By creating a knowledge graph of ~18M+ objects for ECC and ~27M+ objects for S/4HANA in our demo sandbox — demonstrating large-scale knowledge creation and retrieval, and giving a ballpark for the minimum number of objects typically included in a knowledge graph — it makes them semantically searchable and essentially asks consultants: "Did you check if SAP already built this?" before they write code.</p>
 <div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>Try out SAP Research Agent here: <a href="https://research.getadri.ai/" target="_blank" rel="noopener noreferrer" class="">https://research.getadri.ai/</a></p></div></div>]]></content>
         <author>
             <name>Darshita Chaturvedi</name>
@@ -322,7 +322,7 @@ It's typical startup advice, but harder to actually practice than it sounds.</p>
         <content type="html"><![CDATA[<p>Yesterday, we opened up free access to our SAP Change Request agent for everyone who requested it earlier.</p>
 <p>The response has been amazing! So we're expanding access limits and squashing a few bugs we found along the way.</p>
 <p>Trust me, it's pretty cool watching the agent work through your problems step by step.</p>
-<p>Here's what makes this different from ChatGPT: it doesn't just give you generic answers. It checks solutions against your actual system configuration. For this free version, we're validating against all 18 million standard objects in ECC 6.0 EHP 7.</p>
+<p>Here's what makes this different from ChatGPT: it doesn't just give you generic answers. It checks solutions against your actual system configuration. For the free version, we give access to a demo sandbox connected to our ECC and S/4HANA systems where the knowledge graph consists of ~18M+ standard &amp; custom objects for ECC and ~27M+ standard &amp; custom objects for S/4HANA — demonstrating large-scale knowledge creation and retrieval, and giving a ballpark for the minimum number of objects typically included in a knowledge graph.</p>
 <p>A few ways you can put it to work:</p>
 <ol>
 <li class="">Find standard SAP capabilities before you write custom code</li>
