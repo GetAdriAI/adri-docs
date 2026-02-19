@@ -21,7 +21,7 @@ In our demo sandbox, the knowledge graph contains:
 | ECC 6.0 EHP 7 | ~18M+ standard & custom objects |
 | S/4HANA 2023 | ~27M+ standard & custom objects |
 
-These numbers represent the minimum scale of a typical knowledge graph and demonstrate the large-scale knowledge creation and retrieval at work.
+These numbers demonstrate large-scale knowledge creation and retrieval, and represent the minimum ballpark for the number of objects typically included in a knowledge graph.
 
 ## Why It Matters
 

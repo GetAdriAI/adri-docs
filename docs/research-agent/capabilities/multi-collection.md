@@ -11,7 +11,7 @@ The following system collections are available in the demo sandbox:
 | ECC 6.0 EHP 7 | ~18M+ standard & custom objects |
 | S/4HANA 2023  | ~27M+ standard & custom objects |
 
-These figures represent the minimum scale of a typical knowledge graph for each system.
+These figures demonstrate large-scale knowledge creation and retrieval, and represent the minimum ballpark for the number of objects typically included in a knowledge graph.
 
 ## Use Cases
 
