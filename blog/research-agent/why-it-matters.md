@@ -12,14 +12,14 @@ Consultants struggle to find standard SAP capabilities before developing custom 
 
 <!-- truncate -->
 
-SAP systems contain millions of objects (e.g. 27 million standard objects in S/4HANA alone). These are scattered across:
+SAP systems contain millions of objects (e.g. ~27M+ standard & custom objects in S/4HANA alone). These are scattered across:
 
 - Transaction codes, function modules, BAPIs
 - Tables, views, and CDS views
 - Business objects and APIs
 - Configuration settings and enhancement points
 
-There's no single, searchable index that shows "here's what SAP can do out of the box."
+There's no single, searchable knowledge graph that shows "here's what SAP can do out of the box."
 
 ## 2. Poor Native Search and Documentation
 
@@ -54,7 +54,7 @@ ECC 6.0 vs S/4HANA have different capabilities. A consultant might not know:
 
 ## Why SAP Research Agent Matters
 
-SAP Research Agent solves the **discoverability problem**. By indexing ~50M standard objects and making them semantically searchable, it essentially asks consultants: "Did you check if SAP already built this?" before they write code.
+SAP Research Agent solves the **discoverability problem**. By creating a knowledge graph of ~18M+ objects for ECC and ~27M+ objects for S/4HANA in our demo sandbox — demonstrating large-scale knowledge creation and retrieval, and giving a ballpark for the minimum number of objects typically included in a knowledge graph — it makes them semantically searchable and essentially asks consultants: "Did you check if SAP already built this?" before they write code.
 
 :::info
 Try out SAP Research Agent here: https://research.getadri.ai/
