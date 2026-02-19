@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # System Validation
 
-SAP Research Agent validates its recommendations against your connected SAP system by querying the indexed object database.
+SAP Research Agent validates its recommendations against your connected SAP system by querying the knowledge graph.
 
 ## How It Works
 
@@ -12,12 +12,16 @@ The agent writes ChromaSQL queries—a SQL-inspired domain-specific language cre
 
 ## What Gets Validated
 
-The agent validates against all indexed SAP object types, including data dictionary objects, ABAP repository objects, classes, enhancements, and more. See [Available SAP Standard Objects](objects.md) for the complete list.
+The agent validates against all SAP object types in the knowledge graph, including data dictionary objects, ABAP repository objects, classes, enhancements, and more. See [Available SAP Standard Objects](objects.md) for the complete list.
 
-| System | Indexed Objects |
-|--------|-----------------|
-| ECC 6.0 EHP 7 | 18 million |
-| S/4HANA 2023 | 27 million |
+In our demo sandbox, the knowledge graph contains:
+
+| System | Objects in Knowledge Graph |
+|--------|---------------------------|
+| ECC 6.0 EHP 7 | ~18M+ standard & custom objects |
+| S/4HANA 2023 | ~27M+ standard & custom objects |
+
+These numbers represent the minimum scale of a typical knowledge graph and demonstrate the large-scale knowledge creation and retrieval at work.
 
 ## Why It Matters
 
@@ -30,5 +34,5 @@ System validation eliminates these false positives by confirming object availabi
 
 ## Related
 
-- [Search the SAP Index Directly](../use-cases/chromasql-search) - Query the index yourself using ChromaSQL
-- [Available SAP Standard Objects](objects.md) - List of indexed object types
+- [Search the Knowledge Graph Directly](../use-cases/chromasql-search) - Query the knowledge graph yourself using ChromaSQL
+- [Available SAP Standard Objects](objects.md) - List of object types in the knowledge graph

@@ -9,7 +9,7 @@ Use SAP Research Agent to locate relevant objects from your ERP system using nat
 ## How It Works
 
 1. Describe what you're looking for in plain language
-2. The agent interprets your request and searches the indexed SAP system
+2. The agent interprets your request and searches the knowledge graph of your SAP system
 3. Results are validated against your system's installed components
 4. The agent provides context on how the objects relate to your requirement
 

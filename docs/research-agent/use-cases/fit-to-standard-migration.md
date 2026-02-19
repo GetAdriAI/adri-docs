@@ -39,7 +39,7 @@ Learn more about [Slash Commands](../capabilities/slash-commands.md).
 Alternatively, you can manually select multiple collections to include in your session:
 
 1. Open the collection selector in SAP Research Agent
-2. Select both **ECC 6.0 EHP 7** (18 million objects) and **S/4HANA 2023** (27 million objects)
+2. Select both **ECC 6.0 EHP 7** (~18M+ objects in demo sandbox) and **S/4HANA 2023** (~27M+ objects in demo sandbox)
 3. Run your queries across both systems simultaneously
 
 This approach gives you flexibility to choose specific collections based on your migration scenario.

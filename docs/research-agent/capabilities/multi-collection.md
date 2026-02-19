@@ -4,12 +4,14 @@ SAP Research Agent allows you to connect multiple SAP system collections in a si
 
 ## Available Collections
 
-The following system collections are available:
+The following system collections are available in the demo sandbox:
 
-| Collection    | No. of standard objects indexed |
-| :------------ | :------------------------------ |
-| ECC 6.0 EHP 7 | 18 million                      |
-| S/4HANA 2023  | 27 million                      |
+| Collection    | Objects in Knowledge Graph |
+| :------------ | :------------------------- |
+| ECC 6.0 EHP 7 | ~18M+ standard & custom objects |
+| S/4HANA 2023  | ~27M+ standard & custom objects |
+
+These figures represent the minimum scale of a typical knowledge graph for each system.
 
 ## Use Cases
 

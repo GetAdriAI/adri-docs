@@ -10,7 +10,7 @@ SAP Research Agent has access to several key capabilities:
 | :--------- | :---------- |
 | System Validation | Queries the attached SAP system using ChromaSQL to verify objects and configurations |
 | Web Search | Searches the internet for SAP solutions, best practices, and similar use cases |
-| Document Processing | Reads uploaded attachments and optionally indexes them for future reference |
+| Document Processing | Reads uploaded attachments and optionally adds them to the knowledge graph for future reference |
 
 To enable parallel execution, explicitly instruct the agent to run tasks simultaneously. For example:
 

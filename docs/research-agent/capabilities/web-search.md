@@ -8,7 +8,7 @@ SAP Research Agent can search the internet for SAP solutions, best practices, an
 
 ## How It Works
 
-When your question requires information beyond the agent's training data or indexed SAP objects, it searches the web for:
+When your question requires information beyond the agent's training data or the SAP knowledge graph, it searches the web for:
 
 - SAP community discussions and solutions
 - SAP documentation and notes
@@ -20,7 +20,7 @@ When your question requires information beyond the agent's training data or inde
 The agent decides to search the web when:
 
 - The question involves recent SAP updates or patches
-- Standard solutions aren't found in the indexed system
+- Standard solutions aren't found in the knowledge graph
 - You ask about industry best practices or common approaches
 - The topic requires external documentation or references
 

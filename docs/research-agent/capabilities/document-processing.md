@@ -4,7 +4,7 @@ sidebar_position: 8
 
 # Document Processing
 
-SAP Research Agent can read uploaded attachments and optionally index them for future reference during your research session.
+SAP Research Agent can read uploaded attachments and optionally add them to the knowledge graph for future reference during your research session.
 
 ## Supported File Types
 
@@ -19,7 +19,7 @@ SAP Research Agent can read uploaded attachments and optionally index them for f
 1. Upload a document to your research session
 2. The agent extracts and processes the content
 3. Document contents become available as context for your questions
-4. Ask the agent to index the document if you want it available for reference throughout the session
+4. Ask the agent to add the document to the knowledge graph if you want it available for reference throughout the session
 
 ## Use Cases
 

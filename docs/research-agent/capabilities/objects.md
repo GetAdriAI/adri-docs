@@ -4,11 +4,13 @@ sidebar_position: 3
 
 # Available SAP Standard Objects
 
-SAP Research Agent indexes millions of standard SAP objects from your connected ERP system. These objects are used for [system validation](system-validation.md) and can be searched using the [Research Agent](../use-cases/find-sap-objects.md) or [ChromaSQL](../use-cases/chromasql-search.mdx) directly.
+When a company connects its SAP system with Adri, a knowledge graph is created of all the technical objects in the system — for example, the names of custom tables, the definition of the fields in them, and their dependencies. This knowledge graph contains millions of standard and custom SAP objects and is used for [system validation](system-validation.md). Objects can be searched using the [Research Agent](../use-cases/find-sap-objects.md) or [ChromaSQL](../use-cases/chromasql-search.mdx) directly.
+
+We also provide access to a demo sandbox connected to our ECC and S/4HANA systems. In this sandbox, the knowledge graph consists of ~18M+ standard & custom objects for ECC and ~27M+ standard & custom objects for S/4HANA. This demo sandbox is available so that users can learn about the capabilities of Adri agents and test them.
 
 ## Object Types
 
-The indexed objects are organized into the following categories:
+The objects in the knowledge graph are organized into the following categories:
 
 | Object Type                | Objects                                                                                                      |
 | :------------------------- | :----------------------------------------------------------------------------------------------------------- |

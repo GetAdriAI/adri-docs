@@ -37,7 +37,7 @@ Club consecutive assistant messages into one.
 
 Include the following stats in the header: SAP system, Objects Available, Queries answered, Session duration, Est. time saved
 
-Calculate Est. time saved as: (Index Searches + Web Searches) × 30 mins. Add a note explaining this methodology, directly beneath the header.
+Calculate Est. time saved as: (Knowledge Graph Searches + Web Searches) × 30 mins. Add a note explaining this methodology, directly beneath the header.
 ```
 
 The agent will generate a downloadable HTML that you can convert to PDF, if needed.
@@ -49,7 +49,7 @@ You can include the following metrics in your export header:
 | Stat                  | Description                            | Example       |
 | --------------------- | -------------------------------------- | ------------- |
 | **System**            | The SAP system searched                | ECC 6.0 EHP 7 |
-| **Objects available** | Total objects in the knowledge base    | 18M           |
+| **Objects available** | Total objects in the knowledge graph    | ~18M+ (demo sandbox) |
 | **Queries answered**  | Number of questions addressed          | 4             |
 | **Session duration**  | Time from first to last message        | 4 mins        |
 | **Est. time saved**   | Estimated manual research time avoided | ~4 hrs        |
@@ -60,9 +60,9 @@ The estimated time saved is calculated based on typical manual research effort:
 
 | Action                              | Manual Time Estimate |
 | ----------------------------------- | -------------------- |
-| Index Search (querying SAP objects) | 30 mins              |
+| Knowledge Graph Search (querying SAP objects) | 30 mins              |
 | Web Search (finding SAP resources)  | 30 mins              |
 
-**Formula**: Est. time saved = (Index Searches + Web Searches) × 30 mins
+**Formula**: Est. time saved = (Knowledge Graph Searches + Web Searches) × 30 mins
 
 This estimate reflects the time a consultant would typically spend navigating SE11/SE80, searching SAP documentation, or browsing community forums to find equivalent information.
