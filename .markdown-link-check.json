@@ -19,12 +19,12 @@
       "comment": "Ignore static image assets - verified by Docusaurus build"
     },
     {
-      "pattern": "^(\\.\\./)+[a-zA-Z0-9-]+(/[a-zA-Z0-9-]+)*$",
-      "comment": "Ignore relative paths with ../ without extensions"
+      "pattern": "^(\\.\\./)+[a-zA-Z0-9-]+(/[a-zA-Z0-9-]+)*(#[a-zA-Z0-9._-]+)*$",
+      "comment": "Ignore relative paths with ../ without extensions (with optional anchors)"
     },
     {
-      "pattern": "^[a-zA-Z0-9-]+(/[a-zA-Z0-9-]+)*$",
-      "comment": "Ignore relative paths without extensions - Docusaurus routes"
+      "pattern": "^[a-zA-Z0-9-]+(/[a-zA-Z0-9-]+)*(#[a-zA-Z0-9._-]+)*$",
+      "comment": "Ignore relative paths without extensions - Docusaurus routes (with optional anchors)"
     }
   ],
   "aliveStatusCodes": [200, 206, 301, 302, 307, 308],
