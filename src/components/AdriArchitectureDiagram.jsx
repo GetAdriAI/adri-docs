@@ -377,7 +377,7 @@ export default function App() {
                         background: "#fff", padding: "2px 8px", borderRadius: 5,
                         color: COLORS.textMuted, border: "1px solid #e2e8f0",
                       }}>
-                        {c.from === active ? "\u2192" : "\u2190"} {oLabel} \u00B7 {c.label}
+                        {c.from === active ? "\u2192" : "\u2190"} {oLabel} {"\u00B7"} {c.label}
                       </span>
                     );
                   })}
