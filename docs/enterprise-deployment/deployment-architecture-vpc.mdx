@@ -66,6 +66,9 @@ Customers select their preferred provider based on existing cloud relationships 
 
 ### 2.1 Adri AI Server
 
+<AdriArchitectureDiagram highlightNode="server" />
+
+---
 | Property              | Value                                                                                |
 | --------------------- | ------------------------------------------------------------------------------------ |
 | **Role**              | Orchestration, authentication, authorization, web search.                            |
@@ -79,6 +82,8 @@ The Adri AI Server is the only component in the architecture that requires outbo
 ChromaSQL is embedded within the Adri AI Server as an internal query engine module. It is not a separate network service. All queries against the Vector Database and Postgres are issued by ChromaSQL inside the server process, after the server has authenticated and authorized the requesting user.
 
 ### 2.2 Adri AI Knowledge Graph Builder
+
+<AdriArchitectureDiagram highlightNode="builder" />
 
 | Property               | Value                                                             |
 | ---------------------- | ----------------------------------------------------------------- |
@@ -96,6 +101,8 @@ The Knowledge Graph Builder is the central orchestrator for graph construction. 
 
 ### 2.3 Adri AI Connector
 
+<AdriArchitectureDiagram highlightNode="connector" />
+
 | Property              | Value                                                                         |
 | --------------------- | ----------------------------------------------------------------------------- |
 | **Role**              | Client. Extracts ABAP objects and pushes them to the Knowledge Graph Builder. |
@@ -110,6 +117,8 @@ The Connector is the only Adri AI component that touches the SAP system. It runs
 
 ### 2.4 SAP Gateway
 
+<AdriArchitectureDiagram highlightNode="sapgw" />
+
 | Property              | Value                                                     |
 | --------------------- | --------------------------------------------------------- |
 | **Role**              | Enterprise SAP system. Exposes ABAP objects via ADT APIs. |
@@ -121,6 +130,8 @@ SAP Gateway is the customer's existing SAP system. It is not an Adri AI componen
 **Why it's in the restricted subnet:** This is the customer's existing deployment topology. SAP systems are almost universally placed in the most restricted network zone available because they contain core business logic, financial data, and proprietary processes. The architecture respects this placement rather than requiring the customer to change it.
 
 ### 2.5 LLM Embedding Service
+
+<AdriArchitectureDiagram highlightNode="llm" />
 
 | Property              | Value                                                             |
 | --------------------- | ----------------------------------------------------------------- |
@@ -146,6 +157,8 @@ The Basis team or security team selects the appropriate level during setup. The 
 
 ### 2.6 Vector Database
 
+<AdriArchitectureDiagram highlightNode="vectordb" />
+
 | Property              | Value                                                      |
 | --------------------- | ---------------------------------------------------------- |
 | **Role**              | Stores vector embeddings for semantic search.              |
@@ -161,6 +174,8 @@ The Vector Database stores the embedding vectors produced by the LLM service alo
 
 ### 2.7 Postgres Database
 
+<AdriArchitectureDiagram highlightNode="postgres" />
+
 | Property              | Value                                                          |
 | --------------------- | -------------------------------------------------------------- |
 | **Role**              | Stores keyword-searchable content and medium-length documents. |
@@ -175,6 +190,8 @@ Postgres serves as the structured storage layer for content that needs keyword s
 **Why it has a size limit:** The 1 MB record size limit keeps query performance predictable. Objects exceeding this limit are offloaded to S3.
 
 ### 2.8 S3-like Object Storage
+
+<AdriArchitectureDiagram highlightNode="s3" />
 
 | Property              | Value                                                |
 | --------------------- | ---------------------------------------------------- |

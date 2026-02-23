@@ -145,9 +145,9 @@ function getEdgePath(f, t, W, H) {
   };
 }
 
-export default function App() {
+export default function App({ highlightNode = null }) {
   const [hovered, setHovered] = useState(null);
-  const [selected, setSelected] = useState(null);
+  const [selected, setSelected] = useState(highlightNode);
   const W = 1060, H = 680;
   const active = selected || hovered;
   const nm = {};
@@ -166,6 +166,9 @@ export default function App() {
         <div style={{ marginBottom: 20 }}>
           <h1 style={{ fontSize: 26, fontWeight: 700, margin: "0 0 4px", color: "#0f172a" }}>
             How Adri AI deploys Knowledge Graph Infrastructure in VPC
+            {highlightNode && nm[highlightNode] && (
+              <span style={{ color: nm[highlightNode].accent }}> — {nm[highlightNode].label}{nm[highlightNode].label2 ? ` ${nm[highlightNode].label2}` : ""}</span>
+            )}
           </h1>
         </div>
 
