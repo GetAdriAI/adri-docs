@@ -4,82 +4,88 @@ Every SAP landscape is unique, shaped by years of custom development and configu
 
 Adri builds a Knowledge Graph of that unique landscape to make AI agents work for you.
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 <figure>
-  <img src="/img/knowledge_graph_1.png" alt="Knowledge Graph by Adri AI" />
+  <img src={useBaseUrl('/img/knowledge_graph_1.png')} alt="Knowledge Graph by Adri AI" />
   <figcaption style={{textAlign: "center", fontStyle: "italic"}}>Knowledge Graph by Adri AI</figcaption>
 </figure>
 
-When a customer connects their SAP system with Adri, a dedicated Knowledge Graph is built. The Knowledge Graph is a structured representation of every custom object and their dependencies in a customer's SAP system.
+When you connect your SAP system with Adri, a dedicated Knowledge Graph is built. The Knowledge Graph is a structured representation of every custom object and their dependencies in a customer's SAP system.
 
-This gives Adri agents deep, system-level context. So when a user asks Adri agents to research, code or document, the agents understand *your* custom tables, *your* enhancements, and *your* configuration at scale.
+This is what gives Adri agents system-level context: when you ask them to research, code, or write unit tests, they work with _your_ tables, _your_ enhancements, and _your_ configuration.
+
+## What's in the Knowledge Graph
+
+1. **Every custom object and its relationship with other objects**
+   For example, which tables a function module reads from, which data elements a field uses, which programs an enhancement modifies.
+
+2. **Documentation that gives objects their business meaning**
+   For example, code documentation attached to objects, process flow & architecture diagrams, coding guidelines & development standards.
+
+Here's what is included in the Knowledge Graph of a typical S/4HANA 2023 system:
+
+<figure style={{ textAlign: 'center' }}>
+  <img src={useBaseUrl('/img/s4_objects.png')} alt="Object types and counts in a Knowledge Graph" />
+  <figcaption style={{ textAlign: 'center', fontStyle: 'italic' }}>Fig: Object types and counts from a typical Knowledge Graph for S/4HANA 2023</figcaption>
+</figure>
 
 ## How large is this Knowledge Graph?
 
-For a typical S/4HANA 2023 system with 100,000 custom objects, the Knowledge Graph will contain about 30 million records. It takes about 250GB to store this in a vector database. 
+For a typical S/4HANA 2023 system with 100,000 custom objects, the Knowledge Graph contains about **30 million records** stored in roughly **250 GB** of vector database storage. 
 
-:::info
+:::tip
 Try the [free demo sandbox](https://research.getadri.ai) to see large-scale knowledge creation and retrieval in action. The Knowledge Graph in this sandbox contains about 27 million objects for S/4HANA 2023 and 18 million objects for ECC 6.0.
 :::
 
-import AdriArchitectureDiagram from '@site/src/components/AdriArchitectureDiagram';
-import useBaseUrl from '@docusaurus/useBaseUrl';
+## How Adri Agents Use the Knowledge Graph
 
-## How It's Built
+When you ask an Adri agent a question, it queries your Knowledge Graph using [ChromaSQL](../research-agent/use-cases/chromasql-search.mdx). ChromaSQL is a specialized query language built by Adri AI.
 
-The Knowledge Graph is constructed entirely within the customer's VPC through the following pipeline:
+Three types of search run behind the scenes:
 
-1. **Extraction** — The [Adri AI Connector](deployment-architecture-vpc#23-adri-ai-connector), running in the SAP-restricted subnet, reads ABAP objects from SAP Gateway via the standard ADT API.
+- **Semantic search**: queries the Vector Database to find objects by meaning (e.g., "special stocks from vendor")
+- **Keyword search**: queries Postgres for exact matches, `LIKE` patterns, and structured filters (by package, object type, transport request)
+- **Large object retrieval**: fetches oversized objects from S3 when needed
 
-2. **Outbound push** — The Connector pushes the extracted objects to the [Knowledge Graph Builder](deployment-architecture-vpc#22-adri-ai-knowledge-graph-builder) in the customer's VPC over a Secure WebSocket connection (mTLS + JWT). The SAP subnet's "no inbound ports" policy is preserved because the Connector initiates all connections outbound.
+The agent uses results from these searches to give you answers grounded in what actually exists in your landscape.
 
-3. **Embedding** — The Knowledge Graph Builder sends ABAP content to an [LLM Embedding Service](deployment-architecture-vpc#25-llm-embedding-service) via VPC endpoints (PrivateLink). The content sent is determined by the customer-configured content scope — full source, signatures and documentation only, or local embedding only. Embedding traffic never traverses the public internet.
+## How is the Knowledge Graph Built
 
-4. **Storage** — The Builder distributes the results across [three storage tiers](deployment-architecture-vpc#4-storage-tier-selection) based on data size and query requirements.
+The Knowledge Graph is built entirely within your VPC. Nothing reaches your SAP system from outside — the architecture is designed so that your SAP subnet never has inbound traffic.
+
+1. **Extract** — The [Adri Connector](deployment-architecture-vpc#23-adri-ai-connector) runs inside your SAP-restricted subnet. It reads ABAP objects from SAP Gateway via ADT APIs and pushes them outbound to the Knowledge Graph Builder. Your SAP subnet's "no inbound ports" policy stays intact.
+
+2. **Embed** — The [Knowledge Graph Builder](deployment-architecture-vpc#22-adri-ai-knowledge-graph-builder) converts ABAP content into vector embeddings via your cloud provider's LLM service (AWS Bedrock, Azure OpenAI, or GCP Vertex AI). All traffic goes through [VPC endpoints](deployment-architecture-vpc#25-llm-embedding-service) — no public internet.
+
+3. **Store** — The Builder distributes data across three storage tiers based on size: a vector database for embeddings (< 8 KB), Postgres for source code and metadata (< 1 MB), and S3 for oversized objects (> 1 MB). All within your VPC.
 
 :::info
-The customer controls what ABAP content is sent for embedding. Three levels are available: **full source** (default), **signatures and documentation only** (method bodies stripped), or **local embedding only** (no data sent to any LLM provider). See [LLM Embedding Service](deployment-architecture-vpc#25-llm-embedding-service) for details.
+You control what ABAP content is sent for embedding: **full source** (best search quality), **signatures only** (method bodies stripped), or **local embedding** (nothing leaves your VPC). This can be configured per SAP system. See [deployment architecture](deployment-architecture-vpc#25-llm-embedding-service) for details.
 :::
 
-## How It's Stored
-
-The Knowledge Graph is stored across three tiers, all within the customer's VPC:
-
-| Storage Tier                                                               | What It Holds                                                             | Size Limit             | Purpose                                              |
-| :------------------------------------------------------------------------- | :------------------------------------------------------------------------ | :--------------------- | :--------------------------------------------------- |
-| [Vector Database](deployment-architecture-vpc#26-vector-database)          | Embedding vectors + minimal metadata (object name, type, package)         | 8,096 bytes per record | Semantic search — find objects by meaning            |
-| [Postgres Database](deployment-architecture-vpc#27-postgres-database)      | Source code, dependency relationships, structured metadata, documentation | 1 MB per record        | Keyword search, full-text search, relational queries |
-| [S3 Object Storage](deployment-architecture-vpc#28-s3-like-object-storage) | Oversized ABAP objects (large reports, class pools, generated code)       | Effectively unlimited  | Objects exceeding 1 MB stored without truncation     |
-
-This tiered approach ensures no single storage system is forced to handle data outside its optimal range. The Vector Database and Postgres store references (S3 keys) to oversized objects, so the query engine can still locate and fetch them on demand.
-
-## How It's Queried
-
-The [Adri AI Server](deployment-architecture-vpc#21-adri-ai-server) handles all queries against the Knowledge Graph. It authenticates developers via the customer's IdP, enforces authorization policies, and then executes queries through its embedded ChromaSQL engine.
-
-ChromaSQL supports three search methods:
-
-- **Semantic search** — queries the Vector Database to find objects by meaning (e.g., "special stocks from vendor")
-- **Keyword search** — queries Postgres for exact matches, `LIKE` patterns, and structured filters (by package, object type, transport request)
-- **Large object retrieval** — fetches oversized objects from S3 when needed
-
-Results from all three tiers are merged and ranked before being returned to the Adri server.
-
-## What Stays in the VPC
-
-All Knowledge Graph data — embeddings, source code, metadata, dependencies, and oversized objects — is stored within the customer's VPC. No Knowledge Graph data leaves the VPC. The only data that crosses the VPC boundary is the content sent to the LLM provider for embedding, and the customer [controls the scope](deployment-architecture-vpc#52-llm-access-via-vpc-endpoints-private-network) of that content.
-
-:::note
-The Knowledge Graph Builder currently supports ECC and S/4HANA systems. Support for additional SAP products (SuccessFactors, etc.) and add-ons (OpenText, etc.) is coming. This will extend the Knowledge Graph beyond the core ECC and S/4HANA landscape to cover the broader SAP ecosystem.
-:::
+For the full infrastructure details — network zones, mTLS authentication, storage tier design, security boundaries — see the [deployment architecture](deployment-architecture-vpc).
 
 ---
 
 ## FAQs
 
-### Can I connect multiple SAP systems to Adri?
+### Can I connect multiple SAP systems?
 
-Yes. You can connect any number of SAP systems — irrespective of version (ECC, S/4HANA, etc.). A dedicated Knowledge Graph is built for each connected system, so agents have system-specific context for every landscape in your environment.
+Yes. Any number of systems, any version (ECC, S/4HANA, etc.). A separate Knowledge Graph is built for each, so agents have system-specific context for every landscape in your environment.
 
-### Can I control what data is indexed?
+### What SAP products are supported?
 
-Yes. The customer configures a content scope that determines what ABAP content is sent for embedding — full source code, signatures and documentation only, or local embedding only (no data leaves the VPC). This can be set per SAP system. See [LLM Embedding Service](deployment-architecture-vpc#25-llm-embedding-service) for details.
+ECC and S/4HANA today. Support for SuccessFactors, OpenText, and other SAP products and add-ons is coming.
+
+### Does the Knowledge Graph stay current?
+
+Yes. When custom objects are created, modified, or deleted in your SAP system, the Adri Connector syncs changes to the Knowledge Graph. 
+
+The sync frequency is decided by the Basis team. We typically recommend running a background job weekly.
+
+### Can I control what data is included in the Knowledge Graph?
+
+Yes. You configure a content scope per SAP system — full source code, signatures and documentation only, or local embedding only (no data leaves the VPC). See [content scope options](deployment-architecture-vpc#25-llm-embedding-service).
+
+
