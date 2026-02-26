@@ -46,6 +46,9 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/GetAdriAI/adri-docs/tree/main/',
+          showLastUpdateTime: true,
+          // optionally also show who updated it:
+          showLastUpdateAuthor: true,
         },
         blog: {
           showReadingTime: true,
