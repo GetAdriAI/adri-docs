@@ -6,6 +6,10 @@ sidebar_position: 1
 
 This guide helps first-time users go from account creation to a successful first prompt in Adri Code Agent.
 
+:::info Prerequisite
+Code Agent requires an active subscription. This guide walks you through creating an account, buying a subscription, and writing your first prompt in Code Agent.
+:::
+
 ## What You Will Complete
 
 In this flow, you will:
