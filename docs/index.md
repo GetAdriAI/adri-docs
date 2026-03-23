@@ -12,5 +12,6 @@ These docs show how to use SAP Research Agent to speed up pre-implementation res
 - **Fast onboarding** – Follow the [Code Agent getting started guide](code-agent/get-started.md) to set up account access, billing, and system selection in chat.
 - **Conceptual clarity** – Read the [AI Concepts](ai-concepts/semantic-search.md) section to understand how semantic search, embeddings, and agent patterns power the tooling.
 - **Precise references** – Use the [Glossary](glossary/model_name.md) when you need definitions, relationships, and naming conventions for SAP objects referenced throughout this docs.
+- **Product comparisons** – See how Adri AI stacks up against alternatives like [SAP Joule](comparisons/adri-vs-sap-joule.md).
 
 Let's get started!

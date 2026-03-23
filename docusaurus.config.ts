@@ -98,6 +98,7 @@ const config: Config = {
           label: 'Docs',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/comparisons/adri-vs-sap-joule', label: 'Compare', position: 'left'},
         {
           href: 'https://research.getadri.ai',
           label: 'Try Adri agents today',
