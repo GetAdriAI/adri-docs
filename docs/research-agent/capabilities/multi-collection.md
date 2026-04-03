@@ -1,3 +1,5 @@
+import {ADRI_URLS} from '@site/src/constants/urls';
+
 # Select Multiple Connected SAP Systems
 
 Multiple SAP systems can be connected with Adri, irrespective of version — ECC, S/4HANA, or any other SAP system. A separate knowledge graph is created for each connected system, and SAP Research Agent allows you to query multiple knowledge graphs in a single session for cross-system research and comparison.
@@ -41,5 +43,5 @@ If you are on Adri AI's Enterprise Plan, you can connect multiple SAP systems to
 - Enhancement implementations
 
 :::info
-Check out the [free and open version](https://research.getadri.ai) to explore the demo sandbox.
+Check out the <a href={ADRI_URLS.research}>free and open version</a> to explore the demo sandbox.
 :::

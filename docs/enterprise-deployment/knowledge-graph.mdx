@@ -9,6 +9,7 @@ Every SAP landscape is unique, shaped by years of custom development and configu
 Adri builds a Knowledge Graph of that unique landscape to make AI agents work for you.
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import {ADRI_URLS} from '@site/src/constants/urls';
 
 <figure>
   <img src={useBaseUrl('/img/knowledge_graph_1.png')} alt="Knowledge Graph by Adri AI" />
@@ -39,7 +40,7 @@ Here's what is included in the Knowledge Graph of a typical S/4HANA 2023 system:
 For a typical S/4HANA 2023 system with 100,000 custom objects, the Knowledge Graph contains about **30 million records** stored in roughly **250 GB** of vector database storage. 
 
 :::tip
-Try the [free demo sandbox](https://research.getadri.ai) to see large-scale knowledge creation and retrieval in action. The Knowledge Graph in this sandbox contains about 27 million objects for S/4HANA 2023 and 18 million objects for ECC 6.0.
+Try the <a href={ADRI_URLS.research}>free demo sandbox</a> to see large-scale knowledge creation and retrieval in action. The Knowledge Graph in this sandbox contains about 27 million objects for S/4HANA 2023 and 18 million objects for ECC 6.0.
 :::
 
 ## How Adri Agents Use the Knowledge Graph
@@ -91,5 +92,4 @@ The sync frequency is decided by the Basis team. We typically recommend running 
 ### Can I control what data is included in the Knowledge Graph?
 
 Yes. You configure a content scope per SAP system — full source code, signatures and documentation only, or local embedding only (no data leaves the VPC). See [content scope options](deployment-architecture-vpc#25-llm-embedding-service).
-
 

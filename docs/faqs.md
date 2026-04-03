@@ -2,6 +2,8 @@
 sidebar_position: 4
 ---
 
+import {ADRI_URLS} from '@site/src/constants/urls';
+
 # Frequently Asked Questions (FAQs)
 
 ## Who has created SAP Research Agent?
@@ -35,14 +37,14 @@ Details [here](./research-agent/capabilities/models.md).
 
 ## What are the usage limits?
 
-The usage limits for all the tiers are mentioned in the [Pricing Page](https://www.getadri.ai/pricing).
+The usage limits for all the tiers are mentioned on the <a href={ADRI_URLS.pricing}>Pricing Page</a>.
 
 ## What is the difference between all the tiers?
 
-Please visit the [Pricing Page](https://www.getadri.ai/pricing).
+Please visit the <a href={ADRI_URLS.pricing}>Pricing Page</a>.
 
 :::note
-For Enterprise Plan, contact us at [founders@getadri.ai](mailto:founders@getadri.ai)
+For Enterprise Plan, contact us at <a href={ADRI_URLS.foundersMailto}>{ADRI_URLS.foundersEmail}</a>
 :::
 
 ## Have Any Other Questions?

@@ -4,6 +4,8 @@ sidebar_position: 1
 description: Connect Adri MCP Server in any MCP-compatible coding agent (shown here with Claude Code).
 ---
 
+import {ADRI_URLS} from '@site/src/constants/urls';
+
 ## Connect Adri MCP Server (Claude Code example)
 
 Adri MCP Server works with any MCP-compatible coding agent, including Codex, Cline, Claude Code, and others.
@@ -33,16 +35,16 @@ If you are new: MCP is the standard way coding agents use external tools like Ad
 
 This file tells your coding agent how to reach Adri MCP Server.
 
-```json
-{
+<pre>
+  <code className="language-json">{`{
   "mcpServers": {
     "adri-ai": {
       "type": "http",
-      "url": "https://mcp-server.getadri.ai/mcp/mcp/"
+      "url": "${ADRI_URLS.mcpServer}"
     }
   }
-}
-```
+}`}</code>
+</pre>
 
 ![Paste Adri MCP server config in .mcp.json](/img/adri-mcp-server/setup/5.png)
 

@@ -15,6 +15,7 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 const sidebars: SidebarsConfig = {
   tutorialSidebar: [
     {type: 'doc', id: 'index', label: 'Welcome to Adri AI Docs'},
+    {type: 'doc', id: 'use-adri-for-free', label: 'Use Adri for Free'},
     {
       type: 'category',
       label: 'Project Management',

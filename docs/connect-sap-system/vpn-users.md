@@ -4,6 +4,7 @@ title: VPN Users
 
 import ConnectToAConnectionComponent from '@site/src/components/ConnectToAConnectionComponent.mdx';
 import Link from '@docusaurus/Link';
+import {ADRI_URLS} from '@site/src/constants/urls';
 
 - Create your SAP connection first: <Link to="/connect-sap-system/connect-your-sap-system">Connect Your SAP System</Link>
 - Need help finding the **Project Settings** app? See <Link to="/project-management/open-a-project">Open a Project</Link>.
@@ -15,7 +16,7 @@ Use this section if your SAP systems are only reachable through VPN.
 
 > In every screenshot, the red box shows exactly where to focus.
 
-1. Open [getadri.ai](https://www.getadri.ai) and click **Downloads** in the top navigation.
+1. Open <a href={ADRI_URLS.web}>getadri.ai</a> and click **Downloads** in the top navigation.
 
 ![Open Downloads from the Adri AI website](/img/vpn-users/1.png)
 

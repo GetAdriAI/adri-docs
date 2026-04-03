@@ -2,6 +2,8 @@
 sidebar_position: 10
 ---
 
+import {ADRI_URLS} from '@site/src/constants/urls';
+
 # Conversation Export
 
 Export your research session to share findings with your team or demonstrate the agent's capabilities to management.
@@ -25,11 +27,11 @@ SAP projects involve multiple stakeholders—functional consultants, developers,
 
 Ask the agent to export your session. You can customize the format, timestamps, and header stats. Example prompt:
 
-```
-Export this conversation. You must adhere to the design system that the harness has provided you.
+<pre>
+  <code>{`Export this conversation. You must adhere to the design system that the harness has provided you.
 
 Title: Conversation Export | SAP Research Agent
-Subtitle: Exported on `yyyy-mm-dd hh:mm:ss UTC` | Link: https://research.getadri.ai/sessions/session/{conversation_id}
+Subtitle: Exported on \`yyyy-mm-dd hh:mm:ss UTC\` | Link: ${ADRI_URLS.research}/sessions/session/{conversation_id}
 
 Each message should have a timestamp displayed underneath in this format (yyyy-mm-dd hh:mm:ss UTC).
 
@@ -37,8 +39,8 @@ Club consecutive assistant messages into one.
 
 Include the following stats in the header: SAP system, Objects Available, Queries answered, Session duration, Est. time saved
 
-Calculate Est. time saved as: (Knowledge Graph Searches + Web Searches) × 30 mins. Add a note explaining this methodology, directly beneath the header.
-```
+Calculate Est. time saved as: (Knowledge Graph Searches + Web Searches) × 30 mins. Add a note explaining this methodology, directly beneath the header.`}</code>
+</pre>
 
 The agent will generate a downloadable HTML that you can convert to PDF, if needed.
 

@@ -1,6 +1,7 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import {ADRI_URLS} from './src/constants/urls';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -15,7 +16,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://docs.getadri.ai',
+  url: ADRI_URLS.docs,
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/', // changed from `/adri-docs/` to `/` on setting custom domain in GitHub pages
@@ -100,7 +101,7 @@ const config: Config = {
         {to: '/blog', label: 'Blog', position: 'left'},
         {to: '/comparisons/adri-vs-sap-joule', label: 'Compare', position: 'left'},
         {
-          href: 'https://research.getadri.ai',
+          href: ADRI_URLS.research,
           label: 'Try Adri agents today',
           position: 'right',
           className: 'navbar-cta-button',

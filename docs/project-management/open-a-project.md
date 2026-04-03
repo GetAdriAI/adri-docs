@@ -2,6 +2,8 @@
 title: Open a Project
 ---
 
+import {ADRI_URLS} from '@site/src/constants/urls';
+
 ## What is a project?
 
 A project is your workspace in Adri AI.
@@ -19,7 +21,7 @@ Project Settings is where you manage SAP connections and project-level setup.
 
 > In every screenshot, the red box shows exactly where to focus.
 
-1. After logging in, go to [getadri.ai/projects](https://www.getadri.ai/projects).
+1. After logging in, go to <a href={ADRI_URLS.projects}>getadri.ai/projects</a>.
 2. In the **Projects** list, click **Open** for your project.
 
 ![Click Open for your project](/img/project-management/open-project/1.png)
