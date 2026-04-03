@@ -6,7 +6,8 @@ import CreateAProjectComponent from '@site/src/components/CreateAProjectComponen
 
 Use this guide to create a new project in Adri AI.
 
-Projects are isolated workspaces. You can create one project per client, geography, or business unit, and connect unlimited SAP systems within that project.
+Think of a project as a container for one team or one business context (for example one client or one geography).
+You can connect unlimited SAP systems inside that project.
 
 ## Steps
 

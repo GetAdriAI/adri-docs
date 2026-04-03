@@ -11,6 +11,7 @@ import Link from '@docusaurus/Link';
 ## Install Adri Relay on your laptop
 
 Use this section if your SAP systems are only reachable through VPN.
+**Adri Relay** is a small desktop app that securely connects Adri AI to your VPN-only SAP systems.
 
 > In every screenshot, the red box shows exactly where to focus.
 

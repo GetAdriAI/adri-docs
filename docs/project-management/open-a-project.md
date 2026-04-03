@@ -4,7 +4,8 @@ title: Open a Project
 
 ## What is a project?
 
-A project is an isolated workspace in Adri AI.
+A project is your workspace in Adri AI.
+Everything you do is organized inside a project.
 
 - SI firms can create one project per client.
 - SAP customers can create one project per geography, business unit, or rollout.
@@ -13,7 +14,8 @@ A project is an isolated workspace in Adri AI.
 
 ## Open Project Settings
 
-Use these steps to open the **Project Settings** application.
+Use these steps to open **Project Settings**.
+Project Settings is where you manage SAP connections and project-level setup.
 
 > In every screenshot, the red box shows exactly where to focus.
 
