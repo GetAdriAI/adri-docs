@@ -12,7 +12,7 @@ If you are new to Adri AI, use these steps first:
 
 <SignUpAndProfileSetupComponent />
 
-## What you get for free
+## What SAP folks get for free
 
 - Connect as many SAP systems as you want.
 - Use Adri MCP Server for ABAP coding.
