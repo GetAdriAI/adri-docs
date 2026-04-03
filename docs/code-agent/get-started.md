@@ -2,6 +2,8 @@
 sidebar_position: 1
 ---
 
+import CreateAProjectComponent from '@site/src/components/CreateAProjectComponent.mdx';
+
 # Adri Code Agent: Complete Onboarding Guide
 
 This guide helps first-time users go from account creation to a successful first prompt in Adri Code Agent.
@@ -45,15 +47,7 @@ In this flow, you will:
 
 ### Step 3: Create a Project
 
-1. On the **Projects** page, click **Create Project**.
-2. Enter the project details.
-3. Confirm creation.
-
-**Done when:** You are redirected to your newly created project.
-
-![Step 3 placeholder: highlight Create Project](https://res.cloudinary.com/diufkmalk/image/upload/v1773578694/Screenshot_2026-03-15_at_6.12.00_PM_tgykvv.png)
-
-![Step 3 placeholder: highlight Create Project](https://res.cloudinary.com/diufkmalk/image/upload/v1773578651/Screenshot_2026-03-15_at_6.13.28_PM_sljbh4.png)
+<CreateAProjectComponent />
 
 ### Step 4: Activate Billing
 
@@ -100,4 +94,3 @@ In chat, submit a focused prompt:
 **Done when:** You receive a response in the context of your selected SAP user.
 
 ![Step 7 placeholder: first prompt in chat](https://res.cloudinary.com/diufkmalk/image/upload/v1773586777/Screenshot_2026-03-15_at_8.28.17_PM_wkpfe0.png)
-
