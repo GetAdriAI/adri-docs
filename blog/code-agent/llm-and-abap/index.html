@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.9.2">
 <title data-rh="true">LLMs Don&#x27;t Hallucinate ABAP. They Overgeneralize It. | Adri AI</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://docs.getadri.ai/img/adri-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.getadri.ai/img/adri-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.getadri.ai/blog/code-agent/llm-and-abap"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:site_name" content="Adri AI"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:title" content="LLMs Don&#x27;t Hallucinate ABAP. They Overgeneralize It. | Adri AI"><meta data-rh="true" name="description" content="We spent months studying the patterns in mistakes LLMs make while writing ABAP code. While many teams frame the risks in terms of &quot;hallucination&quot;, we&#x27;ve learned that hallucination is not the core issue in ABAP."><meta data-rh="true" property="og:description" content="We spent months studying the patterns in mistakes LLMs make while writing ABAP code. While many teams frame the risks in terms of &quot;hallucination&quot;, we&#x27;ve learned that hallucination is not the core issue in ABAP."><meta data-rh="true" property="og:type" content="article"><meta data-rh="true" property="article:published_time" content="2025-12-30T00:00:00.000Z"><meta data-rh="true" property="article:author" content="https://www.linkedin.com/in/darshitac/,https://www.linkedin.com/in/shyamswaroop/"><meta data-rh="true" property="article:tag" content="Code Agent"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.getadri.ai/blog/code-agent/llm-and-abap"><link data-rh="true" rel="alternate" href="https://docs.getadri.ai/blog/code-agent/llm-and-abap" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.getadri.ai/blog/code-agent/llm-and-abap" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://docs.getadri.ai/blog/code-agent/llm-and-abap","mainEntityOfPage":"https://docs.getadri.ai/blog/code-agent/llm-and-abap","url":"https://docs.getadri.ai/blog/code-agent/llm-and-abap","headline":"LLMs Don't Hallucinate ABAP. They Overgeneralize It.","name":"LLMs Don't Hallucinate ABAP. They Overgeneralize It.","description":"We spent months studying the patterns in mistakes LLMs make while writing ABAP code. While many teams frame the risks in terms of \"hallucination\", we've learned that hallucination is not the core issue in ABAP.","datePublished":"2025-12-30T00:00:00.000Z","author":[{"@type":"Person","name":"Darshita Chaturvedi","description":"Co-Founder & CEO, Adri AI","url":"https://www.linkedin.com/in/darshitac/","image":"https://github.com/darshitac11.png"},{"@type":"Person","name":"Shyam Swaroop","description":"Co-Founder & CTO, Adri AI","url":"https://www.linkedin.com/in/shyamswaroop/","image":"https://github.com/cruxcode.png"}],"keywords":[],"isPartOf":{"@type":"Blog","@id":"https://docs.getadri.ai/blog","name":"Blog"}}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Adri AI RSS Feed">
-<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Adri AI Atom Feed"><link rel="stylesheet" href="/assets/css/styles.198df7ad.css">
-<script src="/assets/js/runtime~main.6d98997f.js" defer="defer"></script>
-<script src="/assets/js/main.842d106d.js" defer="defer"></script>
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Adri AI Atom Feed"><link rel="stylesheet" href="/assets/css/styles.5c99b409.css">
+<script src="/assets/js/runtime~main.ceacb2ef.js" defer="defer"></script>
+<script src="/assets/js/main.5b61e85b.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -36,23 +36,23 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-type-system-misunderstanding">1. Type System Misunderstanding<a href="#1-type-system-misunderstanding" class="hash-link" aria-label="Direct link to 1. Type System Misunderstanding" title="Direct link to 1. Type System Misunderstanding" translate="no">​</a></h3>
 <p>ABAP enforces strong, static typing with meaningful distinctions between:</p>
 <ul>
-<li class=""><code>CHAR</code> (fixed length)</li>
-<li class=""><code>STRING</code> (variable length)</li>
-<li class="">domain-bound DDIC types (e.g., <code>KUNNR</code>, <code>MATNR</code>)</li>
+<li class=""><span class="adri-inline-code-with-copy"><code>CHAR</code><button type="button" class="adri-inline-code-copy-button" aria-label="Copy inline code">Copy</button></span> (fixed length)</li>
+<li class=""><span class="adri-inline-code-with-copy"><code>STRING</code><button type="button" class="adri-inline-code-copy-button" aria-label="Copy inline code">Copy</button></span> (variable length)</li>
+<li class="">domain-bound DDIC types (e.g., <span class="adri-inline-code-with-copy"><code>KUNNR</code><button type="button" class="adri-inline-code-copy-button" aria-label="Copy inline code">Copy</button></span>, <span class="adri-inline-code-with-copy"><code>MATNR</code><button type="button" class="adri-inline-code-copy-button" aria-label="Copy inline code">Copy</button></span>)</li>
 </ul>
 <p>But LLMs routinely assume behavior from dynamic string languages, leading to:</p>
 <ul>
 <li class="">implicit conversions that don&#x27;t exist</li>
 <li class="">padding inconsistencies</li>
-<li class="">boolean improvisations instead of <code>abap_bool</code></li>
-<li class="">generic <code>string</code> usage where DDIC types are required</li>
+<li class="">boolean improvisations instead of <span class="adri-inline-code-with-copy"><code>abap_bool</code><button type="button" class="adri-inline-code-copy-button" aria-label="Copy inline code">Copy</button></span></li>
+<li class="">generic <span class="adri-inline-code-with-copy"><code>string</code><button type="button" class="adri-inline-code-copy-button" aria-label="Copy inline code">Copy</button></span> usage where DDIC types are required</li>
 </ul>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-opensql--standard-sql">2. OpenSQL ≠ Standard SQL<a href="#2-opensql--standard-sql" class="hash-link" aria-label="Direct link to 2. OpenSQL ≠ Standard SQL" title="Direct link to 2. OpenSQL ≠ Standard SQL" translate="no">​</a></h3>
 <p>OpenSQL is database-independent, SAP-portable, and syntactically constrained.</p>
 <p>And yet, LLMs frequently output:</p>
 <ul>
-<li class=""><code>TOP 10</code> instead of <code>UP TO 10 ROWS</code></li>
-<li class=""><code>ORDER BY total_sales DESC</code> instead of <code>DESCENDING</code></li>
+<li class=""><span class="adri-inline-code-with-copy"><code>TOP 10</code><button type="button" class="adri-inline-code-copy-button" aria-label="Copy inline code">Copy</button></span> instead of <span class="adri-inline-code-with-copy"><code>UP TO 10 ROWS</code><button type="button" class="adri-inline-code-copy-button" aria-label="Copy inline code">Copy</button></span></li>
+<li class=""><span class="adri-inline-code-with-copy"><code>ORDER BY total_sales DESC</code><button type="button" class="adri-inline-code-copy-button" aria-label="Copy inline code">Copy</button></span> instead of <span class="adri-inline-code-with-copy"><code>DESCENDING</code><button type="button" class="adri-inline-code-copy-button" aria-label="Copy inline code">Copy</button></span></li>
 <li class="">ANSI or vendor-style date expressions</li>
 <li class="">unsupported analytic functions</li>
 </ul>
@@ -63,12 +63,12 @@
 <li class="">system repositories</li>
 <li class="">DDIC structures</li>
 <li class="">landscape-specific namespaces</li>
-<li class="">custom extensions (<code>Z*</code>, <code>Y*</code>)</li>
+<li class="">custom extensions (<span class="adri-inline-code-with-copy"><code>Z*</code><button type="button" class="adri-inline-code-copy-button" aria-label="Copy inline code">Copy</button></span>, <span class="adri-inline-code-with-copy"><code>Y*</code><button type="button" class="adri-inline-code-copy-button" aria-label="Copy inline code">Copy</button></span>)</li>
 </ul>
 <p>LLMs detect <em>patterns</em> in names and then invent plausible ones.</p>
 <p>For example:</p>
 <ul>
-<li class=""><code>BAPI_GET_MATERIAL_DETAILS</code> instead of <code>BAPI_MATERIAL_GET_DETAIL</code></li>
+<li class=""><span class="adri-inline-code-with-copy"><code>BAPI_GET_MATERIAL_DETAILS</code><button type="button" class="adri-inline-code-copy-button" aria-label="Copy inline code">Copy</button></span> instead of <span class="adri-inline-code-with-copy"><code>BAPI_MATERIAL_GET_DETAIL</code><button type="button" class="adri-inline-code-copy-button" aria-label="Copy inline code">Copy</button></span></li>
 <li class="">fabricated interface names</li>
 <li class="">function modules that &quot;sound right&quot;, but don&#x27;t exist</li>
 </ul>

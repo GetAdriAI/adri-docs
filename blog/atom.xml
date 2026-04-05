@@ -135,23 +135,23 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-type-system-misunderstanding">1. Type System Misunderstanding<a href="https://docs.getadri.ai/blog/code-agent/llm-and-abap#1-type-system-misunderstanding" class="hash-link" aria-label="Direct link to 1. Type System Misunderstanding" title="Direct link to 1. Type System Misunderstanding" translate="no">​</a></h3>
 <p>ABAP enforces strong, static typing with meaningful distinctions between:</p>
 <ul>
-<li class=""><code>CHAR</code> (fixed length)</li>
-<li class=""><code>STRING</code> (variable length)</li>
-<li class="">domain-bound DDIC types (e.g., <code>KUNNR</code>, <code>MATNR</code>)</li>
+<li class=""><span class="adri-inline-code-with-copy"><code>CHAR</code><button type="button" class="adri-inline-code-copy-button" aria-label="Copy inline code">Copy</button></span> (fixed length)</li>
+<li class=""><span class="adri-inline-code-with-copy"><code>STRING</code><button type="button" class="adri-inline-code-copy-button" aria-label="Copy inline code">Copy</button></span> (variable length)</li>
+<li class="">domain-bound DDIC types (e.g., <span class="adri-inline-code-with-copy"><code>KUNNR</code><button type="button" class="adri-inline-code-copy-button" aria-label="Copy inline code">Copy</button></span>, <span class="adri-inline-code-with-copy"><code>MATNR</code><button type="button" class="adri-inline-code-copy-button" aria-label="Copy inline code">Copy</button></span>)</li>
 </ul>
 <p>But LLMs routinely assume behavior from dynamic string languages, leading to:</p>
 <ul>
 <li class="">implicit conversions that don't exist</li>
 <li class="">padding inconsistencies</li>
-<li class="">boolean improvisations instead of <code>abap_bool</code></li>
-<li class="">generic <code>string</code> usage where DDIC types are required</li>
+<li class="">boolean improvisations instead of <span class="adri-inline-code-with-copy"><code>abap_bool</code><button type="button" class="adri-inline-code-copy-button" aria-label="Copy inline code">Copy</button></span></li>
+<li class="">generic <span class="adri-inline-code-with-copy"><code>string</code><button type="button" class="adri-inline-code-copy-button" aria-label="Copy inline code">Copy</button></span> usage where DDIC types are required</li>
 </ul>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-opensql--standard-sql">2. OpenSQL ≠ Standard SQL<a href="https://docs.getadri.ai/blog/code-agent/llm-and-abap#2-opensql--standard-sql" class="hash-link" aria-label="Direct link to 2. OpenSQL ≠ Standard SQL" title="Direct link to 2. OpenSQL ≠ Standard SQL" translate="no">​</a></h3>
 <p>OpenSQL is database-independent, SAP-portable, and syntactically constrained.</p>
 <p>And yet, LLMs frequently output:</p>
 <ul>
-<li class=""><code>TOP 10</code> instead of <code>UP TO 10 ROWS</code></li>
-<li class=""><code>ORDER BY total_sales DESC</code> instead of <code>DESCENDING</code></li>
+<li class=""><span class="adri-inline-code-with-copy"><code>TOP 10</code><button type="button" class="adri-inline-code-copy-button" aria-label="Copy inline code">Copy</button></span> instead of <span class="adri-inline-code-with-copy"><code>UP TO 10 ROWS</code><button type="button" class="adri-inline-code-copy-button" aria-label="Copy inline code">Copy</button></span></li>
+<li class=""><span class="adri-inline-code-with-copy"><code>ORDER BY total_sales DESC</code><button type="button" class="adri-inline-code-copy-button" aria-label="Copy inline code">Copy</button></span> instead of <span class="adri-inline-code-with-copy"><code>DESCENDING</code><button type="button" class="adri-inline-code-copy-button" aria-label="Copy inline code">Copy</button></span></li>
 <li class="">ANSI or vendor-style date expressions</li>
 <li class="">unsupported analytic functions</li>
 </ul>
@@ -162,12 +162,12 @@
 <li class="">system repositories</li>
 <li class="">DDIC structures</li>
 <li class="">landscape-specific namespaces</li>
-<li class="">custom extensions (<code>Z*</code>, <code>Y*</code>)</li>
+<li class="">custom extensions (<span class="adri-inline-code-with-copy"><code>Z*</code><button type="button" class="adri-inline-code-copy-button" aria-label="Copy inline code">Copy</button></span>, <span class="adri-inline-code-with-copy"><code>Y*</code><button type="button" class="adri-inline-code-copy-button" aria-label="Copy inline code">Copy</button></span>)</li>
 </ul>
 <p>LLMs detect <em>patterns</em> in names and then invent plausible ones.</p>
 <p>For example:</p>
 <ul>
-<li class=""><code>BAPI_GET_MATERIAL_DETAILS</code> instead of <code>BAPI_MATERIAL_GET_DETAIL</code></li>
+<li class=""><span class="adri-inline-code-with-copy"><code>BAPI_GET_MATERIAL_DETAILS</code><button type="button" class="adri-inline-code-copy-button" aria-label="Copy inline code">Copy</button></span> instead of <span class="adri-inline-code-with-copy"><code>BAPI_MATERIAL_GET_DETAIL</code><button type="button" class="adri-inline-code-copy-button" aria-label="Copy inline code">Copy</button></span></li>
 <li class="">fabricated interface names</li>
 <li class="">function modules that "sound right", but don't exist</li>
 </ul>
