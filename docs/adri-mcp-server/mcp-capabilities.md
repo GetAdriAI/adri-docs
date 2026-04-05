@@ -1,6 +1,6 @@
 ---
 title: MCP Capabilities
-sidebar_position: 3
+sidebar_position: 4
 description: Current feature availability in Adri MCP Server.
 ---
 

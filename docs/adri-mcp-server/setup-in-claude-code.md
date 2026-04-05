@@ -13,6 +13,8 @@ Adri MCP Server works with any MCP-compatible coding agent, including Codex, Cli
 This walkthrough uses Claude Code screenshots, but the server URL and auth flow are the same idea across agents.
 If you are new: MCP is the standard way coding agents use external tools like Adri AI.
 
+Using Codex CLI instead? See [Setup (Codex)](./setup-in-codex.md).
+
 > In every screenshot, the red box shows where to focus.
 
 ### 1. Create `.mcp.json` in your project
