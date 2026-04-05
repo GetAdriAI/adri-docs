@@ -1,6 +1,6 @@
 ---
 title: Setup (Codex)
-sidebar_position: 2
+sidebar_position: 3
 description: Connect Adri MCP Server in Codex CLI, complete OAuth login, and run your first prompt.
 ---
 
@@ -11,15 +11,17 @@ import CodeBlock from '@theme/CodeBlock';
 
 Use this guide to connect Adri MCP Server in Codex, then use it directly inside VS Code.
 
-If you prefer Claude Code screenshots, use [Setup (Claude Code Example)](./setup-in-claude-code.md).
+If you prefer Claude Code screenshots, use [Setup (Claude Code)](./setup-in-claude-code.md).
 
 > In every screenshot, the red box shows where to focus.
 
 ## Pre-requisites
 
-1. Log in to Adri AI: <a href={ADRI_URLS.login}>https://www.getadri.ai/login</a>
-2. Install the Codex VS Code extension from OpenAI docs: <a href={EXTERNAL_URLS.codexIdeDocs}>https://developers.openai.com/codex/ide</a>
-3. Optional direct marketplace page: <a href={EXTERNAL_URLS.codexVsCodeMarketplace}>Visual Studio Code Marketplace</a>
+1. Complete the one-time tool install guide:
+[Install VS Code and Agent Tools](./install-tools-for-mcp.md)
+2. Log in to Adri AI: <a href={ADRI_URLS.login}>https://www.getadri.ai/login</a>
+3. Install the Codex VS Code extension from OpenAI docs: <a href={EXTERNAL_URLS.codexIdeDocs}>https://developers.openai.com/codex/ide</a>
+4. Optional direct marketplace page: <a href={EXTERNAL_URLS.codexVsCodeMarketplace}>Visual Studio Code Marketplace</a>
 
 ## 1. Setup Adri MCP Server in terminal (CLI)
 

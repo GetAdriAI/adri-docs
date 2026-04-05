@@ -1,6 +1,6 @@
 ---
 title: Connect to Claude (claude.ai)
-sidebar_position: 3
+sidebar_position: 4
 description: Add Adri MCP Server as a custom connector in Claude Chat.
 ---
 

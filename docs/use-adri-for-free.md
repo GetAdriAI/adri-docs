@@ -22,7 +22,8 @@ Recommended next steps:
 
 1. Create a project: [Create a Project](./project-management/create-a-project.md)
 2. Connect your SAP systems: [Connect Your SAP System](./connect-sap-system/connect-your-sap-system.md)
-3. Set up MCP access: [Setup (Codex)](./adri-mcp-server/setup-in-codex.md) or [Setup (Claude Code Example)](./adri-mcp-server/setup-in-claude-code.md)
+3. Install coding tools: [Install VS Code and Agent Tools](./adri-mcp-server/install-tools-for-mcp.md)
+4. Set up MCP access: [Setup (Claude Code)](./adri-mcp-server/setup-in-claude-code.md) or [Setup (Codex)](./adri-mcp-server/setup-in-codex.md)
 
 ## What you do not get for free
 

@@ -13,6 +13,15 @@ export const ADRI_URLS = {
 } as const;
 
 export const EXTERNAL_URLS = {
+  vscodeDownload: 'https://code.visualstudio.com/download',
+  vscodeSetupOverview: 'https://code.visualstudio.com/docs/setup/setup-overview',
+  vscodeSetupWindows: 'https://code.visualstudio.com/docs/setup/windows',
+  vscodeSetupMac: 'https://code.visualstudio.com/docs/setup/mac',
+  vscodeSetupLinux: 'https://code.visualstudio.com/docs/setup/linux',
+  claudeCodeQuickstart: 'https://code.claude.com/docs/en/quickstart',
+  claudeCodeVsCodeDocs: 'https://code.claude.com/docs/en/vs-code',
+  claudeCodeVsCodeMarketplace:
+    'https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code',
   claudeLogin: 'https://claude.ai/login',
   claudeConnectors: 'https://claude.ai/settings/connectors',
   codexCliDocs: 'https://developers.openai.com/codex/cli',

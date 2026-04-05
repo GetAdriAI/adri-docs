@@ -1,13 +1,13 @@
 ---
-title: Setup (Claude Code Example)
-sidebar_position: 1
+title: Setup (Claude Code)
+sidebar_position: 2
 description: Connect Adri MCP Server in any MCP-compatible coding agent (shown here with Claude Code).
 ---
 
-import {ADRI_URLS} from '@site/src/constants/urls';
+import {ADRI_URLS, EXTERNAL_URLS} from '@site/src/constants/urls';
 import CodeBlock from '@theme/CodeBlock';
 
-## Connect Adri MCP Server (Claude Code example)
+## Connect Adri MCP Server in Claude Code
 
 Adri MCP Server works with any MCP-compatible coding agent, including Codex, Cline, Claude Code, and others.
 This walkthrough uses Claude Code screenshots, but the server URL and auth flow are the same idea across agents.
@@ -17,7 +17,25 @@ Using Codex CLI instead? See [Setup (Codex)](./setup-in-codex.md).
 
 > In every screenshot, the red box shows where to focus.
 
-### 1. Create `.mcp.json` in your project
+## Pre-requisites
+
+1. Complete the one-time tool install guide:
+[Install VS Code and Agent Tools](./install-tools-for-mcp.md)
+2. Log in to Adri AI: <a href={ADRI_URLS.login}>https://www.getadri.ai/login</a>
+3. Log in to Claude: <a href={EXTERNAL_URLS.claudeLogin}>https://claude.ai/login</a>
+4. Verify Claude Code CLI is installed.
+5. Verify the Claude Code VS Code extension is installed.
+
+Run this check for step 4:
+<CodeBlock language="bash">{`claude --version`}</CodeBlock>
+
+Claude Code VS Code extension guide:
+<a href={EXTERNAL_URLS.claudeCodeVsCodeDocs}>code.claude.com/docs/en/vs-code</a>
+
+If Claude Code CLI is not installed yet, use the official quickstart:
+<a href={EXTERNAL_URLS.claudeCodeQuickstart}>code.claude.com/docs/en/quickstart</a>
+
+## 1. Create `.mcp.json` in your project
 
 1. Open your project folder in VS Code.
 2. Click **New File** in the Explorer.
@@ -49,14 +67,14 @@ This file tells your coding agent how to reach Adri MCP Server.
 
 ![Paste Adri MCP server config in .mcp.json](/img/adri-mcp-server/setup/5.png)
 
-### 2. Open MCP servers in Claude Code
+## 2. Open MCP servers in Claude Code
 
 1. Open Claude Code in VS Code.
 2. Run `/mcp` and select **MCP servers**.
 
 ![Run /mcp and open MCP servers](/img/adri-mcp-server/setup/6.png)
 
-### 3. Authenticate the `adri-ai` MCP server
+## 3. Authenticate the `adri-ai` MCP server
 
 1. In **MCP servers**, find `adri-ai` and click **Needs Auth**.
 
@@ -86,7 +104,7 @@ This file tells your coding agent how to reach Adri MCP Server.
 
 ![Verify adri-ai is connected](/img/adri-mcp-server/setup/13.png)
 
-### 4. Run your first prompt
+## 4. Run your first prompt
 
 1. Ask Claude: `List all SAP systems`.
 

@@ -19,7 +19,8 @@ Follow step-by-step guides to connect SAP systems in Adri AI:
 If your SAP system is only reachable through VPN, we also show how to install and use **Adri Relay** (the small desktop app that securely bridges that VPN-only access).
 
 3. **Use Adri MCP Server with your coding agent**  
-Set up Adri MCP Server using [Setup (Codex)](adri-mcp-server/setup-in-codex.md) or [Setup (Claude Code Example)](adri-mcp-server/setup-in-claude-code.md).  
+Install your coding tools first: [Install VS Code and Agent Tools](adri-mcp-server/install-tools-for-mcp.md).  
+Then set up Adri MCP Server using [Setup (Claude Code)](adri-mcp-server/setup-in-claude-code.md) or [Setup (Codex)](adri-mcp-server/setup-in-codex.md).  
 The same MCP server works with Codex, Cline, Claude Code, and other MCP-compatible agents.
 This includes creating `.mcp.json`, signing in, and approving tools for all projects.
 Check what is currently supported in [MCP Capabilities](adri-mcp-server/mcp-capabilities.md).
