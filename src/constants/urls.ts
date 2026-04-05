@@ -11,3 +11,8 @@ export const ADRI_URLS = {
   foundersEmail: 'founders@getadri.ai',
   foundersMailto: 'mailto:founders@getadri.ai',
 } as const;
+
+export const EXTERNAL_URLS = {
+  claudeLogin: 'https://claude.ai/login',
+  claudeConnectors: 'https://claude.ai/settings/connectors',
+} as const;
