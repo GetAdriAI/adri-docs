@@ -15,4 +15,9 @@ export const ADRI_URLS = {
 export const EXTERNAL_URLS = {
   claudeLogin: 'https://claude.ai/login',
   claudeConnectors: 'https://claude.ai/settings/connectors',
+  codexCliDocs: 'https://developers.openai.com/codex/cli',
+  codexQuickstart: 'https://developers.openai.com/codex/quickstart',
+  codexIdeDocs: 'https://developers.openai.com/codex/ide',
+  codexVsCodeMarketplace:
+    'https://marketplace.visualstudio.com/items?itemName=openai.chatgpt',
 } as const;
