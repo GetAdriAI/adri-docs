@@ -5,6 +5,7 @@ description: Connect Adri MCP Server in any MCP-compatible coding agent (shown h
 ---
 
 import {ADRI_URLS} from '@site/src/constants/urls';
+import CodeBlock from '@theme/CodeBlock';
 
 ## Connect Adri MCP Server (Claude Code example)
 
@@ -35,16 +36,14 @@ If you are new: MCP is the standard way coding agents use external tools like Ad
 
 This file tells your coding agent how to reach Adri MCP Server.
 
-<pre>
-  <code className="language-json">{`{
+<CodeBlock language="json">{`{
   "mcpServers": {
     "adri-ai": {
       "type": "http",
       "url": "${ADRI_URLS.mcpServer}"
     }
   }
-}`}</code>
-</pre>
+}`}</CodeBlock>
 
 ![Paste Adri MCP server config in .mcp.json](/img/adri-mcp-server/setup/5.png)
 
