@@ -11,6 +11,7 @@ import {ADRI_URLS} from '@site/src/constants/urls';
 - Create your SAP connection first: <Link to="/connect-sap-system/connect-your-sap-system">Connect Your SAP System</Link>
 - Need help finding the **Project Settings** app? See <Link to="/project-management/open-a-project">Open a Project</Link>.
 - Already using Adri Relay and upgrading? See <Link to="/connect-sap-system/upgrade-adri-relay-vpn-users">Upgrade Adri Relay (VPN Users)</Link>.
+- Need one relay app for multiple Adri projects? See <Link to="/connect-sap-system/configure-relay-more-than-one-project-vpn-users">Configure Relay for More Than One Project (VPN Users)</Link>.
 
 ## Install Adri Relay on your laptop
 
