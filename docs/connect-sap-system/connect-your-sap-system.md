@@ -1,5 +1,6 @@
 ---
 title: Connect Your SAP System
+sidebar_position: 1
 ---
 
 import ConnectToASystemComponent from '@site/src/components/ConnectToASystemComponent.mdx';
