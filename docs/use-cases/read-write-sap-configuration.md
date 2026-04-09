@@ -17,6 +17,12 @@ With Adri AI, this works out of the box through:
 - Prompt-based workflows in MCP-compatible agents
 - Slash commands in Adri agents
 
+In both Claude Chat and Claude Code, the first few steps aim for the same thing:
+load Adri AI's SAP configuration guide first, then run your request.
+
+- Claude Chat flow (this page): use connectors to open `sap_read_configuration_guide`
+- Claude Code flow: [Work with SAP Configuration using Claude Code](./work-with-sap-configuration-using-claude-code.md)
+
 The screenshots below show a step-by-step example in Claude (`claude.ai`).
 You can follow the same idea in other MCP-compatible platforms as well.
 
