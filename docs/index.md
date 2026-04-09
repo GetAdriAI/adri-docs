@@ -29,10 +29,13 @@ Check what is currently supported in [MCP Capabilities](adri-mcp-server/mcp-capa
 4. **Get started with Code Agent**  
 Use the full beginner onboarding flow in [Adri Code Agent: Complete Onboarding Guide](code-agent/get-started.md).
 
-5. **Run advanced SAP research workflows**  
+5. **Run practical SAP use cases**  
+Start with [Read and Write SAP Configuration](use-cases/read-write-sap-configuration.md) to see a full prompt-to-result workflow, including IMG Extraction for higher accuracy.
+
+6. **Run advanced SAP research workflows**  
 Use [SAP Research Agent](research-agent/research-intro.mdx) for object discovery, system validation, and research workflows.
 
-6. **Cover architecture, concepts, and references**  
+7. **Cover architecture, concepts, and references**  
 Explore [Deploying Adri in Enterprise](enterprise-deployment/deployment-architecture-vpc.mdx), [AI Concepts](ai-concepts/semantic-search.md), [Glossary](glossary/model_name.md), and [Comparisons](comparisons/adri-vs-sap-joule.md).
 
 Let's get started!
