@@ -10,6 +10,7 @@ import CodeBlock from '@theme/CodeBlock';
 ## Connect Adri MCP Server in Codex
 
 Use this guide to connect Adri MCP Server in Codex, then use it directly inside VS Code.
+For advanced SAP-side capabilities (parametrized execution and better large-table pagination), also complete [Setup Enabler Framework](./setup-enabler-framework.md).
 
 If you prefer Claude Code screenshots, use [Setup (Claude Code)](./setup-in-claude-code.md).
 

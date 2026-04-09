@@ -12,6 +12,7 @@ import CodeBlock from '@theme/CodeBlock';
 Adri MCP Server works with any MCP-compatible coding agent, including Codex, Cline, Claude Code, and others.
 This walkthrough uses Claude Code screenshots, but the server URL and auth flow are the same idea across agents.
 If you are new: MCP is the standard way coding agents use external tools like Adri AI.
+For advanced SAP-side capabilities (parametrized execution and better large-table pagination), also complete [Setup Enabler Framework](./setup-enabler-framework.md).
 
 Using Codex CLI instead? See [Setup (Codex)](./setup-in-codex.md).
 

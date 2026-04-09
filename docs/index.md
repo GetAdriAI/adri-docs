@@ -23,6 +23,7 @@ Install your coding tools first: [Install VS Code and Agent Tools](adri-mcp-serv
 Then set up Adri MCP Server using [Setup (Claude Code)](adri-mcp-server/setup-in-claude-code.md) or [Setup (Codex)](adri-mcp-server/setup-in-codex.md).  
 The same MCP server works with Codex, Cline, Claude Code, and other MCP-compatible agents.
 This includes creating `.mcp.json`, signing in, and approving tools for all projects.
+For advanced SAP-side capabilities, you can also install [Setup Enabler Framework](adri-mcp-server/setup-enabler-framework.md) in about 3-5 minutes per system.
 Check what is currently supported in [MCP Capabilities](adri-mcp-server/mcp-capabilities.md).
 
 4. **Get started with Code Agent**  

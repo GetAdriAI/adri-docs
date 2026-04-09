@@ -1,6 +1,6 @@
 ---
 title: MCP Capabilities
-sidebar_position: 5
+sidebar_position: 6
 description: Current feature availability in Adri MCP Server.
 ---
 
@@ -16,6 +16,7 @@ Current status:
 | --- | --- | --- |
 | ADT API Capabilities | Available | Covers pretty much everything a developer does in Eclipse ADT. |
 | Configuration Reading | Available | Can read all configuration. |
+| Enabler Framework | Available | Enables parametrized ABAP execution and better pagination controls for large table reads. |
 | Knowledge Base Access | Unavailable | Not available in MCP yet. |
 | Specialized ABAP Bug Fixing (Code Medic) | Unavailable | Not available in MCP yet. |
 | Document Generation | Unavailable | Not available in MCP yet. |
@@ -30,6 +31,14 @@ Current status:
 ### Configuration Reading (Available)
 
 - The Adri MCP Server can read all SAP configuration.
+
+### Enabler Framework (Available)
+
+- Enabler Framework is an optional SAP-side setup that takes around 3-5 minutes.
+- It is idempotent, so you can safely run setup multiple times on the same system.
+- It unlocks **parametrized execution**: run ABAP logic through REST endpoints even where ADT API is limited.
+- It unlocks **large table pagination controls**: handle large reads with better pagination flexibility than ADT SQL script limits allow.
+- Setup guide: [Setup Enabler Framework](./setup-enabler-framework.md)
 
 ### Knowledge Base Access (Unavailable)
 
