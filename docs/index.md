@@ -30,7 +30,7 @@ Check what is currently supported in [MCP Capabilities](adri-mcp-server/mcp-capa
 Use the full beginner onboarding flow in [Adri Code Agent: Complete Onboarding Guide](code-agent/get-started.md).
 
 5. **Run practical SAP use cases**  
-Start with [Read and Write SAP Configuration](use-cases/read-write-sap-configuration.md) and [Clean Core Assessment](use-cases/clean-core-assessment.md) to see full prompt-to-result workflows, including IMG Extraction and fit-to-X planning paths.
+Start with [Read and Write SAP Configuration](use-cases/read-write-sap-configuration.md), [Clean Core Assessment](use-cases/clean-core-assessment.md), and [Use Debugger to Find BAdI Automatically](use-cases/debugger-find-badi-automatically.md) to see full prompt-to-result workflows, including IMG Extraction, fit-to-X planning, and runtime debugger discovery.
 
 6. **Run advanced SAP research workflows**  
 Use [SAP Research Agent](research-agent/research-intro.mdx) for object discovery, system validation, and research workflows.
