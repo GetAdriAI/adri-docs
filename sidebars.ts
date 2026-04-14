@@ -47,6 +47,8 @@ const sidebars: SidebarsConfig = {
         'adri-mcp-server/setup-in-claude-code',
         'adri-mcp-server/setup-in-codex',
         'adri-mcp-server/add-as-claude-connector',
+        'adri-mcp-server/authenticate-using-token',
+        'adri-mcp-server/connect-ibm-bob',
         'adri-mcp-server/mcp-capabilities',
       ],
     },
