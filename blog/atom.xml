@@ -2,11 +2,193 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.getadri.ai/blog</id>
     <title>Adri AI Blog</title>
-    <updated>2026-02-06T00:00:00.000Z</updated>
+    <updated>2026-04-19T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.getadri.ai/blog"/>
     <subtitle>Adri AI Blog</subtitle>
     <icon>https://docs.getadri.ai/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Why Executives Should Care About Context Instrumentation]]></title>
+        <id>https://docs.getadri.ai/blog/genai/executive-impact-context-instrumentation</id>
+        <link href="https://docs.getadri.ai/blog/genai/executive-impact-context-instrumentation"/>
+        <updated>2026-04-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The business impact of context instrumentation in SAP: speed, cost, and scalability.]]></summary>
+        <content type="html"><![CDATA[<p>AI in SAP is often discussed in technical terms, but the real story is business impact.
+This is about speed, cost, and scalability.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="from-months-to-days">From months to days<a href="https://docs.getadri.ai/blog/genai/executive-impact-context-instrumentation#from-months-to-days" class="hash-link" aria-label="Direct link to From months to days" title="Direct link to From months to days" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="integrations">Integrations<a href="https://docs.getadri.ai/blog/genai/executive-impact-context-instrumentation#integrations" class="hash-link" aria-label="Direct link to Integrations" title="Direct link to Integrations" translate="no">​</a></h3>
+<ul>
+<li class="">Bank and logistics integrations<!-- -->
+<ul>
+<li class="">Before: months</li>
+<li class="">Now: around 1 day</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="regulatory-changes">Regulatory changes<a href="https://docs.getadri.ai/blog/genai/executive-impact-context-instrumentation#regulatory-changes" class="hash-link" aria-label="Direct link to Regulatory changes" title="Direct link to Regulatory changes" translate="no">​</a></h3>
+<ul>
+<li class="">E-invoicing and compliance updates<!-- -->
+<ul>
+<li class="">Before: months</li>
+<li class="">Now: around 1 day</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="operational-automation">Operational automation<a href="https://docs.getadri.ai/blog/genai/executive-impact-context-instrumentation#operational-automation" class="hash-link" aria-label="Direct link to Operational automation" title="Direct link to Operational automation" translate="no">​</a></h3>
+<ul>
+<li class="">Routine workflows<!-- -->
+<ul>
+<li class="">Before: around 1 week</li>
+<li class="">Now: around 1 day</li>
+</ul>
+</li>
+</ul>
+<p>This is not small optimization. This is cycle-time collapse.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="path-to-roi">Path to ROI<a href="https://docs.getadri.ai/blog/genai/executive-impact-context-instrumentation#path-to-roi" class="hash-link" aria-label="Direct link to Path to ROI" title="Direct link to Path to ROI" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="month-1-about-25-efficiency-gain">Month 1: about 25% efficiency gain<a href="https://docs.getadri.ai/blog/genai/executive-impact-context-instrumentation#month-1-about-25-efficiency-gain" class="hash-link" aria-label="Direct link to Month 1: about 25% efficiency gain" title="Direct link to Month 1: about 25% efficiency gain" translate="no">​</a></h3>
+<ul>
+<li class="">Faster debugging</li>
+<li class="">Early automation wins</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="month-3-about-50-efficiency-gain">Month 3: about 50% efficiency gain<a href="https://docs.getadri.ai/blog/genai/executive-impact-context-instrumentation#month-3-about-50-efficiency-gain" class="hash-link" aria-label="Direct link to Month 3: about 50% efficiency gain" title="Direct link to Month 3: about 50% efficiency gain" translate="no">​</a></h3>
+<ul>
+<li class="">Larger features delivered faster</li>
+<li class="">Increased confidence in change delivery</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="month-6-about-80-efficiency-gain">Month 6: about 80% efficiency gain<a href="https://docs.getadri.ai/blog/genai/executive-impact-context-instrumentation#month-6-about-80-efficiency-gain" class="hash-link" aria-label="Direct link to Month 6: about 80% efficiency gain" title="Direct link to Month 6: about 80% efficiency gain" translate="no">​</a></h3>
+<ul>
+<li class="">End-to-end workflow acceleration</li>
+<li class="">Agent supports build, test, and documentation</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="year-1-outcome">Year 1 outcome<a href="https://docs.getadri.ai/blog/genai/executive-impact-context-instrumentation#year-1-outcome" class="hash-link" aria-label="Direct link to Year 1 outcome" title="Direct link to Year 1 outcome" translate="no">​</a></h3>
+<p>With the same team size, organizations can deliver significantly more applications.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="strategic-value">Strategic value<a href="https://docs.getadri.ai/blog/genai/executive-impact-context-instrumentation#strategic-value" class="hash-link" aria-label="Direct link to Strategic value" title="Direct link to Strategic value" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="faster-automation">Faster automation<a href="https://docs.getadri.ai/blog/genai/executive-impact-context-instrumentation#faster-automation" class="hash-link" aria-label="Direct link to Faster automation" title="Direct link to Faster automation" translate="no">​</a></h3>
+<p>Complex processes become continuously improvable.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="faster-application-delivery">Faster application delivery<a href="https://docs.getadri.ai/blog/genai/executive-impact-context-instrumentation#faster-application-delivery" class="hash-link" aria-label="Direct link to Faster application delivery" title="Direct link to Faster application delivery" translate="no">​</a></h3>
+<p>Backlogs shrink and innovation speeds up.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="built-in-quality">Built-in quality<a href="https://docs.getadri.ai/blog/genai/executive-impact-context-instrumentation#built-in-quality" class="hash-link" aria-label="Direct link to Built-in quality" title="Direct link to Built-in quality" translate="no">​</a></h3>
+<p>Quality improves through repeatable checks and stronger test discipline.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="cost-reduction">Cost reduction<a href="https://docs.getadri.ai/blog/genai/executive-impact-context-instrumentation#cost-reduction" class="hash-link" aria-label="Direct link to Cost reduction" title="Direct link to Cost reduction" translate="no">​</a></h3>
+<p>Teams can reduce SaaS dependency and build more capabilities internally at lower cost.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="executive-takeaway">Executive takeaway<a href="https://docs.getadri.ai/blog/genai/executive-impact-context-instrumentation#executive-takeaway" class="hash-link" aria-label="Direct link to Executive takeaway" title="Direct link to Executive takeaway" translate="no">​</a></h2>
+<p>This is not only a developer productivity tool.
+It is a business transformation engine that improves time-to-market, quality, and agility.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="final-thought">Final thought<a href="https://docs.getadri.ai/blog/genai/executive-impact-context-instrumentation#final-thought" class="hash-link" aria-label="Direct link to Final thought" title="Direct link to Final thought" translate="no">​</a></h2>
+<p>Most transformation initiatives promise speed.
+Few truly remove bottlenecks.</p>
+<p>Context instrumentation does exactly that.</p>
+<p>Once this shift happens, the question is no longer "Can we build this?"
+It becomes:</p>
+<blockquote>
+<p>What should we build next?</p>
+</blockquote>]]></content>
+        <author>
+            <name>Shyam Swaroop</name>
+            <uri>https://www.linkedin.com/in/shyamswaroop/</uri>
+        </author>
+        <category label="GenAI" term="GenAI"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Return of Simple Prompting in SAP]]></title>
+        <id>https://docs.getadri.ai/blog/genai/simple-prompting-context-instrumentation</id>
+        <link href="https://docs.getadri.ai/blog/genai/simple-prompting-context-instrumentation"/>
+        <updated>2026-04-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Why SAP teams are moving beyond prompt engineering toward context instrumentation.]]></summary>
+        <content type="html"><![CDATA[<p>For the past few years, AI adoption in enterprises has been driven by one idea: write better prompts.
+In SAP environments, that phase is ending. We are entering a new paradigm: context instrumentation, where systems are designed so agents can build context and take action autonomously.</p>
+<p>And interestingly, users are returning to simple prompting.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-evolution">The evolution<a href="https://docs.getadri.ai/blog/genai/simple-prompting-context-instrumentation#the-evolution" class="hash-link" aria-label="Direct link to The evolution" title="Direct link to The evolution" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-simple-prompting">1. Simple prompting<a href="https://docs.getadri.ai/blog/genai/simple-prompting-context-instrumentation#1-simple-prompting" class="hash-link" aria-label="Direct link to 1. Simple prompting" title="Direct link to 1. Simple prompting" translate="no">​</a></h3>
+<p>At the beginning, users asked things like:</p>
+<ul>
+<li class="">"Write an ABAP report"</li>
+<li class="">"Explain this dump"</li>
+</ul>
+<p>Results were inconsistent because the model had no awareness of:</p>
+<ul>
+<li class="">your SAP system</li>
+<li class="">your configurations</li>
+<li class="">your custom logic</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-prompt-engineering">2. Prompt engineering<a href="https://docs.getadri.ai/blog/genai/simple-prompting-context-instrumentation#2-prompt-engineering" class="hash-link" aria-label="Direct link to 2. Prompt engineering" title="Direct link to 2. Prompt engineering" translate="no">​</a></h3>
+<p>Teams improved how they asked: better structure, clearer constraints, and examples.
+This helped, but only up to a limit.</p>
+<p>The model still lacked real context.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-context-engineering">3. Context engineering<a href="https://docs.getadri.ai/blog/genai/simple-prompting-context-instrumentation#3-context-engineering" class="hash-link" aria-label="Direct link to 3. Context engineering" title="Direct link to 3. Context engineering" translate="no">​</a></h3>
+<p>Teams then started injecting:</p>
+<ul>
+<li class="">documentation</li>
+<li class="">schemas</li>
+<li class="">business rules</li>
+</ul>
+<p>Now the model had context, but it was usually:</p>
+<ul>
+<li class="">static</li>
+<li class="">manually curated</li>
+<li class="">incomplete</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-context-instrumentation">4. Context instrumentation<a href="https://docs.getadri.ai/blog/genai/simple-prompting-context-instrumentation#4-context-instrumentation" class="hash-link" aria-label="Direct link to 4. Context instrumentation" title="Direct link to 4. Context instrumentation" translate="no">​</a></h3>
+<p>Instead of feeding all context manually, we enable the agent to build context itself.</p>
+<p>In SAP, this means the agent can:</p>
+<ul>
+<li class="">read and write ABAP</li>
+<li class="">query tables</li>
+<li class="">analyze runtime logs and dumps</li>
+<li class="">trace execution paths</li>
+<li class="">generate artifacts (for example forms)</li>
+<li class="">execute controlled changes</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-this-looks-like">What this looks like<a href="https://docs.getadri.ai/blog/genai/simple-prompting-context-instrumentation#what-this-looks-like" class="hash-link" aria-label="Direct link to What this looks like" title="Direct link to What this looks like" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="example-invoice-failure">Example: invoice failure<a href="https://docs.getadri.ai/blog/genai/simple-prompting-context-instrumentation#example-invoice-failure" class="hash-link" aria-label="Direct link to Example: invoice failure" title="Direct link to Example: invoice failure" translate="no">​</a></h3>
+<p>Traditional approach:</p>
+<ul>
+<li class="">use ST22 for dump analysis</li>
+<li class="">jump into SE80</li>
+<li class="">trace logic manually</li>
+</ul>
+<p>With an agent, a user can ask:</p>
+<blockquote>
+<p>"Why did this invoice fail to post?"</p>
+</blockquote>
+<p>The agent can then retrieve logs, trace execution, inspect dependencies, map to the billing process, and explain root cause.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-hard-problem-meaning">The hard problem: meaning<a href="https://docs.getadri.ai/blog/genai/simple-prompting-context-instrumentation#the-hard-problem-meaning" class="hash-link" aria-label="Direct link to The hard problem: meaning" title="Direct link to The hard problem: meaning" translate="no">​</a></h2>
+<p>SAP systems are complex: custom Z programs, implicit logic, and configuration-driven behavior.
+So the real challenge is not only "Can the agent act?" but also "Can the agent act correctly?"</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="our-breakthrough-code-to-process-mapping">Our breakthrough: code-to-process mapping<a href="https://docs.getadri.ai/blog/genai/simple-prompting-context-instrumentation#our-breakthrough-code-to-process-mapping" class="hash-link" aria-label="Direct link to Our breakthrough: code-to-process mapping" title="Direct link to Our breakthrough: code-to-process mapping" translate="no">​</a></h2>
+<p>A key layer is mapping every code artifact and configuration to a business process.</p>
+<p>When the agent encounters code, it:</p>
+<ol>
+<li class="">reads the source</li>
+<li class="">analyzes dependencies</li>
+<li class="">traverses execution paths</li>
+<li class="">maps to business processes such as Order-to-Cash, Procure-to-Pay, and Record-to-Report</li>
+<li class="">generates living documentation</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-this-unlocks">What this unlocks<a href="https://docs.getadri.ai/blog/genai/simple-prompting-context-instrumentation#what-this-unlocks" class="hash-link" aria-label="Direct link to What this unlocks" title="Direct link to What this unlocks" translate="no">​</a></h2>
+<p>When a user asks "Why did this invoice fail?", the agent can reason with process context, system logic, and expected behavior.</p>
+<p>This is no longer basic debugging. This is business-aware reasoning.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-new-roles">The new roles<a href="https://docs.getadri.ai/blog/genai/simple-prompting-context-instrumentation#the-new-roles" class="hash-link" aria-label="Direct link to The new roles" title="Direct link to The new roles" translate="no">​</a></h2>
+<ul>
+<li class="">Enterprise Architect: designs the capability surface</li>
+<li class="">Agent: builds context and executes</li>
+<li class="">SAP system: becomes instrumented</li>
+<li class="">User: returns to simple prompting</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="final-thought">Final thought<a href="https://docs.getadri.ai/blog/genai/simple-prompting-context-instrumentation#final-thought" class="hash-link" aria-label="Direct link to Final thought" title="Direct link to Final thought" translate="no">​</a></h2>
+<p>The shift is clear:</p>
+<p>Prompt Engineering -&gt; Context Engineering -&gt; Context Instrumentation.</p>
+<p>The core question is no longer "How do we write better prompts?"
+It becomes:</p>
+<blockquote>
+<p>How do we make SAP systems understandable and operable by agents?</p>
+</blockquote>]]></content>
+        <author>
+            <name>Shyam Swaroop</name>
+            <uri>https://www.linkedin.com/in/shyamswaroop/</uri>
+        </author>
+        <category label="GenAI" term="GenAI"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Why ChatGPT Fails at Finding SAP APIs]]></title>
         <id>https://docs.getadri.ai/blog/research-agent/api-hub</id>
