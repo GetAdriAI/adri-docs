@@ -74,6 +74,20 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            from: ['/adri-mcp-server/'],
+            to: '/adri-mcp-server/mcp-capabilities',
+          },
+        ],
+      },
+    ],
+  ],
+
   themeConfig: {
     // Replace with your project's social card
     image: 'img/adri-social-card.jpg',
