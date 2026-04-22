@@ -30,6 +30,24 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'Adri AI Foundry for VS Code',
+      collapsed: false,
+      items: [
+        'vs-code-extension/introduction',
+        'vs-code-extension/install-vs-code-extension',
+        'vs-code-extension/open-folder-in-vs-code',
+        'vs-code-extension/sign-in-adri-ai',
+        'vs-code-extension/connect-to-a-system',
+        'vs-code-extension/disconnect-a-system',
+        'vs-code-extension/vpn-users',
+        'vs-code-extension/download-resources',
+        'vs-code-extension/install-mcp-for-claude-code',
+        'vs-code-extension/install-mcp-for-codex',
+        'vs-code-extension/abap-debugger',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Agent Booster Setup',
       collapsed: false,
       items: [
