@@ -1,6 +1,6 @@
 ---
 title: ABAP Debugger
-sidebar_position: 1
+sidebar_position: 2
 description: Adri AI agents can launch ABAP debugger sessions, set breakpoints, and step through execution.
 ---
 
