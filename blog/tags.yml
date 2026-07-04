@@ -17,3 +17,8 @@ genai:
   label: GenAI
   permalink: /genai
   description: All posts about GenAI
+
+sap:
+  label: SAP
+  permalink: /sap
+  description: All posts about SAP terminology, architecture, and implementation patterns
