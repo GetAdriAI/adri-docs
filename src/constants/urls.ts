@@ -29,4 +29,7 @@ export const EXTERNAL_URLS = {
   codexIdeDocs: 'https://developers.openai.com/codex/ide',
   codexVsCodeMarketplace:
     'https://marketplace.visualstudio.com/items?itemName=openai.chatgpt',
+  anthropicApiKeys: 'https://console.anthropic.com/settings/keys',
+  openaiApiKeys: 'https://platform.openai.com/api-keys',
+  googleAiStudioKeys: 'https://aistudio.google.com/apikey',
 } as const;
