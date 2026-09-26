@@ -113,6 +113,7 @@ const config: Config = {
           label: 'Docs',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/case-studies', label: 'Case Studies', position: 'left'},
         {to: '/comparisons/adri-vs-sap-joule', label: 'Compare', position: 'left'},
         {
           href: ADRI_URLS.research,
