@@ -2,9 +2,9 @@
 
 ## 1. Possible input sources
 
-- ECC, S/4HANA
-- Add-ons like CRM
-- Java based systems like PI/PO that are synchronous and asynchronous Java-based interfaces (?)
+- ERP systems: ECC, S/4HANA
+- SAP Add-ons: CRM, BTP
+- Java based systems: PI/PO
 
 ---
 
