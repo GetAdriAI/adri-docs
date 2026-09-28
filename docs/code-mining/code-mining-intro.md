@@ -1,25 +1,5 @@
 # Context layer built by Code Mining
 
-## How is Context Layer created?
-
-### 1. What are the possible input sources for Code Mining?
-
-- ECC, S/4HANA
-- Add-ons like CRM
-- Java based systems like PI/PO that are synchronous and asynchronous Java-based interfaces (?)
-
-### 2. What are the inputs that Code Mining considers? Does it factor in technical objects only or incorporates business context as well somehow?
-
-### 3. How is a RICEFW object mapped to a business process?
-
-- Does it rely on database tables to identify which module a program belongs to?
-
-### 4. At which steps is human oversight required during the Context Layer creation?
-
-Is there human oversight or verification of the knowledge graph after it is created automatically?
-
----
-
 ## How is Context Layer used?
 
 ### 1. Use case: code generation
