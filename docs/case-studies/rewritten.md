@@ -44,15 +44,13 @@ The agent traced the custom code and configuration to understand how approvers w
 
 This is work a developer would otherwise have to do directly: follow the code, inspect configuration, and connect the pieces.
 
-Finding the email class only gets you so far. The setup that allows those lines of code to work is part of the implementation too.
-
 ### Step 3. Develop and test an approach.
 
 The agent worked on a class to generate the email and direct-action button, along with the workflow nodes and containers needed to call it. It also unit-tested the components.
 
 There were failed attempts. The agent built, scrapped, and retried approaches before finding one that fit the system's workflow, configuration, and authorization setup.
 
-Delegating this work did not make the dependencies disappear. It changed who was doing the investigation and implementation as those dependencies surfaced.
+Broadly, this meant changing workflow nodes, creating workflow containers, and integrating with the existing email infrastructure. In this landscape, the required direct navigation was not available out of the box.
 
 ### Step 4. Resolve an authorization blocker.
 
@@ -62,7 +60,7 @@ The developer took the request to the relevant stakeholders and checked whether 
 
 BASIS completed the required update. The agent resumed and finished the remaining implementation.
 
-This handoff is easy to overlook when we describe the task as “the agent changed the workflow.” Someone still had to get the proposed system change assessed and carried out by the team responsible for it.
+agent wrote the exact requirement for basis and how to implement it - values, tcode, update
 
 ### Step 5. Make the environment safe for testing.
 
@@ -70,7 +68,7 @@ Before end-to-end testing, the agent identified that the sandbox could still sen
 
 Calling it a sandbox does not help much when your test lands in an actual approver's inbox.
 
-The agent stopped and requested a safety measure for outbound email. The developer coordinated with BASIS to establish what the environment could support. BASIS put the measure in place, and testing resumed after confirmation.
+The agent stopped and requested a safety measure for outbound email. The agent documented the BASIS configuration required which the developer shared with BASIS to put the measure in place, and testing resumed after confirmation.
 
 In this case, the agent spotted the risk. The developer's responsibility still included deciding when it was safe to continue and coordinating the people who could change the environment.
 
@@ -80,13 +78,11 @@ With the authorization blocker resolved and outbound email contained, the agent 
 
 The modified workflow, email-generation class, and navigation to the PR could now be tested together.
 
-This distinction matters when assigning work: running a test and deciding whether the available test evidence is sufficient are separate responsibilities. The agent performed the test execution here. A team adopting this workflow still needs to decide who reviews the evidence and accepts the result.
+The other most important requirement set by the developer was that the agent must trigger the workflow by creating real PRs and monitoring the SAPConnect activities. The agent analyzed the release strategy for PRs and past PRs to create test PRs. The developers and other team members who were temporarily added for end to end testing confirmed that they received emails in their inbox.
 
 ### Step 7. Prepare the handover.
 
-The agent delivered the transports and technical specification. The resulting email included the requisition details and a button to open the relevant PR.
-
-That is where this implementation account ends. It does not establish who approved a production release or imported the transports, so I would not describe this as an agent owning deployment from start to finish.
+The agent delivered the transports and technical specification.
 
 ### Step 8. Retain what was learned.
 
@@ -151,13 +147,13 @@ Several of these responsibilities will be familiar to experienced developers and
 
 ### Turn requirements into constraints the agent can act on.
 
-“Improve the approval email” leaves a lot open. “Preserve a clear way back to the working workflow” changes which solutions are acceptable.
+“Improve the approval email” leaves a lot open. “Preserve a clear way back to the working workflow” and "Trigger real PR and monitor SAPConnect" changes which solutions are acceptable.
 
 The developer in this case supplied that priority. For an architect, the same responsibility extends to defining the system boundaries and constraints within which the agent can work.
 
 ### Evaluate proposed changes against the real environment.
 
-The authorization request needed someone who could discuss it with the relevant teams and understand their answer. If the preferred change was not possible, that person also had to guide the next approach.
+The authorization request needed someone who could discuss it with the relevant teams and understand their answer. If the preferred authorization change was not possible, that person also had to guide the next approach.
 
 This requires technical knowledge. To challenge a proposed permission change or an implementation dependency, you need to understand why it is being requested and what it would affect.
 
