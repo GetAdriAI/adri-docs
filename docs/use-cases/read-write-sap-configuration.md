@@ -1,7 +1,7 @@
 ---
-title: Read and Write SAP Configuration
-sidebar_position: 1
-description: Use Adri AI to read and update SAP configuration quickly with MCP tools, prompts, and IMG extraction.
+title: Read and Write SAP Configuration with Claude Code
+sidebar_position: 2
+description: Use Claude Code with Adri MCP to read and update SAP configuration.
 ---
 
 import Link from '@docusaurus/Link';
@@ -48,12 +48,12 @@ List pricing condition types in system DEV40.
 ![Ask a configuration query with system name](/img/use-cases/img-extraction/2.png)
 
 3. Claude starts running Adri MCP calls in the background.
-Watch the tool steps to verify progress.
+   Watch the tool steps to verify progress.
 
 ![Tool execution progress in Claude](/img/use-cases/img-extraction/3.png)
 
 4. Review the returned configuration result.
-Use filters/search in the result table to inspect specific entries.
+   Use filters/search in the result table to inspect specific entries.
 
 ![Configuration result returned in structured table view](/img/use-cases/img-extraction/4.png)
 
@@ -62,6 +62,7 @@ Use filters/search in the result table to inspect specific entries.
 For best results, run IMG Extraction from Project Manager.
 This improves configuration read/write quality significantly.
 Full setup guide:
+
 <Link to="/adri-mcp-server/setup-img-extraction">Setup IMG Extraction</Link>
 
 <IMGExtractionStepsComponent />

@@ -1,7 +1,7 @@
 ---
 title: Clean Core Assessment
-sidebar_position: 3
-description: Run Clean Core Assessment in Adri AI, classify objects into A/B/C levels, and continue to fit-to-X planning.
+sidebar_position: 4
+description: Use Claude Code with Adri MCP to classify objects into A/B/C levels, and continue to fit-to-X planning.
 ---
 
 import Link from '@docusaurus/Link';
@@ -42,7 +42,7 @@ The assessment will still follow Adri's framework, but it will consider your add
 ![Framework loaded and input requirements shown](/img/use-cases/clean-core-assessment/2.png)
 
 3. Ask for assessment with object + system details.
-You can include your architect notes in the same request.
+   You can include your architect notes in the same request.
 
 Example:
 
