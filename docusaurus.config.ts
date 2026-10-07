@@ -118,6 +118,7 @@ const config: Config = {
           label: 'Docs',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/use-cases', label: 'Use Cases', position: 'left'},
         {to: '/case-studies', label: 'Case Studies', position: 'left'},
         {to: '/comparisons/adri-vs-sap-joule', label: 'Compare', position: 'left'},
         {
