@@ -1,0 +1,15 @@
+Use case: text-localization. Edit target: the attached Outlook email screenshot. Recreate this screenshot faithfully, preserving its UI layout, white background, blue headings and button, toolbar icons, fonts, date, and overall proportions. Make these exact replacements with crisp legible text:
+Subject: "Approval required: Purchase Requisition 27481639".
+Sender: "Adri Workflow <adri-workflow@acme.com>". Change circular sender avatar initials to AW.
+Recipient: "To: Maya Bennett".
+Keep heading "Purchase Requisition Approval Required" and introductory sentence unchanged.
+Details, in this order:
+PR Number: 27481639
+Requisitioner: Ethan Brooks
+Created By: Nina Patel
+Purchasing Group: K7M
+Total Value: 684.50 USD
+Completely remove Supplier and Plant rows and close the gaps naturally.
+Keep "Line Items" heading. Table headers Item, Description, Quantity, Value. One row: 00010 | ADRI TEST - enriched PR approval mail | 10.000 EA | 684.50 USD.
+Keep the blue "View / Approve PR in SAP" button.
+Remove the raw URL in the footer completely, including the original topcon hostname and URL parameters. Retain the gray explanatory sentence "Direct link opens the PR release screen (ME54N) in SAP Web GUI." Retain Reply and Forward controls. Do not leave the old PR number, sender name or address, recipient name, requisitioner identifiers, supplier, plant or old amount anywhere. Maintain realistic screenshot appearance.

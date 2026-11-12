@@ -48,11 +48,19 @@ No. A switch takes effect on the conversation's **next message**. Existing messa
 
 ### What does the "Adri AI" entry actually run?
 
-**Adri AI** means "inherit the project default": the project's default provider (the one with the **default** badge) and its default model. If your project has no providers, it is the Adri-managed model — this is how every project starts.
+**Adri AI** is the Adri-managed lane. Its **Auto** row means "inherit the project default": the project's default provider (the one with the **default** badge) and its default model; if your project has no providers, Auto is Adri's default managed model — this is how every project starts. Its vendor rows (**Claude**, **OpenAI**, …) pin the conversation to a specific managed model from that vendor, still on Adri's capacity.
+
+### Which vendors show up under Adri AI?
+
+The ones your Adri deployment offers. A vendor appears only when Adri can serve it; the list is the same for every project. Your own providers are listed separately below Adri AI.
 
 ### Who pays for the tokens?
 
-Conversations on your provider call the model **with your API key**, so usage is billed to your provider account (Anthropic, OpenAI, …). Conversations on **Adri AI** without a default provider configured run on Adri-managed capacity.
+Conversations on your provider call the model **with your API key**, so usage is billed to your provider account (Anthropic, OpenAI, …). Conversations on **Adri AI** — Auto without a default provider, or any managed Claude/OpenAI model — run on Adri-managed capacity and count against your Adri subscription.
+
+### A managed model says it is unavailable
+
+Adri AI's credentials are managed by Adri, so a message like *"Adri AI (OpenAI) rejected the platform credentials"* is on Adri's side, not yours. Pick another Adri AI model for now, or try again later.
 
 ### Still stuck?
 
