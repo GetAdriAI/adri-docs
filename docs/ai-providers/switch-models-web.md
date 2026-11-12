@@ -20,8 +20,10 @@ Open any conversation. At the bottom, next to the message box, there is a button
 
 Click the button. The dropdown shows:
 
-- **Adri AI** at the top — the project default. A check mark marks the current selection.
+- **Adri AI** at the top — the Adri-managed lane. Hover it to see **Auto** (recommended) plus one row per managed vendor, such as **Claude** and **OpenAI**, each with its models. A check mark marks the current selection.
 - One entry per enabled provider, by the name your team gave it (e.g. `Production Anthropic`).
+
+![Adri AI opened: Auto, Claude and OpenAI](/img/ai-providers/model-picker-web/adri-ai-submenu-web.jpg)
 
 ![The open model picker dropdown](/img/ai-providers/model-picker-web/model-picker-dropdown-providers.jpg)
 
@@ -46,15 +48,19 @@ You should see a toast like *Switched to Claude Sonnet 4.5*, and the composer bu
 - It takes effect on the **next message** you send. Earlier messages are never rewritten.
 - The selection is saved — leave and come back, it is still set.
 
-### 5. Go back to the default
+### 5. Pick a managed model
 
-Open the picker and click **Adri AI**. You should see the toast *"Using the project default model"*.
+Hover **Adri AI**, then **Claude** or **OpenAI**, and click a model. The toast reads *Switched to Adri AI · GPT-5* and the composer button shows **Adri AI · GPT-5**. The turn runs on Adri's capacity — no API key of yours is involved.
+
+### 6. Go back to the default
+
+Open the picker, hover **Adri AI** and click **Auto**. You should see the toast *"Using the project default model"*.
 
 ![Switching back to Adri AI](/img/ai-providers/model-picker-web/switch-back-adri-ai-default.jpg)
 
 ## If the button shows "(unavailable)"
 
-The provider behind this conversation's model was removed. Open the picker and choose a new model (or **Adri AI**). See [FAQs & troubleshooting](./provider-faqs.md#a-model-shows-unavailable) for details.
+The provider behind this conversation's model was removed. Open the picker and choose a new model (or **Adri AI → Auto**). See [FAQs & troubleshooting](./provider-faqs.md#a-model-shows-unavailable) for details.
 
 ## Next steps
 
