@@ -27,9 +27,9 @@ Click the pill. The menu header tells you the scope:
 - **Model for this conversation** — an open conversation; picking applies immediately.
 - **Model for this new chat** — a brand-new chat; your pick is applied as soon as you send the first message.
 
-The list shows **Adri AI** (the Adri-managed lane, tagged **managed**) first, then one row per provider. The project's default provider is tagged **Default**.
+The list shows **Project default** first when your project has a default provider, then **Adri AI** (the Adri-managed lane, tagged **managed**), then one row per provider. The project's default provider is tagged **Default**.
 
-Tap **Adri AI** to drill into it: **Auto** (recommended — the project default, else Adri's default managed model) and one row per managed vendor, such as **Claude** and **OpenAI**. Tap a vendor to see its models and pick one; the pill then reads **Adri AI · GPT-5**. Tap **Auto** to go back to the default.
+Tap **Adri AI** to drill into it: **Auto** (Adri's default managed model, always on Adri's capacity) and one row per managed vendor, such as **Claude** and **OpenAI**. Tap a vendor to see its models and pick one; the pill then reads **Adri AI · GPT-5**. Tap **Project default** to return to the project's provider, or **Auto** to run on Adri.
 
 ![Level 1 of the picker: Adri AI plus the provider list](/img/ai-providers/model-picker-vscode/model-picker-providers-vscode.jpg)
 

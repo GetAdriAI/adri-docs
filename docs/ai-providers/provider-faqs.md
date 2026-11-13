@@ -48,7 +48,11 @@ No. A switch takes effect on the conversation's **next message**. Existing messa
 
 ### What does the "Adri AI" entry actually run?
 
-**Adri AI** is the Adri-managed lane. Its **Auto** row means "inherit the project default": the project's default provider (the one with the **default** badge) and its default model; if your project has no providers, Auto is Adri's default managed model — this is how every project starts. Its vendor rows (**Claude**, **OpenAI**, …) pin the conversation to a specific managed model from that vendor, still on Adri's capacity.
+**Adri AI** is the Adri-managed lane. Its **Auto** row runs the conversation on Adri's default managed model, on Adri's capacity — even if your project has a default provider. Its vendor rows (**Claude**, **OpenAI**, …) pin the conversation to a specific managed model from that vendor.
+
+### What does "Project default" mean?
+
+The provider your project's admin marked as default (the one with the **default** badge) and its pinned model. New conversations start on it, and picking the row again returns a conversation to it. It follows the project: if the admin changes the default later, conversations on it switch on their next message. A project with no default provider starts on Adri AI → Auto.
 
 ### Which vendors show up under Adri AI?
 
@@ -56,7 +60,7 @@ The ones your Adri deployment offers. A vendor appears only when Adri can serve 
 
 ### Who pays for the tokens?
 
-Conversations on your provider call the model **with your API key**, so usage is billed to your provider account (Anthropic, OpenAI, …). Conversations on **Adri AI** — Auto without a default provider, or any managed Claude/OpenAI model — run on Adri-managed capacity and count against your Adri subscription.
+Conversations on your provider (including the **Project default**) call the model **with your API key**, so usage is billed to your provider account (Anthropic, OpenAI, …). Conversations on **Adri AI** — Auto or any managed Claude/OpenAI model — run on Adri-managed capacity and count against your Adri subscription.
 
 ### A managed model says it is unavailable
 

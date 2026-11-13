@@ -36,14 +36,16 @@ Today you can connect **Anthropic (Claude)** and **OpenAI (GPT)**. The remaining
 
 ## How the "Adri AI" entry works
 
-The model picker always shows **Adri AI** as the first entry. It is the Adri-managed lane: models that run on Adri's own capacity and count against your Adri subscription, so you never need an API key for them. Open it to choose:
+**Adri AI** is the Adri-managed lane: models that run on Adri's own capacity and count against your Adri subscription, so you never need an API key for them. Open it to choose:
 
-- **Auto** (recommended) — the default. If your project has a default provider, the conversation inherits it; otherwise it runs on Adri's default managed model. This is how every project starts.
+- **Auto** — Adri picks the model (its default managed model). Choosing Auto always runs on Adri's capacity, even if your project has a default provider.
 - **Claude** or **OpenAI** — pin **this conversation** to a specific managed model from that vendor (for example *Claude Sonnet 5.5* or *GPT-5*). Which vendors and models appear depends on what your Adri deployment offers.
+
+If your project has a **default provider** (set in Settings → Providers), the picker shows a **Project default** row above Adri AI, naming that provider and its pinned model. New conversations start on it; choosing it again returns a conversation to it. A project without a default provider starts on Adri AI → Auto.
 
 Below Adri AI, the picker lists your project's own providers. Picking one of their models pins the conversation to that provider and model, billed to **your** key.
 
-Switching takes effect on the conversation's **next message** — earlier messages are never rewritten. The composer button shows what is in effect: **Adri AI** for Auto, **Adri AI · GPT-5** for a managed pick, or the model's name for a provider pick.
+Switching takes effect on the conversation's **next message** — earlier messages are never rewritten. The composer button shows what is in effect: **Adri AI** for Auto, **Adri AI · GPT-5** for a managed pick, or the model's name for a provider pick or the project default.
 
 ## Where do the model lists come from?
 
