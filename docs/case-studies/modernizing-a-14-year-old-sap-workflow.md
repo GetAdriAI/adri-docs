@@ -57,6 +57,20 @@ Then, just before end-to-end testing, another risk surfaced: the sandbox could s
 
 The agent stopped the test before that could happen. It asked the BASIS team to put a safety net in place, waited for confirmation, and then resumed testing in a controlled environment.
 
+## What Did the Developer in the Hot Seat Do?
+
+The agent could inspect the system, propose a design, write the code, and run the tests. But someone still had to decide what mattered most when the stakes were real.
+
+The developer made one concern non-negotiable: every change had to be easy to reverse.
+
+There was a good reason. Nobody on the current team had deep knowledge of the 14-year-old workflow. If the new implementation behaved unexpectedly, they needed a clear path back to the known working state. The agent could identify many technical concerns, but the developer ranked this one above the rest and made reversibility a success criterion for the solution.
+
+The developer also became the bridge between the agent and the BASIS team. An LLM can request a technically valid system change that is still impossible in a particular environment because of security policies, platform constraints, or operational limits. The developer took the agent's requests to the relevant stakeholders, checked whether they were viable, brought the constraints back, and guided the next move.
+
+During testing, that meant asking practical questions at every handoff: Can this authorization be granted? Can outbound email be contained safely? If the preferred setup is not possible, what can the environment support instead?
+
+The developer was not manually executing every technical step. The developer was exercising judgment: setting priorities, challenging assumptions, coordinating people, and deciding when it was safe for the agent to continue.
+
 This was not a one-shot generation followed by a hopeful deployment. It was a complete delivery cycle:
 
 1. Analyze the existing configuration and custom code.
