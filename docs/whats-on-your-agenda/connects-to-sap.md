@@ -57,3 +57,7 @@ Adri AI stores only the information needed to provide and operate the service:
 - **Retention:** Logs are retained for no more than 30 days and are routinely purged.
 - **Archival:** Logs are not archived beyond the 30-day retention period.
 - **Deletion:** Periodic deletion ensures that log records are not retained beyond the stated period.
+
+## Connect your SAP system
+
+Follow the [Connect your SAP system](../connect-sap-system/connect-your-sap-system.md) guide to configure a connection in Adri AI.
