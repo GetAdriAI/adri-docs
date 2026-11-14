@@ -1,0 +1,44 @@
+1. In your demo project, expand **Migration** and select **Architect Clean Core**.
+
+![Open Architect Clean Core from the Migration menu](/img/whats-on-your-agenda/btp-architecture/4.png)
+
+2. Review the pipeline from **Import sources** through **Design target applications**. To inspect a node that is outside the current view, pan across the canvas or use the minimap in the lower-right corner.
+
+![Review the Architect Clean Core pipeline](/img/whats-on-your-agenda/btp-architecture/5.png)
+
+The canvas supports zooming with **Ctrl + mouse wheel** on Windows and Linux, or **Command + mouse wheel** on macOS.
+
+3. Move to the right-hand end of the pipeline and open **Design target applications**.
+
+![Find the Design target applications node](/img/whats-on-your-agenda/btp-architecture/6.png)
+
+4. Expand the node output to use the available space.
+
+![Expand the Design target applications output](/img/whats-on-your-agenda/btp-architecture/7.png)
+
+5. Start with **Old → new**. This view shows how each current application is transformed into one or more target applications, including its module, proposed application types, target technologies, clean-core level, and review status.
+
+![Compare current applications with their proposed target applications](/img/whats-on-your-agenda/btp-architecture/8.png)
+
+6. Select **Target applications** to inspect the proposed target estate directly. Each row explains an application's responsibility and identifies its target type.
+
+![Review the proposed target applications](/img/whats-on-your-agenda/btp-architecture/9.png)
+
+7. Select **Estate diagram** to explore the architecture visually. The diagram places the current estate, S/4HANA applications, and side-by-side BTP applications in separate areas. Solid links show what an existing application **becomes**; dashed links show what another application or service **uses**.
+
+![Explore the target estate diagram](/img/whats-on-your-agenda/btp-architecture/10.png)
+
+8. Select a node to inspect its platform, artifacts, parents, and links in the details panel. Right-click the node to open its context menu.
+
+![Open the context menu for an architecture node](/img/whats-on-your-agenda/btp-architecture/11.png)
+
+Choose between these views:
+
+- **Isolate** keeps the selected node and all of its direct and indirect relationships visible, through the full relationship depth.
+- **Spotlight** emphasizes the selected node while preserving the wider estate for context.
+
+9. Choose **Isolate** when you need to trace one application's complete dependency path without unrelated nodes obscuring it. Close the isolation filter at the top of the diagram to return to the full estate.
+
+![Inspect an isolated application and all of its relationships](/img/whats-on-your-agenda/btp-architecture/12.png)
+
+**Done when:** You can compare the current and target applications, navigate the estate diagram, inspect a node's details, and isolate its complete relationship path.
