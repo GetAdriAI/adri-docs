@@ -4,7 +4,18 @@ The Adri AI Context Engine is a process-centric map of your SAP landscape. It co
 
 Every item ultimately links to one or more processes. This means users and agents can begin with a business question—such as *What supports Procure-to-Pay?*—and follow the graph to the relevant SAP objects and evidence instead of searching through isolated technical inventories.
 
-To see this model in action, watch [Context Engine: every SAP business process, mapped to the custom code behind it](https://www.getadri.ai/videos/context-engine-process-to-custom-code). You can also browse the complete [Adri AI video library](https://www.getadri.ai/videos).
+See this model in action in **Context Engine: every SAP business process, mapped to the custom code behind it**.
+
+<div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/0Cixp06sedI"
+    title="Context Engine: every SAP business process, mapped to the custom code behind it"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowFullScreen
+    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0}}
+  />
+</div>
 
 ## How is the Context Engine created?
 
@@ -27,7 +38,18 @@ The Context Engine is updated as Adri AI mining pipelines and workflows run. Exe
 
 This approach allows the Context Engine to evolve with the SAP landscape while preserving where each fact came from. Agents use the same current, process-linked context when answering questions or carrying out work.
 
-For an example of an agent using this shared context, watch [Template rollout: what changes for an AP lead, answered from the Context Engine](https://www.getadri.ai/videos/template-rollout-fit-gap-invoice-blocks).
+See an agent use this shared context in **Template rollout: what changes for an AP lead, answered from the Context Engine**.
+
+<div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/fwaZzyyvGkc"
+    title="Template rollout: what changes for an AP lead, answered from the Context Engine"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowFullScreen
+    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0}}
+  />
+</div>
 
 ## Persona-based presentation and access
 
