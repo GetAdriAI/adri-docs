@@ -6,7 +6,7 @@ import ExploreBtpArchitectureComponent from '@site/src/components/ExploreBtpArch
 
 Adri AI's **Architect Clean Core** pipeline designs a clean-core target architecture for a custom-code estate. It supports two target strategies: a side-by-side architecture that uses SAP BTP where appropriate, or an architecture that keeps the custom estate on S/4HANA using ABAP Cloud without requiring BTP.
 
-![Architect Clean Core supports target architectures with and without BTP](/img/whats-on-your-agenda/btp-architecture/1.png)
+![Choose a target architecture with or without BTP in Architect Clean Core](/img/whats-on-your-agenda/btp-architecture/2.png)
 
 The pipeline turns individual custom-code objects and their relationships into a reviewable application architecture. It shows how existing applications split, combine, or become new services; where each target application runs; and which dependencies remain between S/4HANA and side-by-side services.
 
