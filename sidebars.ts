@@ -15,6 +15,48 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 const sidebars: SidebarsConfig = {
   tutorialSidebar: [
     {type: 'doc', id: 'index', label: 'Welcome to Adri AI Docs'},
+    {
+      type: 'category',
+      label: "What's on your agenda?",
+      collapsed: false,
+      link: {type: 'doc', id: 'whats-on-your-agenda/index'},
+      items: [
+        {
+          type: 'category',
+          label: 'Learn',
+          collapsed: false,
+          items: [
+            'whats-on-your-agenda/agentic-harness',
+            'whats-on-your-agenda/connects-to-sap',
+            'whats-on-your-agenda/context-engine-concepts',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Explore',
+          collapsed: false,
+          items: [
+            'whats-on-your-agenda/btp-affinity',
+            'whats-on-your-agenda/btp-architecture',
+            'whats-on-your-agenda/explore-context-engine',
+            'whats-on-your-agenda/template-rollout',
+            'whats-on-your-agenda/code-and-process-mining',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Use',
+          collapsed: false,
+          items: [
+            'whats-on-your-agenda/rap-development',
+            'whats-on-your-agenda/wricef-development',
+            'whats-on-your-agenda/integration-suite-development',
+            'whats-on-your-agenda/search-standard-sap-capabilities',
+            'whats-on-your-agenda/build-custom-agents',
+          ],
+        },
+      ],
+    },
     {type: 'doc', id: 'use-adri-for-free', label: 'Use Adri for Free'},
     {
       type: 'category',
