@@ -1,0 +1,24 @@
+1. In your demo project, expand **Migration** and select **BTP Affinity**.
+
+![Open the BTP Affinity pipeline from the Migration menu](/img/whats-on-your-agenda/btp-affinity/20.png)
+
+2. The pipeline starts with an imported code-mining run, narrows the applications in scope, analyses the code and its links to SAP, applies affinity metrics, and scores the result. Select **Import code-mining run** to inspect the portfolio used by this demo.
+
+![Select Import code-mining run in the BTP Affinity pipeline](/img/whats-on-your-agenda/btp-affinity/21.png)
+
+3. Review the selected run and its output. In the Willow demo, the imported inventory contains 182 custom objects grouped into 92 applications. Select **Next** to continue through the pipeline without replacing the prepared input.
+
+![Review the imported Willow code-mining run](/img/whats-on-your-agenda/btp-affinity/22.png)
+
+4. Open **Define affinity metrics** to inspect the code-affinity and data-affinity factors and their weights. The demo uses a score of 60 or higher as the threshold for high affinity in each dimension.
+
+![Review code and data affinity metrics and thresholds](/img/whats-on-your-agenda/btp-affinity/23.png)
+
+Use these dimensions together when reading the results:
+
+- **High code affinity and high data affinity:** move both logic and data to BTP.
+- **High code affinity only:** move the logic to BTP while keeping the data in SAP.
+- **High data affinity only:** offload the data or data-intensive work while keeping the logic in SAP.
+- **Neither is high:** keep the application in SAP unless other constraints justify a different decision.
+
+**Done when:** You can open the prepared pipeline, inspect its imported custom-code inventory, and explain how its code and data affinity thresholds drive the placement recommendation.
