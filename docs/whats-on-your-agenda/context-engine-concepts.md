@@ -1,21 +1,8 @@
 # Context engine concepts
 
-The Adri AI Context Engine is a process-centric map of your SAP landscape. It connects custom code, integrations, configuration, process activities, tables, documents, and other technical evidence to the business processes they support.
+import ContextEngineIntro from '@site/src/components/ContextEngineIntroComponent.mdx';
 
-Every item ultimately links to one or more processes. This means users and agents can begin with a business question—such as *What supports Procure-to-Pay?*—and follow the graph to the relevant SAP objects and evidence instead of searching through isolated technical inventories.
-
-See this model in action in **Context Engine: every SAP business process, mapped to the custom code behind it**.
-
-<div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden'}}>
-  <iframe
-    src="https://www.youtube-nocookie.com/embed/0Cixp06sedI"
-    title="Context Engine: every SAP business process, mapped to the custom code behind it"
-    loading="lazy"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowFullScreen
-    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0}}
-  />
-</div>
+<ContextEngineIntro />
 
 ## How is the Context Engine created?
 
