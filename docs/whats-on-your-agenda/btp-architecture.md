@@ -14,6 +14,10 @@ The pipeline turns individual custom-code objects and their relationships into a
 
 The Willow reference demo contains a completed **Architect Clean Core** run for an S/4HANA target architecture with BTP. Copy the reference project, then use the prepared result to explore its application mappings and estate diagram.
 
+:::tip Already set up?
+**If you have already signed up for Adri AI and copied the Willow reference project, skip directly to [Step 3](#step-3-explore-the-architect-clean-core-pipeline-with-btp).**
+:::
+
 ## Step 1: Sign up for Adri AI
 
 <SignUpAndProfileSetupComponent />

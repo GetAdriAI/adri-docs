@@ -14,6 +14,10 @@ For the complete methodology—including inventory creation, application groupin
 
 Adri AI includes a curated reference portfolio with hundreds of ABAP objects. Create your own demo project, copy the prepared Willow reference data, and inspect the BTP Affinity pipeline without connecting an SAP system.
 
+:::tip Already set up?
+**If you have already signed up for Adri AI and copied the Willow reference project, skip directly to [Step 3](#step-3-explore-the-btp-affinity-pipeline).**
+:::
+
 ## Step 1: Sign up for Adri AI
 
 <SignUpAndProfileSetupComponent />
