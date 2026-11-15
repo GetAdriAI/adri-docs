@@ -14,7 +14,7 @@ If you are new to the Adri AI platform, we recommend following the **Learn → E
 - [Explore the platform's BTP architecture capabilities](btp-architecture.md)
 - [Explore the context engine](explore-context-engine.md)
 - [Explore template rollout](template-rollout.md)
-- [Explore code mining and process mining](code-and-process-mining.md)
+- [Explore code mining](code-mining.md)
 
 ## Use
 

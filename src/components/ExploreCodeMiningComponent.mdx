@@ -1,0 +1,67 @@
+### Open the Code Mining workflow
+
+In the Willow project, open **Mining**, select **Code Mining**, and open the prepared workflow run.
+
+![Open Code Mining from the Mining section](/img/whats-on-your-agenda/code-mining/2.png)
+
+The workflow contains specialized agents for each stage of code analysis. Select **Generate functional specs per object** to inspect its completed output.
+
+![Select the agent that generates functional specifications](/img/whats-on-your-agenda/code-mining/3.png)
+
+### Review generated functional specifications
+
+The agent creates a functional specification for every successfully analyzed custom object. Open the agent details and expand the output.
+
+![Open the completed functional-specification agent](/img/whats-on-your-agenda/code-mining/4.png)
+
+Navigate to **technical_assessment_bundle_fspec → applications → output**, then select a Markdown file to review the functional specification for that object.
+
+![Navigate to an object's generated functional specification](/img/whats-on-your-agenda/code-mining/5.png)
+
+Each specification translates the source code into readable documentation. It identifies the object's purpose and explains its functional behavior, data usage, dependencies, processing flow, validations, and outputs.
+
+![Read the generated functional specification](/img/whats-on-your-agenda/code-mining/6.png)
+
+Scroll through the document to review the complete analysis.
+
+![Review the complete functional specification](/img/whats-on-your-agenda/code-mining/7.png)
+
+When you are ready to inspect the next deliverable, select **Next**.
+
+![Move to the next Code Mining deliverable](/img/whats-on-your-agenda/code-mining/8.png)
+
+### Explore the source dependency graph
+
+The source dependency graph turns relationships among custom objects into an interactive map. Open the graph output and expand it for more room to explore.
+
+![Open the source dependency graph](/img/whats-on-your-agenda/code-mining/9.png)
+
+Start with **Module** to see how custom objects are distributed across SAP functional modules. Switch between **Modules**, **Slices**, and **Objects** to move from a portfolio-level view to individual objects.
+
+![View the source dependency graph grouped by module](/img/whats-on-your-agenda/code-mining/10.png)
+
+In **Objects**, select a card to inspect its type, incoming and outgoing dependencies, parent group, and related objects. Use **Isolate** to focus on that object's dependency closure.
+
+![Select and inspect an object in the dependency graph](/img/whats-on-your-agenda/code-mining/11.png)
+
+The isolated view keeps the selected object and the dependencies that explain its impact, making a dense landscape easier to analyze.
+
+![Inspect an isolated object's dependency closure](/img/whats-on-your-agenda/code-mining/12.png)
+
+Choose **Process** to organize the same source-code inventory by the business processes associated with each object. This is a code-classification view within Code Mining; it is not process mining.
+
+![Group custom code by associated business process](/img/whats-on-your-agenda/code-mining/13.png)
+
+Switch to **Objects** to inspect the code-level dependencies within and across those process groups. The legend distinguishes dependencies within a group, coupling across groups, and RFC boundaries.
+
+![Inspect objects grouped by associated business process](/img/whats-on-your-agenda/code-mining/14.png)
+
+Choose **Application category** to group custom code by its technical usage pattern, such as output and report combinations, transaction-code outputs, or RFC functions and reports.
+
+![Group custom code by application category](/img/whats-on-your-agenda/code-mining/15.png)
+
+Open **Objects** to see the individual custom objects behind each category and trace coupling across categories.
+
+![Inspect objects grouped by application category](/img/whats-on-your-agenda/code-mining/16.png)
+
+Together, the generated functional specifications and dependency graph give you both object-level documentation and a landscape-wide view of how your custom code is organized and connected.

@@ -40,7 +40,7 @@ const sidebars: SidebarsConfig = {
             'whats-on-your-agenda/btp-architecture',
             'whats-on-your-agenda/explore-context-engine',
             'whats-on-your-agenda/template-rollout',
-            'whats-on-your-agenda/code-and-process-mining',
+            'whats-on-your-agenda/code-mining',
           ],
         },
         {
