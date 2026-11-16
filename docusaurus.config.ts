@@ -28,6 +28,11 @@ const config: Config = {
 
   onBrokenLinks: 'throw',
 
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
+
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -113,6 +118,7 @@ const config: Config = {
           label: 'Docs',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/case-studies', label: 'Case Studies', position: 'left'},
         {to: '/comparisons/adri-vs-sap-joule', label: 'Compare', position: 'left'},
         {
           href: ADRI_URLS.research,
