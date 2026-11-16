@@ -15,6 +15,48 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 const sidebars: SidebarsConfig = {
   tutorialSidebar: [
     {type: 'doc', id: 'index', label: 'Welcome to Adri AI Docs'},
+    {
+      type: 'category',
+      label: "What's on your agenda?",
+      collapsed: false,
+      link: {type: 'doc', id: 'whats-on-your-agenda/index'},
+      items: [
+        {
+          type: 'category',
+          label: 'Learn',
+          collapsed: false,
+          items: [
+            'whats-on-your-agenda/agentic-harness',
+            'whats-on-your-agenda/connects-to-sap',
+            'whats-on-your-agenda/context-engine-concepts',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Explore',
+          collapsed: false,
+          items: [
+            'whats-on-your-agenda/btp-affinity',
+            'whats-on-your-agenda/btp-architecture',
+            'whats-on-your-agenda/explore-context-engine',
+            'whats-on-your-agenda/template-rollout',
+            'whats-on-your-agenda/code-mining',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Use',
+          collapsed: false,
+          items: [
+            'whats-on-your-agenda/rap-development',
+            'whats-on-your-agenda/wricef-development',
+            'whats-on-your-agenda/integration-suite-development',
+            'whats-on-your-agenda/search-standard-sap-capabilities',
+            'whats-on-your-agenda/build-custom-agents',
+          ],
+        },
+      ],
+    },
     {type: 'doc', id: 'use-adri-for-free', label: 'Use Adri for Free'},
     {
       type: 'category',
@@ -50,6 +92,50 @@ const sidebars: SidebarsConfig = {
         'vs-code-extension/install-mcp-for-claude-code',
         'vs-code-extension/install-mcp-for-codex',
         'vs-code-extension/abap-debugger',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'SAP PI/PO',
+      collapsed: false,
+      link: {type: 'doc', id: 'pi-po/index'},
+      items: [
+        {
+          type: 'category',
+          label: 'Set up',
+          items: ['pi-po/set-up/connect-pi-po'],
+        },
+        {
+          type: 'category',
+          label: 'Use',
+          items: ['pi-po/use/explore-and-develop'],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'SAP Integration Suite',
+      collapsed: false,
+      link: {type: 'doc', id: 'integration-suite/index'},
+      items: [
+        {
+          type: 'category',
+          label: 'Set up',
+          items: [
+            'integration-suite/set-up/request-access',
+            'integration-suite/set-up/add-toolkit',
+            'integration-suite/set-up/connect-cloud-foundry',
+            'integration-suite/set-up/pi-po-to-integration-suite-migration',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Use',
+          items: [
+            'integration-suite/use/migrate-pi-po-interface',
+            'integration-suite/use/develop-new-integration',
+          ],
+        },
       ],
     },
     {
